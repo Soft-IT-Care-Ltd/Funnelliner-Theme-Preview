@@ -80,11 +80,10 @@ const Menubar = ({ menu1, menu2, menu3, menu4, fontSize, save }) => {
                   </Dropdown.Toggle>
 
                   <Dropdown.Menu>
-                    {categories?.map((item, index) => {
-                      return (
-                        <Dropdown.Item key={index} href='#/action-1'>{item.name}</Dropdown.Item>
-                      );
-                    })}
+                  <Dropdown.Item  href='#/action-1'>Organic Food</Dropdown.Item>
+                  <Dropdown.Item  href='#/action-1'>Milk</Dropdown.Item>
+                  <Dropdown.Item  href='#/action-1'>Honey Nut</Dropdown.Item>
+                  <Dropdown.Item  href='#/action-1'>Organic Food</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </div>

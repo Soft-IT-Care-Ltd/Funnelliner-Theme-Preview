@@ -21,7 +21,66 @@ import ContentEditable from "react-contenteditable";
 import Context from "../../Context";
 const axios = require("axios");
 import { useRouter } from "next/router";
+import iamgeOne from "../../../public/theme_1/images/product/headphoneProduct.jpg"
+
 const AllProduct = ({ title, fontSize }) => {
+  const product = [
+    {
+      name: "Head Phone",
+      image: iamgeOne,
+      price: 100,
+      discount: 40,
+    },
+    {
+      name: "Head Phone",
+      image: iamgeOne,
+      price: 100,
+      discount: 40,
+    },
+    {
+      name: "Head Phone",
+      image: iamgeOne,
+      price: 100,
+      discount: 40,
+    },
+    {
+      name: "Head Phone",
+      image: iamgeOne,
+      price: 100,
+      discount: 40,
+    },
+    {
+      name: "Head Phone",
+      image: iamgeOne,
+      price: 100,
+      discount: 40,
+    },
+    {
+      name: "Head Phone",
+      image: iamgeOne,
+      price: 100,
+      discount: 40,
+    },
+    {
+      name: "Head Phone",
+      image: iamgeOne,
+      price: 100,
+      discount: 40,
+    },
+    {
+      name: "Head Phone",
+      image: iamgeOne,
+      price: 100,
+      discount: 40,
+    },
+    {
+      name: "Head Phone",
+      image: iamgeOne,
+      price: 100,
+      discount: 40,
+    },
+  ]
+
   const {
     connectors: { connect, drag },
     hasSelectedNode,
@@ -136,18 +195,19 @@ const AllProduct = ({ title, fontSize }) => {
                 <Tab eventKey='PackOne' title='All Products'>
                   <div className='PopularProductContent'>
                     <Row>
-                      <Col xs={12}>
-                        <div className='PopularProductGrid'>
-                          {allProducts.map((item, index) => {
+                      <Col>
+                        <div md='5' className='PopularProductGrid'>
+                          {product.map((item, index) => {
                             return (
-                              <Link href={`${shop_name}/details/${item?.id}`}>
+                              
+                              <Link href="#">
                                 <div
                                   key={item.id}
                                   className='PopularProductItem'
                                 >
                                   <div className='img'>
-                                    <img
-                                      src={item?.main_image?.name}
+                                    <Image
+                                      src={item?.image}
                                       alt=''
                                       style={{ width: "250px" }}
                                     />
@@ -159,15 +219,15 @@ const AllProduct = ({ title, fontSize }) => {
                                     <p>{item?.product_name}</p>
                                     <div className='duelButton'>
                                       <Link
-                                        onClick={() => handleAddToCart(item)}
+                                        
                                         className='addToCart'
                                         href='#'
                                       >
                                         Add To Cart
                                       </Link>
                                       <Link
-                                        onClick={() => handleBuyNow(item)}
-                                        href={`/${shop_name}/checkout`}
+                                       
+                                        href="#"
                                       >
                                         Buy Now
                                       </Link>

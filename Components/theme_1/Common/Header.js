@@ -158,7 +158,7 @@ const Header = ({ save }) => {
                       <AiOutlineShoppingCart />
                     </div>
                     Cart
-                    <span>{totalItem}</span>
+                    <span>2</span>
                   </Link>
                 </li>
 
