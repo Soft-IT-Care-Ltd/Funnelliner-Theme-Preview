@@ -80,7 +80,8 @@ const AllProduct = ({ title, fontSize }) => {
       discount: 40,
     },
   ]
-
+`
+`
   const {
     connectors: { connect, drag },
     hasSelectedNode,
