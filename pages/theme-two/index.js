@@ -14,10 +14,11 @@ function index() {
             <Hero></Hero>
             <Service></Service>
             <CategoryImage/>
-            <ProductBanner/>
-            <ProductCarousel />
            
-            {/* <ProductListCarousel/> */}
+            <ProductCarousel />
+            <ProductBanner/>
+           
+            <ProductListCarousel/>
             <Footer/>
         </div>
     )
