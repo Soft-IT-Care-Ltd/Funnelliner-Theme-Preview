@@ -11,11 +11,8 @@ import TinyFooter from "../../../Components/theme_1/Common/TinyFooter";
 import ProductDescription from "../../../Components/theme_1/ProductDetails/ProductDescription";
 const axios = require("axios");
 import { useRouter } from "next/router";
-import { shopId } from "../../../constant/constant";
-import { Editor, Frame } from "@craftjs/core";
 import Cookies from 'js-cookie'
 const index = ({data}) => {
-  console.log("shop id",Cookies.get('shop_id'))
   return (
     <>
       <Head>
@@ -31,12 +28,8 @@ const index = ({data}) => {
       </Head>
       <main>
         <Header></Header>
-			<Editor resolver={{ MenuBar }}>
-				<Frame>
-					<MenuBar menu1={'Home'} menu2={'Shop'} menu3={'About Us'} menu4={'Contact Us'} fontSize={'15'} />
-				</Frame>
-			</Editor>
-        <ProductDescription data={data.data}></ProductDescription>
+        <MenuBar/>
+        <ProductDescription></ProductDescription>
         <Delivary></Delivary>
         <Footer></Footer>
         <SocialMedia></SocialMedia>
@@ -49,20 +42,3 @@ const index = ({data}) => {
 
 export default index;
 
-export async function getServerSideProps(context) {
-  const { params } = context;
-  const response = await fetch(
-    `${process.env.API_URL}v1/customer/products/${params.productID}`,
-    {
-      method: "get",
-      headers: {
-      //  "shop-id": params.product_details,
-      "shop-id": params.product_details
-      },
-    }
-  );
-  const data = await response?.json();
-  return {
-    props: { data },
-  };
-}

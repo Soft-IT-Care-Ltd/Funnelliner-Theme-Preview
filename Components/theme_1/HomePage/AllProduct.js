@@ -165,7 +165,7 @@ const AllProduct = ({ title, fontSize }) => {
                           {product.map((item, index) => {
                             return (
                               
-                              <Link href="#">
+                              <Link href="/theme_1/product_details/1">
                                 <div
                                   key={item.id}
                                   className='PopularProductItem'

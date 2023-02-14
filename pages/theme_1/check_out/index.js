@@ -18,19 +18,11 @@ const index = () => {
   };
   return (
     <>
-      {shopInfo.theme === 1 && shopInfo.landing === null && (
-        <>
-          {" "}
-          {/* <Header></Header> */}
-          {/* <MenuBar></MenuBar> */}
-          <CheckOut></CheckOut>
-          <Delivary></Delivary>
-          <Footer></Footer>
-          <SocialMedia></SocialMedia>
-          <TinyFooter></TinyFooter>
-          <footer></footer>{" "}
-        </>
-      )}
+      {/* <Header></Header>
+      <MenuBar></MenuBar> */}
+      <CheckOut></CheckOut>
+      {/* <Delivary></Delivary> */}
+      {/* <Footer></Footer> */}
     </>
   );
 };

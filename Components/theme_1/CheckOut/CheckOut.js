@@ -119,18 +119,21 @@ const CheckOut = () => {
 			image: iamgeOne,
 			price: 100,
 			discount: 40,
+			quantity: 1
 		},
 		{
 			name: "Head Phone",
 			image: iamgeOne,
 			price: 100,
 			discount: 40,
+			quantity: 1
 		},
 		{
 			name: "Head Phone",
 			image: iamgeOne,
 			price: 100,
 			discount: 40,
+			quantity: 1
 		},
 		
 	]
@@ -221,7 +224,7 @@ const CheckOut = () => {
 
 																<div className='InputNumber'>
 																	<h6 className='py-2'>
-																		{item?.cartQuantity}
+																		{item?.quantity}
 																	</h6>
 																</div>
 
@@ -334,7 +337,7 @@ const CheckOut = () => {
 
 									<li className='d_flex'>
 										<h5>Total Item</h5>
-										<p>6</p>
+										<p>3</p>
 									</li>
 
 									<li className='d_flex'>
