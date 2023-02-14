@@ -153,7 +153,7 @@ const Header = ({ save }) => {
                 </li>
 
                 <li>
-                  <Link href={`/${shop_name}/checkout`} className='d_flex'>
+                  <Link href={`/theme_1/check_out`} className='d_flex'>
                     <div className='svg'>
                       <AiOutlineShoppingCart />
                     </div>

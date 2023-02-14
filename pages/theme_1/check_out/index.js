@@ -21,7 +21,7 @@ const index = () => {
       {shopInfo.theme === 1 && shopInfo.landing === null && (
         <>
           {" "}
-          <Header></Header>
+          {/* <Header></Header> */}
           {/* <MenuBar></MenuBar> */}
           <CheckOut></CheckOut>
           <Delivary></Delivary>

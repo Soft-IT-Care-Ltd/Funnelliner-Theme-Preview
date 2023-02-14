@@ -80,8 +80,7 @@ const AllProduct = ({ title, fontSize }) => {
       discount: 40,
     },
   ]
-`
-`
+
   const {
     connectors: { connect, drag },
     hasSelectedNode,
@@ -217,7 +216,7 @@ const AllProduct = ({ title, fontSize }) => {
                                     <h3>
                                       {item?.price} <del>{item?.discount}</del>
                                     </h3>
-                                    <p>{item?.product_name}</p>
+                                    <p>{item?.name}</p>
                                     <div className='duelButton'>
                                       <Link
                                         
