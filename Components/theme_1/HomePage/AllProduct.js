@@ -81,15 +81,7 @@ const AllProduct = ({ title, fontSize }) => {
     },
   ]
 
-  const {
-    connectors: { connect, drag },
-    hasSelectedNode,
-    hasDraggedNode,
-    actions: { setProp },
-  } = useNode((state) => ({
-    hasSelectedNode: state.events.selected.size > 0,
-    hasDraggedNode: state.events.dragged.size > 0,
-  }));
+
   const dispatch = useDispatch();
   const router = useRouter();
   const editActive = useContext(Context);
@@ -162,34 +154,7 @@ const AllProduct = ({ title, fontSize }) => {
         <Row>
           {/* item */}
           <Col xs={12}>
-            {editActive === false && <h2>{title}</h2>}
-            {editActive === true && (
-              <ContentEditable
-                html={title}
-                onChange={(e) =>
-                  setProp(
-                    (props) =>
-                      (props.title = e.target.value.replace(
-                        /<\/?[^>]+(>|$)/g,
-                        ""
-                      ))
-                  )
-                }
-                tagName='h2'
-                style={{ fontSize: `${fontSize}px` }}
-              />
-            )}
-            {editActive === true && (
-              <Form.Range
-                min={1}
-                defaultvalue={fontSize}
-                style={{ width: "200px" }}
-                max={50}
-                onChange={(e) => {
-                  setProp((props) => (props.fontSize = e.target.value));
-                }}
-              />
-            )}
+          {/* <h2>All Product</h2> */}
             <div className='AllProductTabs'>
               <Tabs variant='pills' defaultActiveKey='PackOne'>
                 <Tab eventKey='PackOne' title='All Products'>
