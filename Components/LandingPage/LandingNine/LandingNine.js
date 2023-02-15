@@ -9,6 +9,11 @@ import { RiShoppingCart2Line } from 'react-icons/ri';
 import styles from '../../../styles/landing_nine/landing_nine.module.css';
 
 const LandingNine = () => {
+
+      const today = new Date();
+      const year = today.getFullYear();       
+
+
   return (
     <div className={styles.LandingNine}>
 
@@ -669,7 +674,7 @@ const LandingNine = () => {
                     <ul className=''>
 
                         <li><Link href="#"><BsTelephone/>
-                            00 0392 96 32</Link>
+                        +8801894844452</Link>
                         </li>
 
                     </ul>
@@ -740,11 +745,20 @@ const LandingNine = () => {
                 <hr></hr>
                 <div className='d-flex justify-content-center'>
 
-                  <p>Copyright © 2023 Hafsa. All rights reserved.</p>
+                  {/* <p>Copyright © 2023 Hafsa. All rights reserved.</p> */}
 
                 </div>
               </Col>
             </Row>
+
+
+              {/* Tiny Footer */}
+             <div className={styles.tinyFooter}>
+                
+                <p>@ {year} All Rights Reserved </p>
+                <p>System developed by <Link href='https://funnelliner.com/'>Funnel Liner</Link> </p>
+
+              </div>
 
           </Container>
 

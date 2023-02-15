@@ -11,8 +11,14 @@ import { RiShoppingCart2Line } from 'react-icons/ri';
 import styles from '../../../styles/landing_thirteen/landing_thirteen.module.css';
 
 const LandingThirteen = () => {
+
+    const today = new Date();
+    const year = today.getFullYear();    
+
   return (
-    <div className={styles.LandingThirteen}>
+
+
+     <div className={styles.LandingThirteen}>
 
         {/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
             Top Bar
@@ -763,7 +769,7 @@ const LandingThirteen = () => {
                             <ul className=''>
 
                                 <li><Link href="#"><BsTelephone/>
-                                    00 0392 96 32</Link>
+                                +8801894844452</Link>
                                 </li>
 
                             </ul>
@@ -831,17 +837,30 @@ const LandingThirteen = () => {
                         <Row>
                         <Col lg={12} className={styles.copyRight}>
                             <hr></hr>
-                            <div className='d-flex justify-content-lg-end justify-content-center'>
+                            {/* <div className='d-flex justify-content-lg-end justify-content-center'>
 
                             <p>2022 All Rights Reserved | Designed by Soft IT Care Development Team</p>
 
-                            </div>
+                            </div> */}
+
+                        {/* Tiny Footer */}
+                    <div className={styles.tinyFooter}>
+                                    
+                        <p>@ {year} All Rights Reserved </p>
+                        <p>System developed by <Link href='https://funnelliner.com/'>Funnel Liner</Link> </p>
+
+                    </div>
+
+
                         </Col>
                         </Row>
                     
                     </Col>
 
                 </Row>
+
+                
+
 
             </Container>
 

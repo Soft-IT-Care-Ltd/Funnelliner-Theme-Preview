@@ -8,6 +8,10 @@ import { RiShoppingCart2Line } from 'react-icons/ri';
 import styles from '../../../styles/landing_six/landing_six.module.css';
 
 const LandingSix = () => {
+
+    const today = new Date();
+    const year = today.getFullYear();       
+  
   return (
 
     <div className={styles.LandingSix}>
@@ -492,10 +496,24 @@ const LandingSix = () => {
                             </ul>
 
                         </div>
+
+                        
+
                     
                     </Col>
 
+
+
                 </Row>
+
+                                       {/* Tiny Footer */}
+                       
+                            <div className={styles.tinyFooter}>
+                            
+                            <p>@ {year} All Rights Reserved </p>
+                            <p>System developed by <Link href='https://funnelliner.com/'>Funnel Liner</Link> </p>
+
+                        </div>
 
             </Container>
 

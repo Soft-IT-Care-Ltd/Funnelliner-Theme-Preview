@@ -9,7 +9,12 @@ import { FiFacebook, FiInstagram, FiMail, FiTwitter } from 'react-icons/fi';
 import { RiShoppingCart2Line } from 'react-icons/ri';
 import styles from '../../../styles/landing_eleven/landing_eleven.module.css';
 
+
 const LandingEleven = () => {
+    
+    const today = new Date();
+    const year = today.getFullYear();
+
   return (
     <div className={styles.LandingEleven}>
 
@@ -390,7 +395,7 @@ const LandingEleven = () => {
 
                 <div className={styles.text}>
 
-                  <h2>+8801799733234</h2>
+                  <h2>+8801894844452</h2>
 
                   <h5>অর্ডার পেতে কল করুন এই নাম্বারে</h5>
 
@@ -659,7 +664,7 @@ const LandingEleven = () => {
             Footer Widget Section
         ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
 
-        <section className={styles.FooterWidget}>
+     <section className={styles.FooterWidget}>
 
         
 
@@ -722,7 +727,7 @@ const LandingEleven = () => {
 
                         
 
-                        <h2 className='text-lg-end'>+8801799733234</h2>
+                        <h2 className='text-lg-end'>+8801894844452</h2>
                         <h5 className='text-lg-end text-center'>অর্ডার পেতে কল করুন এই নাম্বারে</h5>
 
                     </div>
@@ -763,9 +768,17 @@ const LandingEleven = () => {
                 
                 </Col>
 
-                <Col lg={6} className='d-flex justify-content-lg-end justify-content-center'>
+                <Col lg={6} className=' justify-content-lg-end justify-content-center'>
 
-                    <p>2022 All Rights Reserved | Designed by Soft IT Care Development Team</p>
+                     {/* Tiny Footer */}
+                    <div className={styles.tinyFooter}>
+                        
+                        <p>@ {year} All Rights Reserved </p>
+                        <p>System developed by <Link href='https://funnelliner.com/'>Funnel Liner</Link> </p>
+
+                    </div>
+                    
+
                 </Col>
             </Row>
 

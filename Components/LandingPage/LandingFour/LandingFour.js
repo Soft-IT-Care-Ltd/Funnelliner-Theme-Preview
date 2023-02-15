@@ -84,6 +84,9 @@ const LandingFour = () => {
   };
 
 
+  const today = new Date();
+  const year = today.getFullYear();   
+
   return (
 
 
@@ -665,7 +668,7 @@ const LandingFour = () => {
 
                 <ul>
 
-                  <li> <Link href='tel:01799-733234'> <FiPhoneCall /> 01799-733234 </Link> </li>
+                  <li> <Link href='tel:+8801894844452'> <FiPhoneCall /> +8801894844452 </Link> </li>
                   <li> <Link href='mailto:contact@softitcare.com'> <BsEnvelope /> contact@softitcare.com </Link> </li>
 
                 </ul>
@@ -691,6 +694,14 @@ const LandingFour = () => {
               </div>
 
             </Col>
+
+             {/* Tiny Footer */}
+            <div className={styles.tinyFooter}>
+                
+                <p>@ {year} All Rights Reserved </p>
+                <p>System developed by <Link href='https://funnelliner.com/'>Funnel Liner</Link> </p>
+                
+            </div>
 
           </Row>
 

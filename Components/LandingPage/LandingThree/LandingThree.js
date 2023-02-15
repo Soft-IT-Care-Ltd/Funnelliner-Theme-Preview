@@ -82,6 +82,11 @@ const LandingThree = () => {
       });
   };
 
+
+
+  const today = new Date();
+  const year = today.getFullYear();  
+
   return (
     <>
       {/* ------------------------------------------------------------------------   -----------------------------------------------------------
@@ -676,12 +681,12 @@ const LandingThree = () => {
                     </Link>
                   </li>
 
-                                    <li><Link href="#"><BsTelephone/>
-                                        00 0392 96 32</Link>
+                                    <li><Link href="#"><BsTelephone/></Link>
+
                                     </li>
 
-                                    <li><Link href="#"><FiMail/>
-                                        oder@freshen.com</Link>
+                                    <li><Link href="#"><FiMail/></Link>
+
                                     </li>
 
                   <li>
@@ -692,9 +697,25 @@ const LandingThree = () => {
                 </ul>
               </div>
             </Col>
+
+
+
+               {/* Tiny Footer */}
+              <div className='tinyFooter'>
+                  
+                  <p>@ {year} All Rights Reserved </p>
+                  <p>System developed by <Link href='https://funnelliner.com/'>Funnel Liner</Link> </p>
+
+             </div>
+
           </Row>
+
+            
+       
         </Container>
       </section>
+
+
 
       {/* -----------------------------------------------------------------------------------------------------------------------------------
             footerWidget Section

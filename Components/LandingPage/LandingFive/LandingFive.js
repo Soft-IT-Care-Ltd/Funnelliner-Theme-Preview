@@ -13,6 +13,8 @@ import { RiShoppingCart2Line } from "react-icons/ri";
 
 const LandingFive = () => {
 
+  const today = new Date();
+  const year = today.getFullYear();       
 
 
   return (
@@ -425,27 +427,44 @@ const LandingFive = () => {
               <Col xs={12} sm={4}>
                     <h2 className= {`${styles.footerh2} ${styles.footerh2TB}`}>প্রয়োজনীয় লিংক</h2>
                     <div className={styles.hrDev}></div>
+
+
                        <div className={styles.hr}></div>
                           <ul>
                             
                           
                             <li className={styles.footerS}> <span className= {styles.footerSpan} ><Link href="#">প্রাইভেসী পলিসি </Link></span></li>
                             <li> <span className={styles.footerSpan}> <Link href="#">শর্তাবলী </Link></span></li>
-                        </ul>
+
+
+                        </ul> 
               </Col>
 
               <Col xs={12} sm={4}>
+
+
                 <div>
                   <Link href="#"> <img src='images/landing_5/logo2.svg' className={styles.lastlogo} alt='Img'></img></Link>
                    
                           <ul>
                               <li> <span className={styles.footlastSpan1}>অর্ডার পেতে কল করুন এই নাম্বারে</span></li>
-                              <li> <span className={styles.footlastSpan2}>+8801799733234</span></li>
+                              <li> <span className={styles.footlastSpan2}>+8801894844452</span></li>
                           </ul>
                  </div>
+                 
               </Col>
            </Row>
           
+
+          
+                {/* Tiny Footer */}
+                <div className={styles.tinyFooter}>
+                      
+                      <p>@ {year} All Rights Reserved </p>
+                      <p>System developed by <Link href='https://funnelliner.com/'>Funnel Liner</Link> </p>
+
+                </div>
+
 
         </div>
 

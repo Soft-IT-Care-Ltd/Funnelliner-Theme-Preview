@@ -151,6 +151,12 @@ const LandingOne = (props) => {
   const onEditProductVideoClick = () => {
     ProductVideoFile.current.click();
   };
+
+  const today = new Date();
+  const year = today.getFullYear();
+
+
+
   return (
     <div className='LandingTwo'>
       {/* Banner */}
@@ -1358,11 +1364,10 @@ const LandingOne = (props) => {
 
           {/* Tiny Footer */}
           <div className='tinyFooter'>
-            <p>
-              2022 All Rights Reserved | Designed by{" "}
-              <a href='https://sitc.sitcdev.xyz/'>Soft IT Care</a> Development
-              Team
-            </p>
+              
+                <p>@ {year} All Rights Reserved </p>
+                <p>System developed by <Link href='https://funnelliner.com/'>Funnel Liner</Link> </p>
+
           </div>
         </Container>
       </section>

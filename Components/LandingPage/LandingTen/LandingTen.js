@@ -8,26 +8,32 @@ import { IoCallOutline } from "react-icons/io5";
 import { FiMail,FiFacebook,FiTwitter } from "react-icons/fi";
 import { RiShoppingCart2Line } from "react-icons/ri";
 
-// FiMail
-
-
-
 
 
 
 export default function LandingTen() {
+
+      const today = new Date();
+      const year = today.getFullYear();   
+
+
   return (
+
     <div className={styles.LandingTen}>
 
-{/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        Banner
-      ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
+            {/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                    Banner
+                  ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
+       
         <section className={styles.banner}>
+               
               <Container>
                
                   <Row className={styles.Rowrvs}>
+
                        <Col xs={12} sm={12} md={6} className={styles.ClmPad}>
                             <div className={styles.topImg}><img className={styles.topImg1} src="images/landing_10/b1.svg" alt="img" /></div>
+                            
 
                             <div className={styles.TopTxtdev}>
                                <div className={styles.logo}><img src="images/landing_10/logo.svg" alt="img" /></div>
@@ -44,8 +50,8 @@ export default function LandingTen() {
                        <Col xs={12} sm={12} md={6} className={styles.ClmPad}>
                     
                             <div className={styles.logo2}><img src="images/landing_10/logo.svg" alt="img" /></div>
-                       
-                       <div className={styles.topImg2}><img className={styles.topImg4} src="images/landing_10/b2.svg" alt="img" /></div>
+                            {/* <div className={styles.topImg2}><img className={styles.topImg4} src="images/landing_10/b2.svg" alt="img" /></div> */}
+ 
                        
                             <div className={styles.TopTxtdev2}>
                                     <div className={styles.mainImglogo}><img src="images/landing_10/b.png" alt="img" />
@@ -77,9 +83,9 @@ export default function LandingTen() {
 
 
 
-{/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        Banner-  2
-      ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
+        {/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                Banner-  2
+              ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
         
         <section >
             <Container fluid className={styles.secBanner2}>
@@ -95,11 +101,13 @@ export default function LandingTen() {
 
 
 
-{/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        Banner----3
-      ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
-<section>
-    <Container fluid className={styles.PaddCon}>
+      {/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+              Banner----3
+            ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
+      <section>
+
+        <Container fluid className={styles.PaddCon}>
+
          <div className={styles.banner3bg}>
            <h2>আল-কুরআনুল-কারীম কিতাব কেন পড়বেন? কেন  প্রত্যেক মুসলমান জানা দরকার বা পরিবারে থাকা উচিত?</h2>
             <div className={styles.banAbsoluteMain1}>
@@ -163,278 +171,274 @@ export default function LandingTen() {
             </div>
             <div className={styles.FloatSolve}></div>
          </div>
-    </Container>
+        </Container>
 
    
-</section>
+      </section>
 
-{/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        Banner--3
-      ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
+        {/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                Banner--3
+              ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
 
 
 
-<section className={styles.section3}>
+        <section className={styles.section3}>
 
-    <Container>
-        <div className={styles.sec3txtDiv}>
-            <div className={styles.linkdiv}> <Link href='#' className={styles.bg}> <AiOutlineShoppingCart/>Order Now</Link></div>
-            <h2>দেশজুড়ে সারা বাংলাদেশে ফ্রি হোম ডেলিভারি এবং কুরিয়ার মাধ্যমেও বই পাঠানো হয়</h2>
-        </div>
-    </Container>
-</section>
+            <Container>
+                <div className={styles.sec3txtDiv}>
+                    <div className={styles.linkdiv}> <Link href='#' className={styles.bg}> <AiOutlineShoppingCart/>Order Now</Link></div>
+                    <h2>দেশজুড়ে সারা বাংলাদেশে ফ্রি হোম ডেলিভারি এবং কুরিয়ার মাধ্যমেও বই পাঠানো হয়</h2>
+                </div>
+            </Container>
+        </section>
 
-{/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        Banner-4
-      ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
-<section className={styles.section4}>
-    <Container fluid className={styles.Consection4}>
-     <Row>
-        <Col xs={12} sm={6}>
-           <div className={styles.Sec4Img}>
-                <img src='images/landing_10/b6.png' alt='img'></img>
-           </div>
+          {/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                  Banner-4
+                ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
+          <section className={styles.section4}>
 
-        </Col>
-        <Col xs={12} sm={6}>
-                <div className={styles.B4reltive}>
-                    <div className={styles.B4Absolutimg}>
-                       <img src="images/landing_10/b10.svg" alt="img" />
+            <Container fluid className={styles.Consection4}>
+              <Row>
+                  <Col xs={12} sm={6}>
+                    <div className={styles.Sec4Img}>
+                          <img src='images/landing_10/b6.png' alt='img'></img>
                     </div>
 
-                </div>
+                  </Col>
+                  <Col xs={12} sm={6}>
+                          <div className={styles.B4reltive}>
+                              <div className={styles.B4Absolutimg}>
+                                <img src="images/landing_10/b10.svg" alt="img" />
+                              </div>
 
-            <div  className={styles.Sec4ul}>
+                          </div>
 
-              
-                <ul>
-                    <li><img className={styles.liImg} src="images/landing_10/b7.svg" alt="img"/> <span className={styles.liTxt}>প্রকাশকঃ সৌদি কিং ফাহাদ অরজিনাল </span></li>
-                    <li><img className={styles.liImg} src="images/landing_10/b7.svg" alt="img"/> <span className={styles.liTxt}>বাংলা অনুবাদ</span></li>
-                    <li><img className={styles.liImg} src="images/landing_10/b7.svg" alt="img"/> <span className={styles.liTxt}>ভাষাঃ আরবী ও বাংলা </span></li>
-                    <li><img className={styles.liImg} src="images/landing_10/b7.svg" alt="img"/> <span className={styles.liTxt}>সাইজঃ লার্জ</span></li>
-                    <li><img className={styles.liImg} src="images/landing_10/b7.svg" alt="img"/> <span className={styles.liTxt}>পেইজ সংখ্যাঃ ১৪৯০ পাতা</span></li>
-                    <li><img className={styles.liImg} src="images/landing_10/b7.svg" alt="img"/> <span className={styles.liTxt}>পারা ৩০</span></li>
-                    <li><img className={styles.liImg} src="images/landing_10/b7.svg" alt="img"/> <span className={styles.liTxt}>ডাইমেনশন ৯.৫*৬.৫ ইঞ্চি</span></li>
-                    <li><img className={styles.liImg} src="images/landing_10/b7.svg" alt="img"/> <span className={styles.liTxt}>১০০% নির্ভুল ছাপা </span></li>
-                </ul>
-            </div>
-        </Col>
-     </Row>
+                      <div  className={styles.Sec4ul}>
 
-        
-    </Container>
-</section>
+                        
+                          <ul>
+                              <li><img className={styles.liImg} src="images/landing_10/b7.svg" alt="img"/> <span className={styles.liTxt}>প্রকাশকঃ সৌদি কিং ফাহাদ অরজিনাল </span></li>
+                              <li><img className={styles.liImg} src="images/landing_10/b7.svg" alt="img"/> <span className={styles.liTxt}>বাংলা অনুবাদ</span></li>
+                              <li><img className={styles.liImg} src="images/landing_10/b7.svg" alt="img"/> <span className={styles.liTxt}>ভাষাঃ আরবী ও বাংলা </span></li>
+                              <li><img className={styles.liImg} src="images/landing_10/b7.svg" alt="img"/> <span className={styles.liTxt}>সাইজঃ লার্জ</span></li>
+                              <li><img className={styles.liImg} src="images/landing_10/b7.svg" alt="img"/> <span className={styles.liTxt}>পেইজ সংখ্যাঃ ১৪৯০ পাতা</span></li>
+                              <li><img className={styles.liImg} src="images/landing_10/b7.svg" alt="img"/> <span className={styles.liTxt}>পারা ৩০</span></li>
+                              <li><img className={styles.liImg} src="images/landing_10/b7.svg" alt="img"/> <span className={styles.liTxt}>ডাইমেনশন ৯.৫*৬.৫ ইঞ্চি</span></li>
+                              <li><img className={styles.liImg} src="images/landing_10/b7.svg" alt="img"/> <span className={styles.liTxt}>১০০% নির্ভুল ছাপা </span></li>
+                          </ul>
+                      </div>
+                  </Col>
+              </Row>
 
-
-
-
-{/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        Banner-5
-      ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
-<section>
-    <Container>
-        <div className={styles.ban5Txtbox}>
-            <h2>কেন এই আল-কুরআনুল-কারীম কিতাব  শিক্ষা করবেন তার সম্পর্ক  ভিডিও বিস্তারিত আলোচনা করা হয়েছে</h2>
-        </div>
-        
-    <div className={styles.banner5Img}>
-        <img src="images/landing_10/b8.png" alt="" />
-    </div>
-
-
-        <div className={styles.banner5Button} >
-                <div >
-                    <h2>নিচের বাটনে ক্লিক করে এখুনি অর্ডার করুন</h2>
-                    <Link href='#' className={styles.bg}> <AiOutlineShoppingCart/>Order Now</Link>
-                </div>
-
-        </div>
+                  
+            </Container>
+          </section>
 
 
 
 
-    </Container>
-</section>
-
-{/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        OrderConfirmFrom
-      ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
-<section className={styles.section_gaps}></section>
-<section className="OrderConfirmFrom">
-
-<Container>
-
-  <Row>
-
-    {/* left */}
-    <Col lg={7}>
-
-      <div className="OrderConfirmLeft">
-
-        <h3>Billing details</h3>
-
-        <div className="CustomeInput">
-          <input type="text" name="" placeholder='আপনার নাম লিখুন *' />
-        </div>
-
-        <div className="CustomeInput">
-          <input type="text" name="" placeholder='আপনার মোবাইল নাম্বার লিখুন *' />
-        </div>
-
-        <div className="CustomeInput">
-          <input type="text" name="" placeholder='আপনার সম্পূর্ণ ঠিকানা লিখুন *' />
-        </div>
-
-        {/* Payment */}
-        <div className="Payment">
-
-          <h3>Paymet</h3>
-
-          <div className="CustomeInput d_flex">
-            <input type="checkbox" name="" id='CashOn'/>
-            <label htmlFor="CashOn">ক্যাশ অন ডেলিভারি</label>
-          </div>
-
-          <div className="ArrowBg">
-            <p>Pay with cash on delivery.</p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </Col>
-
-    {/* right */}
-    <Col lg={5}>
-
-      <div className="OrderConfirmRight">
-
-        <h3>Your order</h3>
-
-        <ul>
-
-          <li>
-            <h4>Product</h4>
-            <h5>Subtotal</h5>
-          </li>
-
-          <li>
-
-            <div className="left d_flex">
-              
-              <div className="img">
-                <img src="images/product.svg" alt="" />
+          {/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                  Banner-5
+                ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
+          <section>
+              <Container>
+                  <div className={styles.ban5Txtbox}>
+                      <h2>কেন এই আল-কুরআনুল-কারীম কিতাব  শিক্ষা করবেন তার সম্পর্ক  ভিডিও বিস্তারিত আলোচনা করা হয়েছে</h2>
+                  </div>
+                  
+              <div className={styles.banner5Img}>
+                  <img src="images/landing_10/b8.png" alt="" />
               </div>
 
-              <p>Flower Of Story Men’s Perfume Set Boss</p>
 
-            </div>
+                  <div className={styles.banner5Button} >
+                          <div >
+                              <h2>নিচের বাটনে ক্লিক করে এখুনি অর্ডার করুন</h2>
+                              <Link href='#' className={styles.bg}> <AiOutlineShoppingCart/>Order Now</Link>
+                          </div>
 
-            <div className="right d_flex">
-
-              <input type="number" />
-
-              <h5>BDT 1,690.00</h5>
-
-            </div>
-
-          </li>
-
-          <li>
-            <h5>Subtotal</h5>
-            <h5>1,690.00</h5>
-          </li>
-
-          <li>
-            <h4>Total</h4>
-            <h4>1,690.00</h4>
-          </li>
-          
-        </ul>
-
-          <button> <RiShoppingCart2Line/> Place Order BDT 49.00</button>
-
-      </div>
-
-    </Col>
-
-  </Row>
-
-</Container>
-
-</section>
+                  </div>
 
 
 
 
+              </Container>
+          </section>
 
+          {/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                  OrderConfirmFrom
+                ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
+          <section className={styles.section_gaps}></section>
+          <section className="OrderConfirmFrom">
 
-{/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        Banner
-      ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
-<section className={styles.footerSec}>
- <Container fluid className={styles.Footpad}>
-    <div className={styles.footerRel}>
-        <div className={styles.lastImg}>
-            <img src="images/landing_10/b9.png" alt="img" />
-        </div>
-    </div>
- </Container>
-    <Container>
+          <Container>
 
-        <Row>
-            <Col xs={12} sm={4}>
-                <div className={styles.footerh4}>
-                    <h4>যোগাযোগ</h4>
-                    <div className={styles.hr}></div>
-                     <ul>
-                        <li> <IoCallOutline/><span> 00 0392 96 32</span></li>
-                        <li><FiMail/> <span> oder@freshen.com</span></li>
-                     </ul>
+            <Row>
 
-                        <div className={styles.footericon3}>                   
-                            <Link href="#"> <AiOutlineInstagram className={styles.coloricon}/></Link>  <Link href="#"> <FiFacebook className={styles.coloricon}/></Link> <Link href="#"><FiTwitter className={styles.coloricon3} /> </Link>
+              {/* left */}
+              <Col lg={7}>
+
+                <div className="OrderConfirmLeft">
+
+                  <h3>Billing details</h3>
+
+                  <div className="CustomeInput">
+                    <input type="text" name="" placeholder='আপনার নাম লিখুন *' />
+                  </div>
+
+                  <div className="CustomeInput">
+                    <input type="text" name="" placeholder='আপনার মোবাইল নাম্বার লিখুন *' />
+                  </div>
+
+                  <div className="CustomeInput">
+                    <input type="text" name="" placeholder='আপনার সম্পূর্ণ ঠিকানা লিখুন *' />
+                  </div>
+
+                  {/* Payment */}
+                  <div className="Payment">
+
+                    <h3>Paymet</h3>
+
+                    <div className="CustomeInput d_flex">
+                      <input type="checkbox" name="" id='CashOn'/>
+                      <label htmlFor="CashOn">ক্যাশ অন ডেলিভারি</label>
+                    </div>
+
+                    <div className="ArrowBg">
+                      <p>Pay with cash on delivery.</p>
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </Col>
+
+              {/* right */}
+              <Col lg={5}>
+
+                <div className="OrderConfirmRight">
+
+                  <h3>Your order</h3>
+
+                  <ul>
+
+                    <li>
+                      <h4>Product</h4>
+                      <h5>Subtotal</h5>
+                    </li>
+
+                    <li>
+
+                      <div className="left d_flex">
+                        
+                        <div className="img">
+                          <img src="images/product.svg" alt="" />
                         </div>
 
+                        <p>Flower Of Story Men’s Perfume Set Boss</p>
+
+                      </div>
+
+                      <div className="right d_flex">
+
+                        <input type="number" />
+
+                        <h5>BDT 1,690.00</h5>
+
+                      </div>
+
+                    </li>
+
+                    <li>
+                      <h5>Subtotal</h5>
+                      <h5>1,690.00</h5>
+                    </li>
+
+                    <li>
+                      <h4>Total</h4>
+                      <h4>1,690.00</h4>
+                    </li>
+                    
+                  </ul>
+
+                    <button> <RiShoppingCart2Line/> Place Order BDT 49.00</button>
+
                 </div>
 
-            </Col>
-            <Col xs={12} sm={4}>
-                <div  className={styles.footerh4}>
-                    <h4>প্রয়োজনীয় লিংক</h4>
-                    <div className={styles.hr}></div>
-                     <ul>
-                        <li> <span><Link href=""> প্রাইভেসী পলিসি </Link></span></li>
-                        <li> <span><Link href=""> শর্তাবলী</Link></span></li>
-                     </ul>
+              </Col>
 
-                </div>
+            </Row>
 
-            </Col>
-        </Row>
-    </Container>
+          </Container>
 
-
-</section>
+          </section>
 
 
 
 
-{/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        Banner
-      ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
-{/* <section>
-    <Container>
-        <h1>Hello</h1>
-    </Container>
-</section> */}
+
+
+          {/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                  Banner
+                ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
+          <section className={styles.footerSec}>
+          <Container fluid className={styles.Footpad}>
+              <div className={styles.footerRel}>
+                  <div className={styles.lastImg}>
+                      <img src="images/landing_10/b9.png" alt="img" />
+                  </div>
+              </div>
+          </Container>
+              <Container>
+
+                  <Row>
+                      <Col xs={12} sm={4}>
+                          <div className={styles.footerh4}>
+                              <h4>যোগাযোগ</h4>
+                              <div className={styles.hr}></div>
+                              <ul>
+                                  <li> <IoCallOutline/><span> 00 0392 96 32</span></li>
+                                  <li><FiMail/> <span> oder@freshen.com</span></li>
+                              </ul>
+
+                                  <div className={styles.footericon3}>                   
+                                      <Link href="#"> <AiOutlineInstagram className={styles.coloricon}/></Link>  <Link href="#"> <FiFacebook className={styles.coloricon}/></Link> <Link href="#"><FiTwitter className={styles.coloricon3} /> </Link>
+                                  </div>
+
+                          </div>
+
+                      </Col>
+                      <Col xs={12} sm={4}>
+                          <div  className={styles.footerh4}>
+                              <h4>প্রয়োজনীয় লিংক</h4>
+                              <div className={styles.hr}></div>
+                              <ul>
+                                  <li> <span><Link href=""> প্রাইভেসী পলিসি </Link></span></li>
+                                  <li> <span><Link href=""> শর্তাবলী</Link></span></li>
+                              </ul>
+
+                          </div>
+
+                      </Col>
+                  </Row>
+
+
+                  {/* Tiny Footer */}
+                  <div className={styles.tinyFooter}>
+                        
+                        <p>@ {year} All Rights Reserved </p>
+                        <p>System developed by <Link href='https://funnelliner.com/'>Funnel Liner</Link> </p>
+
+                  </div>
+
+              </Container>
+
+
+          </section>
 
 
 
-{/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-        Banner
-      ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
 
 
 

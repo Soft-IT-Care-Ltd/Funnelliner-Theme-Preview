@@ -11,6 +11,10 @@ import { RiShoppingCart2Line } from 'react-icons/ri';
 import styles from '../../../styles/landing_eight/landing_eight.module.css';
 
 const LandingEight = () => {
+
+    const today = new Date();
+    const year = today.getFullYear();  
+
   return (
     <>
     <div className={styles.LandingEight}>
@@ -774,9 +778,10 @@ const LandingEight = () => {
 
                             <li>
                                 <div className={styles.footerBox}>
-                                    <GoLocation/>
+                                   
 
                                     <Link href="#">
+                                    <GoLocation/>
 
                                     Level: 5, Road: 07, Block: C, Niketan, Gulshan– 1, Dhaka – 1212</Link>
 
@@ -845,7 +850,10 @@ const LandingEight = () => {
                     <Col lg={12}>
 
                         <div className={styles.CopyRight}>
-                            <p className='text-center'>Copyright © 2022 FR agrances. All rights reserved.</p>
+
+                               <p>@ {year} All Rights Reserved </p>
+                               
+                               <p>System developed by <Link href='https://funnelliner.com/'>Funnel Liner</Link> </p>
 
                         </div>
 

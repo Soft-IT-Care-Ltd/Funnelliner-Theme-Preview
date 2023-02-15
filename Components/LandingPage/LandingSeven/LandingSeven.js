@@ -15,6 +15,11 @@ import { RiShoppingCart2Line } from "react-icons/ri";
 
 
 export default function LandingSeven() {
+
+  const today = new Date();
+  const year = today.getFullYear();
+
+
   return (
 
         
@@ -303,8 +308,8 @@ export default function LandingSeven() {
           </Col>
         </Row>
     </div>
+    
   </Container>
-
 
 </section>
 
@@ -483,19 +488,13 @@ export default function LandingSeven() {
       ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
       <section className={styles.footerSection}>
         <Container>
+
                    <div className={styles.banner3TopTxtF}>
                         <h2>Join Us On Our Social Media</h2>
                         <div><img src="images/landing_7/d4.svg" alt="Img" /></div>
                     </div>
 
-            {/* <div>
-                <div className={styles.imgBoxFooter}>
-                  <Link href="#"> <img src="images/landing_7/facebook.png" alt="img" /> </Link>
-                  <Link href="#"> <img src="images/landing_7/youtube.png" alt="img" /></Link>
-                  <Link href="#"> <img src="images/landing_7/instagram.png" alt="img" /> </Link>
-                  <Link href="#"> <img src="images/landing_7/twiter.png" alt="img" /> </Link>
-                </div>
-            </div> */}
+        
 
             {/* <!--Icon Hover Effect 2--> */}
 
@@ -527,6 +526,20 @@ export default function LandingSeven() {
               <Link href="#">Privacy Policy</Link>
               <Link href="#">FAQs</Link> 
           </div> */}
+        
+             
+              <div className={styles.socialBox}>
+
+                 {/* Tiny Footer */}
+          <div className='tinyFooter'>
+              
+              <p>@ {year} All Rights Reserved </p>
+              <p>System developed by <Link href='https://funnelliner.com/'>Funnel Liner</Link> </p>
+
+        </div>
+
+              </div>
+            
 
         </Container>
 
