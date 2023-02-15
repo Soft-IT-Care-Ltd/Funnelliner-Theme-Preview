@@ -84,7 +84,7 @@ const Header = ({ save }) => {
           {/* left  */}
           <Col>
             <div className='HeaderLeftLogo'>
-              <Link href={`/${shop_name}`}>
+              <Link href='/theme_1'>
                 <img
                   src={logo === undefined ? "/theme_1/images/logo.png" : logo}
                   alt=''
