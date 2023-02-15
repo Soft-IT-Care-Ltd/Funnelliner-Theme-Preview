@@ -771,9 +771,11 @@ const LandingEleven = () => {
                 <Col lg={6} className=' justify-content-lg-end justify-content-center'>
 
                      {/* Tiny Footer */}
+                     
                     <div className={styles.tinyFooter}>
                         
                         <p>@ {year} All Rights Reserved </p>
+
                         <p>System developed by <Link href='https://funnelliner.com/'>Funnel Liner</Link> </p>
 
                     </div>
