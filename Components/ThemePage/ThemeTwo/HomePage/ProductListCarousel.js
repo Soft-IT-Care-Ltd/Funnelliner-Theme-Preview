@@ -15,49 +15,58 @@ import axios from "axios";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../../../redux/stateSlices/CartSlice";
 import Link from "next/link";
+import iamgeOne from "../../../../public/theme_1/images/category/headphone.jpg"
+import iamgeTwo from "../../../../public/theme_1/images/category/image 130.png"
+import iamgeThree from "../../../../public/theme_1/images/category/Mask group (1).png"
+import iamgeFour from "../../../../public/theme_1/images/category/Mask group (2).png"
+import iamgeFive from "../../../../public/theme_1/images/category/Mask group (3).png"
+import iamgeSix from "../../../../public/theme_1/images/category/Mask group.png"
+import Image from 'next/image'
+
 // ../../../redux/stateSlices/CartSlice
 const ProductListCarousel = () => {
-  const [allProducts, setAllProducts] = useState([]);
   const [shopId, setShopId] = useState();
   const dispatch = useDispatch();
-  const handleFetchProduct = (headers) => {
-    axios
-      .get(`${process.env.API_URL}v1/customer/products`, { headers: headers })
-      .then((res) => {
-        console.log("res", res);
-        setAllProducts(res?.data?.data);
-      });
-    // try {
-    //   let res = await axios({
-    //     method: "get",
-    //     url: `${baseUrl}/api/v1/customer/products`,
-    //     headers: headers,
-    //   });
-    //   setAllProducts(res.data.data);
-    // } catch (err) {
+  const allProducts = [
+    {
+      name: "Head Phone",
+      image: iamgeOne
+    },
+    {
+      name: "Men Shirt",
+      image: iamgeTwo
+    },
+    {
+      name: "women Shoes",
+      image: iamgeThree
+    },
+    {
+      name: "Men Shoes",
+      image: iamgeFive
+    },
+    {
+      name: "Ladies Dress",
+      image: iamgeFour
+    },
+    {
+      name: "Women Bag",
+      image: iamgeSix
+    },
+    {
+      name: "Bag",
+      image: iamgeSix
+    },
+    {
+      name: "Men Shirt",
+      image: iamgeTwo
+    },
+    {
+      name: "Men Shoes",
+      image: iamgeFive
+    },
+  ]
 
-    // }
-  };
-
-  useEffect(() => {
-    const headers = {
-      "shop-id": localStorage.getItem("shop_id"),
-    };
-    handleFetchProduct(headers);
-    // axios
-    //   .get(`${baseUrl}/api/v1/customer/products`, { headers: headers })
-    //   .then((res) => {
-    //     setAllProducts(res.data.data);
-    //   });
-    setShopId(localStorage.getItem("shop_id"));
-  }, []);
-  const handleAddToCart = (product) => {
-    dispatch(addToCart(product));
-  };
-  // const handleBuyNow = (product) => {
-  //   dispatch(addToCart(product));
-  //   router.push("/theme_1/check_out");
-  // };
+ 
   return (
     <>
       <section id='product-list-carousel'>
@@ -114,7 +123,7 @@ const ProductListCarousel = () => {
                   {allProducts.map((item, index) => {
                     return (
                       <SwiperSlide>
-                        <Link href={`${localStorage.getItem('shop_name')}/details/${item.id}`}>
+                        <Link href='/theme-two/productDetails'>
                           <div className='imageproduct'>
                             <div className='image-layer'>
                               <button className='wishlist' type='button'>
@@ -129,10 +138,10 @@ const ProductListCarousel = () => {
                                   alt=''
                                 />
                               </button>
-                              <img src={item?.main_image?.name} alt='' />
+                              <Image src={item.image} alt='' />
                               <div className='overlay' />
                               <button
-                                onClick={() => handleAddToCart(item)}
+                               
                                 className='cart'
                               >
                                 <BsCart3 />
@@ -140,11 +149,11 @@ const ProductListCarousel = () => {
                               </button>
                             </div>
                             <p className='category'>Accessories</p>
-                            <h3 className='title'>{item.product_name}</h3>
+                            <h3 className='title'>{item.name}</h3>
                             <h3 className='price-discount'>
-                              BDT {item.price}
+                              BDT 100
                               <span>
-                                {parseInt(item.price) + parseInt(item.discount)}
+                               150
                               </span>
                             </h3>
                           </div>

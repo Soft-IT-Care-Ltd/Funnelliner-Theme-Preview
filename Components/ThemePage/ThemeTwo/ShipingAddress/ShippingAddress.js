@@ -23,92 +23,37 @@ import { useDispatch, useSelector } from "react-redux";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import swal from "sweetalert";
+import iamgeOne from "../../../../public/theme_1/images/product/headphoneProduct.jpg"
 
 const CheckOut = () => {
-  const carts = useSelector((state) => state.cart);
-  const [cart, setCart] = useState([]);
-  const [cartSubTotal, setCartSubTotal] = useState("");
-  const dispatch = useDispatch();
-  const router = useRouter();
 
-  const [shopID, setShopID] = useState();
-  const [shopName, setShopName] = useState();
-
-
-  useEffect(() => {
-    setShopID(localStorage.getItem("shop_id"));
-    setShopName(localStorage.getItem("shop_name"));
-    setCart(carts?.cartItems);
-    setCartSubTotal(carts.cartTotalAmount);
-  }, [carts]);
-
-  useEffect(() => {
-    dispatch(getTotals());
-  }, [cart, dispatch]);
-
-  const handleAddToCart = (product) => {
-    dispatch(addToCart(product));
-  };
-  const handleDecreaseCart = (product) => {
-    if (product.cartQuantity < 2) {
-      return;
-    }
-    dispatch(decreaseCart(product));
-  };
-  const handleRemoveFromCart = (product) => {
-    dispatch(removeFromCart(product));
-  };
-  const handleClearCart = () => {
-    dispatch(clearCart());
-  };
-
-  //order place
-  const cartQuantitys = [];
-  const productsId = [];
-  cart.map((item, index) => {
-    return [cartQuantitys.push(item.cartQuantity), productsId.push(item.id)];
-  });
-  const totalItem = cartQuantitys.reduce((partialSum, a) => partialSum + a, 0);
-
-  const headers = {
-    "shop-id": shopID,
-  };
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors },
-  } = useForm();
-  const handleSubmitOrder = (data) => {
-    const postBody = {
-      customer_name: data.customerName,
-      customer_phone: data.customerMobile,
-      customer_address: data.customerAddress,
-      product_id: productsId,
-      product_qty: cartQuantitys,
-    };
-    axios
-      .post(`${baseUrl}/api/v1/customer/order/store`, postBody, {
-        headers: headers,
-      })
-      .then((res) => {
-        if (res.status === 200) {
-          swal(
-            "Thank you!",
-            "Your order has been successfully placed",
-            "success"
-          );
-
-          handleClearCart();
+  const cart = [
+		{
+			name: "Head Phone",
+			image: iamgeOne,
+			price: 100,
+			discount: 40,
+			quantity: 1
+		},
+		{
+			name: "Head Phone",
+			image: iamgeOne,
+			price: 100,
+			discount: 40,
+			quantity: 1
+		},
+		{
+			name: "Head Phone",
+			image: iamgeOne,
+			price: 100,
+			discount: 40,
+			quantity: 1
+		},
+		
+	]
 
 
-        }
-      })
-      .catch((err) => {
-        console.log(err);
-        swal("Something went wrong !", "error");
-      });
-  };
+ 
 
   return (
     <section className='CheckOut'>
@@ -123,7 +68,7 @@ const CheckOut = () => {
           <Row>
             <Col xs={6}>
               <div className='Header my-3'>
-                <h3>Shopping cart ({cart.length} Items)</h3>
+                <h3>Shopping cart 3 Items</h3>
               </div>
             </Col>
           </Row>
@@ -152,14 +97,14 @@ const CheckOut = () => {
                                 <div className='ProductFst d_flex'>
                                   <div className='svg'>
                                     <MdOutlineClose
-                                      onClick={() => handleRemoveFromCart(item)}
+                                     
                                     />
                                   </div>
 
                                   <div className='img'>
                                     {cart.length > 0 && (
                                       <img
-                                        src={item?.main_image?.name}
+                                        src={item?.image}
                                         alt=''
                                       />
                                     )}
@@ -167,7 +112,7 @@ const CheckOut = () => {
 
                                   <div className='Description'>
                                     <p style={{ paddingLeft: "15px" }}>
-                                      {item.product_name}
+                                      {item.price}
                                     </p>
                                   </div>
                                 </div>
@@ -191,7 +136,7 @@ const CheckOut = () => {
                               <td>
                                 <div className='PlusMinus'>
                                   <div
-                                    onClick={() => handleDecreaseCart(item)}
+                                  
                                     className='Minus'
                                   >
                                     <AiOutlineMinus />
@@ -199,12 +144,12 @@ const CheckOut = () => {
 
                                   <div className='InputNumber'>
                                     <h6 className='py-2'>
-                                      {item.cartQuantity}
+                                     {item?.quantity}
                                     </h6>
                                   </div>
 
                                   <div
-                                    onClick={() => handleAddToCart(item)}
+                                   
                                     className='Minus'
                                   >
                                     <AiOutlinePlus />
@@ -214,7 +159,7 @@ const CheckOut = () => {
 
                               <td>
                                 <h3 style={{ textAlign: "left" }}>
-                                  TK {item.price * item.cartQuantity}
+                                  300
                                 </h3>
                               </td>
                             </tr>
@@ -230,20 +175,16 @@ const CheckOut = () => {
                 <div className='CheckOutContent'>
                   <h3>Shipping Address</h3>
                   <div className='ProductDescriptionLeft'>
-                    <form onSubmit={handleSubmit(handleSubmitOrder)}>
+                    <form >
                       <div className='LoginItem'>
                         <div className='CustomeInput'>
                           <TextField
                             id='outlined-basic'
                             label='Name *'
                             variant='outlined'
-                            {...register("customerName", { required: true })}
+                          
                           />
-                          {errors.customerName && (
-                            <span style={{ color: "red" }}>
-                              Name is required
-                            </span>
-                          )}
+                        
                         </div>
 
                         <div className='CustomeInput'>
@@ -251,17 +192,9 @@ const CheckOut = () => {
                             id='outlined-basic'
                             label='Phone Number *'
                             variant='outlined'
-                            {...register(
-                              "customerMobile",
-                              { required: true },
-                              { min: 11, max: 15 }
-                            )}
+                           
                           />
-                          {errors.customerMobile && (
-                            <span style={{ color: "red" }}>
-                              Valid Mobile Number require
-                            </span>
-                          )}
+                         
                         </div>
 
                         <div className='CustomeInput'>
@@ -269,17 +202,13 @@ const CheckOut = () => {
                             id='outlined-basic'
                             label='Street address *'
                             variant='outlined'
-                            {...register("customerAddress", { required: true })}
+                            
                           />
-                          {errors.customerAddress && (
-                            <span style={{ color: "red" }}>
-                              Address is required
-                            </span>
-                          )}
+                         
                         </div>
                         <div className='ProceedToCheckout'>
                           <Button type='submit' variant='contained'>
-                            PLACE ORDER TK {cartSubTotal}
+                            PLACE ORDER TK 700
                           </Button>
                         </div>
                       </div>
@@ -299,14 +228,14 @@ const CheckOut = () => {
 
                   <li className='d_flex'>
                     <div className='img'>
-                      <img src={cart[0]?.main_image?.name} alt='' />
+                      <Image src={cart[0]?.image} alt='' />
                     </div>
-                    <p>TK {cartSubTotal}</p>
+                    <p>TK 700</p>
                   </li>
 
                   <li className='d_flex'>
                     <h5>Total Item</h5>
-                    <p>{totalItem}</p>
+                    <p>3</p>
                   </li>
 
                   <li className='d_flex'>
@@ -316,7 +245,7 @@ const CheckOut = () => {
 
                   <li className='d_flex'>
                     <h3>Grand total</h3>
-                    <h4>TK {cartSubTotal}</h4>
+                    <h4>TK 700</h4>
                   </li>
                 </ul>
               </div>

@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import { BsArrowRight } from "react-icons/bs";
 import { FiCircle } from "react-icons/fi";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Image from 'next/image'
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -10,28 +11,53 @@ import "swiper/css/grid";
 import { Autoplay, Pagination, Navigation, Grid } from "swiper";
 import Link from "next/link";
 import { baseUrl } from "../../../../constant/constant";
+import iamgeOne from "../../../../public/theme_1/images/category/headphone.jpg"
+import iamgeTwo from "../../../../public/theme_1/images/category/image 130.png"
+import iamgeThree from "../../../../public/theme_1/images/category/Mask group (1).png"
+import iamgeFour from "../../../../public/theme_1/images/category/Mask group (2).png"
+import iamgeFive from "../../../../public/theme_1/images/category/Mask group (3).png"
+import iamgeSix from "../../../../public/theme_1/images/category/Mask group.png"
 
 const CategoryImage = () => {
-  const [categories, setCategories] = useState([]);
+  const categories = [
+    {
+      name: "Head Phone",
+      image: iamgeOne
+    },
+    {
+      name: "Men Shirt",
+      image: iamgeTwo
+    },
+    {
+      name: "women Shoes",
+      image: iamgeThree
+    },
+    {
+      name: "Men Shoes",
+      image: iamgeFive
+    },
+    {
+      name: "Ladies Dress",
+      image: iamgeFour
+    },
+    {
+      name: "Women Bag",
+      image: iamgeSix
+    },
+    {
+      name: "Bag",
+      image: iamgeSix
+    },
+    {
+      name: "Men Shirt",
+      image: iamgeTwo
+    },
+    {
+      name: "Men Shoes",
+      image: iamgeFive
+    },
+  ]
 
-  async function handleFetchCategories(headers) {
-    const response = await fetch(
-      `${process.env.API_URL}v1/customer/categories`,
-      { headers: headers }
-    );
-    const data = await response.json();
-    if (data.success === true) {
-      setCategories(data?.data);
-    }
-  }
-
-  useEffect(() => {
-    const headers = {
-     "shop-id": localStorage.getItem("shop_id"),
-    };
-    handleFetchCategories(headers).then((r) => console.log());
-  }, []);
-  console.log("categories", categories);
   return (
     <>
       <section id='category-image'>
@@ -94,7 +120,7 @@ const CategoryImage = () => {
                     return (
                       <SwiperSlide>
                         <div className='imagebox'>
-                          <img src={item?.image?.name} alt='' />
+                          <Image src={item?.image} alt='' />
                           <p>{item.name}</p>
                         </div>
                       </SwiperSlide>
