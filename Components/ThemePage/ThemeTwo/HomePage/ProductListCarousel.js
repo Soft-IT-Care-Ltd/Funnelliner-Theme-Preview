@@ -16,11 +16,11 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../../../../redux/stateSlices/CartSlice";
 import Link from "next/link";
 import iamgeOne from "../../../../public/theme_1/images/category/headphone.jpg"
-import iamgeTwo from "../../../../public/theme_1/images/category/image 130.png"
-import iamgeThree from "../../../../public/theme_1/images/category/Mask group (1).png"
-import iamgeFour from "../../../../public/theme_1/images/category/Mask group (2).png"
-import iamgeFive from "../../../../public/theme_1/images/category/Mask group (3).png"
-import iamgeSix from "../../../../public/theme_1/images/category/Mask group.png"
+import iamgeTwo from "../../../../public/theme_1/images/category/headphone3.jpg"
+import iamgeThree from "../../../../public/theme_1/images/category/theme2Shirt.jpg"
+import iamgeFour from "../../../../public/theme_1/images/category/theme2Shirt.jpg"
+import iamgeFive from "../../../../public/theme_1/images/category/headphone3.jpg"
+import iamgeSix from "../../../../public/theme_1/images/category/theme2Shirt.jpg"
 import Image from 'next/image'
 
 // ../../../redux/stateSlices/CartSlice
@@ -64,9 +64,53 @@ const ProductListCarousel = () => {
       name: "Men Shoes",
       image: iamgeFive
     },
+    {
+      name: "Head Phone",
+      image: iamgeOne
+    },
+    {
+      name: "Head Phone",
+      image: iamgeOne
+    },
+    {
+      name: "Men Shirt",
+      image: iamgeTwo
+    },
+    {
+      name: "women Shoes",
+      image: iamgeThree
+    },
+    {
+      name: "Men Shoes",
+      image: iamgeFive
+    },
+    {
+      name: "Ladies Dress",
+      image: iamgeFour
+    },
+    {
+      name: "Women Bag",
+      image: iamgeSix
+    },
+    {
+      name: "Bag",
+      image: iamgeSix
+    },
+    {
+      name: "Men Shirt",
+      image: iamgeTwo
+    },
+    {
+      name: "Men Shoes",
+      image: iamgeFive
+    },
+    {
+      name: "Head Phone",
+      image: iamgeOne
+    },
   ]
 
- 
+
   return (
     <>
       <section id='product-list-carousel'>
@@ -138,10 +182,10 @@ const ProductListCarousel = () => {
                                   alt=''
                                 />
                               </button>
-                              <Image src={item.image} alt='' />
+                              <Image style={{width:'250px', height:'160px'}} src={item.image} alt='' />
                               <div className='overlay' />
                               <button
-                               
+
                                 className='cart'
                               >
                                 <BsCart3 />
@@ -153,7 +197,7 @@ const ProductListCarousel = () => {
                             <h3 className='price-discount'>
                               BDT 100
                               <span>
-                               150
+                                150
                               </span>
                             </h3>
                           </div>

@@ -108,7 +108,7 @@ const index = () => {
 					<MiddleBanner />
 					<Editor resolver={{ PopularProduct }}>
 						<Frame>
-							<PopularProduct title={'Popular Products'} fontSize={'16'} save={save} />
+							{/* <PopularProduct title={'Popular Products'} fontSize={'16'} save={save} /> */}
 						</Frame>
 					</Editor>
 					<Editor resolver={{ AllProduct }}>

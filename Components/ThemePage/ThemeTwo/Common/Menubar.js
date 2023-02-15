@@ -163,6 +163,11 @@ const Menubar = ({ name, ...props }) => {
                       Products
                     </Link>
                   </li> */}
+                   <li className='nav-item px-lg-2 mx-lg-1'>
+                    <a className='nav-link' href='/theme-two/all-products'>
+                     Shop
+                    </a>
+                  </li>
                   <li className='nav-item px-lg-2 mx-lg-1'>
                     <Link className='nav-link' href='/theme-two/all-products'>
                       Categories
@@ -182,11 +187,7 @@ const Menubar = ({ name, ...props }) => {
                       </ul>
                     </div>
                   </li>
-                  {/* <li className='nav-item px-lg-2 mx-lg-1'>
-                    <a className='nav-link' href='/theme-two/product-details'>
-                      Single product
-                    </a>
-                  </li> */}
+                 
                 </ul>
               </Col>
 
