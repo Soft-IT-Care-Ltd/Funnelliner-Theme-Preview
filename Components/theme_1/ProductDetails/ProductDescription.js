@@ -42,16 +42,16 @@ const ProductDescription = ({ data }) => {
 
             <Col xs={6}>
               <div className='ProductDetailsRight'>
-                {data?.product_qty >= 0 && <h4>IN STOCK</h4>}
+              <h4>IN STOCK</h4>
 
-                <h3>{data?.product_name}</h3>
+                <h3>Karkuma Organic Turmeric Immune Booster</h3>
 
                 <h2>
-                  {data?.price} TK{" "}
-                  <del>{parseInt(data?.price) + parseInt(data?.discount)}</del>{" "}
+                 499 TK{" "}
+                  <del>600</del>{" "}
                 </h2>
 
-                <p>{data?.short_description}</p>
+                <p>n publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content.</p>
 
                 {/* <div className='Price'>
                   <div   onClick={() => handleAddToCart(data)} className='Plus'>
@@ -66,11 +66,11 @@ const ProductDescription = ({ data }) => {
 
                 {/* AddCart */}
                 <div className='AddCart mt-5'>
-                  <button onClick={() => handleAddToCart(data)}>
+                  <button>
                     {" "}
                     <AiOutlineShoppingCart /> ADD TO CART
                   </button>
-                  <button onClick={() => handleBuyNow(data)}   href={`/${shopName}/checkout`}>
+                  <button   href={`/theme_1/checkout`}>
                     {" "}
                     <BsCart4 /> Buy Now
                   </button>
@@ -90,7 +90,7 @@ const ProductDescription = ({ data }) => {
                 <div className='TabsItem'>
                   <p>{data?.short_description}</p>
 
-                  {/* <ul>
+                  <ul>
                     <li>
                       Nunc nec porttitor turpis. In eu risus enim. In vitae
                       mollis elit.
@@ -106,7 +106,7 @@ const ProductDescription = ({ data }) => {
                   </ul>
 
                   <p>
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Lorem ipsum dolor sit amet, consectetuer dipiscing elit.
                     Donec odio. Quisque volutpat mattis eros. Nullam malesuada
                     erat ut turpis. Suspendisse urna viverra non, semper
                     suscipit, posuere a, pede. Donec nec justo eget felis
@@ -114,11 +114,11 @@ const ProductDescription = ({ data }) => {
                     Aenean dignissim pellentesque felis. Phasellus ultrices
                     nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
                     vulputate sem tristique cursus.
-                  </p> */}
+                  </p>
                 </div>
               </Tab>
 
-              {/* <Tab eventKey="Additional information" title="Additional information">
+              <Tab eventKey="Additional information" title="Additional information">
 
               <div className="TabsItem">
 
@@ -139,7 +139,7 @@ const ProductDescription = ({ data }) => {
 
               </div>
 
-              </Tab> */}
+              </Tab> 
             </Tabs>
           </div>
         </Container>

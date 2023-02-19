@@ -1,7 +1,4 @@
-import Head from "next/head";
-import React, { useRef, useState } from "react";
-
-// Common CSS
+import React from 'react'
 import Header from "../../../Components/theme_1/Common/Header";
 import MenuBar from "../../../Components/theme_1/Common/Menubar";
 import Delivary from "../../../Components/theme_1/Common/Delivary";
@@ -9,22 +6,22 @@ import Footer from "../../../Components/theme_1/Common/Footer";
 import SocialMedia from "../../../Components/theme_1/Common/SocialMedia";
 import TinyFooter from "../../../Components/theme_1/Common/TinyFooter";
 import CheckOut from "../../../Components/theme_1/CheckOut/CheckOut";
+import Menubar from "../../../Components/theme_1/Common/Menubar";
+import AllProduct from '../../../Components/theme_1/HomePage/AllProduct';
 
-const index = () => {
-  const shopInfo = {
-    theme: 1,
-    landing: null,
-    shop_id: 1,
-  };
+
+export default function index() {
   return (
     <>
-      {/* <Header></Header>
-      <MenuBar></MenuBar> */}
-      <CheckOut></CheckOut>
-      {/* <Delivary></Delivary> */}
-      {/* <Footer></Footer> */}
+      <Header />
+      <Menubar />
+      <AllProduct/>
+      <Footer></Footer>
+      <SocialMedia></SocialMedia>
+      <TinyFooter></TinyFooter>
     </>
-  );
-};
+  )
+}
 
-export default index;
+
+

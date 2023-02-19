@@ -39,8 +39,7 @@ const ProductCarousel = () => {
     <>
       <section id='product-carousel'>
         <Container>
-            {
-                popularProducts.length>0&&<Row>
+           <Row>
                 <Col lg={12}>
                   <div className='heading d_flex align-items-center'>
                     <div className='circle'>
@@ -100,8 +99,7 @@ const ProductCarousel = () => {
                       modules={[Autoplay, Pagination, Navigation, Grid]}
                       className='mySwiperProduct'
                     >
-                      {popularProducts?.map((item, index) => {
-                        return (
+                      
                           <SwiperSlide>
                             <div className='imageproduct'>
                               <div className='image-layer'>
@@ -134,13 +132,236 @@ const ProductCarousel = () => {
                               </h3>
                             </div>
                           </SwiperSlide>
-                        );
-                      })}
+                          <SwiperSlide>
+                            <div className='imageproduct'>
+                              <div className='image-layer'>
+                                <button className='wishlist' type='button'>
+                                  <img
+                                    className='add-heart'
+                                    src='../images/theme_2/heart-add-sm.png'
+                                    alt=''
+                                  />
+                                  <img
+                                    className='remove-heart d-none'
+                                    src='../images/theme_2/heart.png'
+                                    alt=''
+                                  />
+                                </button>
+                                <img
+                                  src='../images/theme_2/Mask group (1).png'
+                                  alt=''
+                                />
+                                <div className='overlay' />
+                                <button className='cart'>
+                                  <BsCart3 />
+                                  Add to Cart
+                                </button>
+                              </div>
+                              <p className='category'>Accessories</p>
+                              <h3 className='title'>Simple Black T-Shirt</h3>
+                              <h3 className='price-discount'>
+                                BDT 650<span>BDT 670</span>
+                              </h3>
+                            </div>
+                          </SwiperSlide>
+                          <SwiperSlide>
+                            <div className='imageproduct'>
+                              <div className='image-layer'>
+                                <button className='wishlist' type='button'>
+                                  <img
+                                    className='add-heart'
+                                    src='../images/theme_2/heart-add-sm.png'
+                                    alt=''
+                                  />
+                                  <img
+                                    className='remove-heart d-none'
+                                    src='../images/theme_2/heart.png'
+                                    alt=''
+                                  />
+                                </button>
+                                <img
+                                  src='../images/theme_2/Mask group (1).png'
+                                  alt=''
+                                />
+                                <div className='overlay' />
+                                <button className='cart'>
+                                  <BsCart3 />
+                                  Add to Cart
+                                </button>
+                              </div>
+                              <p className='category'>Accessories</p>
+                              <h3 className='title'>Simple Black T-Shirt</h3>
+                              <h3 className='price-discount'>
+                                BDT 650<span>BDT 670</span>
+                              </h3>
+                            </div>
+                          </SwiperSlide>
+                          <SwiperSlide>
+                            <div className='imageproduct'>
+                              <div className='image-layer'>
+                                <button className='wishlist' type='button'>
+                                  <img
+                                    className='add-heart'
+                                    src='../images/theme_2/heart-add-sm.png'
+                                    alt=''
+                                  />
+                                  <img
+                                    className='remove-heart d-none'
+                                    src='../images/theme_2/heart.png'
+                                    alt=''
+                                  />
+                                </button>
+                                <img
+                                  src='../images/theme_2/Mask group (1).png'
+                                  alt=''
+                                />
+                                <div className='overlay' />
+                                <button className='cart'>
+                                  <BsCart3 />
+                                  Add to Cart
+                                </button>
+                              </div>
+                              <p className='category'>Accessories</p>
+                              <h3 className='title'>Simple Black T-Shirt</h3>
+                              <h3 className='price-discount'>
+                                BDT 650<span>BDT 670</span>
+                              </h3>
+                            </div>
+                          </SwiperSlide>
+                          <SwiperSlide>
+                            <div className='imageproduct'>
+                              <div className='image-layer'>
+                                <button className='wishlist' type='button'>
+                                  <img
+                                    className='add-heart'
+                                    src='../images/theme_2/heart-add-sm.png'
+                                    alt=''
+                                  />
+                                  <img
+                                    className='remove-heart d-none'
+                                    src='../images/theme_2/heart.png'
+                                    alt=''
+                                  />
+                                </button>
+                                <img
+                                  src='../images/theme_2/Mask group (1).png'
+                                  alt=''
+                                />
+                                <div className='overlay' />
+                                <button className='cart'>
+                                  <BsCart3 />
+                                  Add to Cart
+                                </button>
+                              </div>
+                              <p className='category'>Accessories</p>
+                              <h3 className='title'>Simple Black T-Shirt</h3>
+                              <h3 className='price-discount'>
+                                BDT 650<span>BDT 670</span>
+                              </h3>
+                            </div>
+                          </SwiperSlide>
+                          <SwiperSlide>
+                            <div className='imageproduct'>
+                              <div className='image-layer'>
+                                <button className='wishlist' type='button'>
+                                  <img
+                                    className='add-heart'
+                                    src='../images/theme_2/heart-add-sm.png'
+                                    alt=''
+                                  />
+                                  <img
+                                    className='remove-heart d-none'
+                                    src='../images/theme_2/heart.png'
+                                    alt=''
+                                  />
+                                </button>
+                                <img
+                                  src='../images/theme_2/Mask group (1).png'
+                                  alt=''
+                                />
+                                <div className='overlay' />
+                                <button className='cart'>
+                                  <BsCart3 />
+                                  Add to Cart
+                                </button>
+                              </div>
+                              <p className='category'>Accessories</p>
+                              <h3 className='title'>Simple Black T-Shirt</h3>
+                              <h3 className='price-discount'>
+                                BDT 650<span>BDT 670</span>
+                              </h3>
+                            </div>
+                          </SwiperSlide>
+                          <SwiperSlide>
+                            <div className='imageproduct'>
+                              <div className='image-layer'>
+                                <button className='wishlist' type='button'>
+                                  <img
+                                    className='add-heart'
+                                    src='../images/theme_2/heart-add-sm.png'
+                                    alt=''
+                                  />
+                                  <img
+                                    className='remove-heart d-none'
+                                    src='../images/theme_2/heart.png'
+                                    alt=''
+                                  />
+                                </button>
+                                <img
+                                  src='../images/theme_2/Mask group (1).png'
+                                  alt=''
+                                />
+                                <div className='overlay' />
+                                <button className='cart'>
+                                  <BsCart3 />
+                                  Add to Cart
+                                </button>
+                              </div>
+                              <p className='category'>Accessories</p>
+                              <h3 className='title'>Simple Black T-Shirt</h3>
+                              <h3 className='price-discount'>
+                                BDT 650<span>BDT 670</span>
+                              </h3>
+                            </div>
+                          </SwiperSlide>
+                          <SwiperSlide>
+                            <div className='imageproduct'>
+                              <div className='image-layer'>
+                                <button className='wishlist' type='button'>
+                                  <img
+                                    className='add-heart'
+                                    src='../images/theme_2/heart-add-sm.png'
+                                    alt=''
+                                  />
+                                  <img
+                                    className='remove-heart d-none'
+                                    src='../images/theme_2/heart.png'
+                                    alt=''
+                                  />
+                                </button>
+                                <img
+                                  src='../images/theme_2/Mask group (1).png'
+                                  alt=''
+                                />
+                                <div className='overlay' />
+                                <button className='cart'>
+                                  <BsCart3 />
+                                  Add to Cart
+                                </button>
+                              </div>
+                              <p className='category'>Accessories</p>
+                              <h3 className='title'>Simple Black T-Shirt</h3>
+                              <h3 className='price-discount'>
+                                BDT 650<span>BDT 670</span>
+                              </h3>
+                            </div>
+                          </SwiperSlide>
+                     
                     </Swiper>
                   </div>
                 </Col>
               </Row>
-            }
+          
 
         </Container>
       </section>

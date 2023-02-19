@@ -84,7 +84,7 @@ const Header = ({ save }) => {
           {/* left  */}
           <Col>
             <div className='HeaderLeftLogo'>
-              <Link href={`/${shop_name}`}>
+              <Link href='/theme_1'>
                 <img
                   src={logo === undefined ? "/theme_1/images/logo.png" : logo}
                   alt=''
@@ -153,12 +153,12 @@ const Header = ({ save }) => {
                 </li>
 
                 <li>
-                  <Link href={`/${shop_name}/checkout`} className='d_flex'>
+                  <Link href={`/theme_1/check_out`} className='d_flex'>
                     <div className='svg'>
                       <AiOutlineShoppingCart />
                     </div>
                     Cart
-                    <span>{totalItem}</span>
+                    <span>2</span>
                   </Link>
                 </li>
 

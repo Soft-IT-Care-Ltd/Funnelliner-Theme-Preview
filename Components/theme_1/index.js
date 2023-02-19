@@ -26,42 +26,7 @@ const index = () => {
 	const [categories, setCategories] = useState([])
 	const [editActive, setEditActive] = useState(false)
 	const [saveData, setSaveData] = useState(false)
-	// const { actions, query, enabled } = useEditor((state) => ({
-	// 	enabled: editActive
-	//   }));
-
-
-	// async function handleFetchCategories(headers) {
-	// 	const response = await fetch(
-	// 		`${baseUrl}/api/v1/customer/categories`, { headers: headers }
-	// 	);
-	// 	const data = await response.json();
-	// 	if (data.success === true) {
-	// 		setCategories(data?.data)
-	// 	}
-	// }
-
-	// const handleFetchCategories=async (headers)=>{
-	// 	try {
-	// 	  let res = await axios({
-	// 		method: "get",
-	// 		url: `${baseUrl}/api/v1/customer/categories`,
-	// 		headers: headers,
-	// 	  });
-	// 	//   const data = await res.json()
-	// 	 setCategories(res.data.data)
-	// 	} catch (err) {
-	// 		// console.log(err)
-	// 	}
-	//   }
-
-	// useEffect(() => {
-	// 	const headers = {
-	// 		shop_id: localStorage.getItem('shop_id'),
-	// 	}
-	// 	handleFetchCategories(headers).then(r => console.log())
-	// }, [])
-
+	
 
 	let baseData
 	const save = (data) => {
@@ -123,10 +88,10 @@ const index = () => {
 				/>
 			</Head>
 			<main>
-				<button style={{ position: 'fixed', top: 0, right: '60px' }} onClick={() => {
+				{/* <button style={{ position: 'fixed', top: 0, right: '60px' }} onClick={() => {
 					setSaveData(!saveData)
 				}} className="btn btn-success">Save</button>
-				<button style={{ position: 'fixed', top: 0, right: 0 }} onClick={() => setEditActive(!editActive)} className="btn btn-success">Edit</button>
+				<button style={{ position: 'fixed', top: 0, right: 0 }} onClick={() => setEditActive(!editActive)} className="btn btn-success">Edit</button> */}
 				<Context.Provider value={{ value: editActive, value1: saveData }}>
 					<Header save={save} />
 					<Editor resolver={{ MenuBar }}>
@@ -137,13 +102,13 @@ const index = () => {
 					<Banner></Banner>
 					<Editor resolver={{ Category }}>
 						<Frame>
-							<Category title={'Categori'} fontSize={'16'} save={save} />
+							<Category title={'Category'} fontSize={'16'} save={save} />
 						</Frame>
 					</Editor>
 					<MiddleBanner />
 					<Editor resolver={{ PopularProduct }}>
 						<Frame>
-							<PopularProduct title={'Popular Products'} fontSize={'16'} save={save} />
+							{/* <PopularProduct title={'Popular Products'} fontSize={'16'} save={save} /> */}
 						</Frame>
 					</Editor>
 					<Editor resolver={{ AllProduct }}>

@@ -33,10 +33,8 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../../../../redux/stateSlices/CartSlice";
 
 const ProductInfo = ({data}) => {
-  const dispatch = useDispatch();
-  const handleAddToCart = (product) => {
-    dispatch(addToCart(product));
-  };
+ 
+
   return (
     <>
       <section id='single-product'>
@@ -53,7 +51,7 @@ const ProductInfo = ({data}) => {
             <Col lg={6}>
               <div className='product-details'>
                 <div className='title'>
-                  <h2>{data?.product_name}</h2>
+                  <h2>Premium Full Sleeves Casual Shirt for Men (Shirt for Men) </h2>
                 </div>
                 {/* <div className='reviews'>
                   <div className='star'>
@@ -70,7 +68,7 @@ const ProductInfo = ({data}) => {
                 </div> */}
                 <div className='price'>
                   <h2>
-                   {data?.price} TK <span>{data?.price+data?.discount}</span>
+                  100 TK <span>140</span>
                   </h2>
                 </div>
                 <div className='variation'>
@@ -103,7 +101,7 @@ const ProductInfo = ({data}) => {
                     <BsFillBookmarkFill />
                     Wishlist
                   </button>
-                  <button onClick={() => handleAddToCart(data)} className='cart-btn' type='button'>
+                  <button  className='cart-btn' type='button'>
                     <GiShoppingBag />
                     Add to Cart
                   </button>

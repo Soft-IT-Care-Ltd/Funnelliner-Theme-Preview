@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Col, Container, Dropdown, Row, Form } from "react-bootstrap";
 import { BiCategory } from "react-icons/bi";
-
 // Import Swiper React components
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,50 +9,97 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
-import { baseUrl} from "../../../constant/constant";
-import { useNode,useEditor } from "@craftjs/core";
+import { baseUrl } from "../../../constant/constant";
+import { useNode, useEditor } from "@craftjs/core";
 import ContentEditable from 'react-contenteditable'
 import Context from "../../Context";
+import iamgeOne from "../../../public/theme_1/images/category/headphone.jpg"
+import iamgeTwo from "../../../public/theme_1/images/category/image 130.png"
+import iamgeThree from "../../../public/theme_1/images/category/Mask group (1).png"
+import iamgeFour from "../../../public/theme_1/images/category/Mask group (2).png"
+import iamgeFive from "../../../public/theme_1/images/category/Mask group (3).png"
+import iamgeSix from "../../../public/theme_1/images/category/Mask group.png"
 
-const Category = ({ title,fontSize,save }) => {
 
-	const [categories, setCategories] = useState([])
+// /theme_1/images/logo.png
+const Category = ({ title, fontSize, save }) => {
+
+  const [categories, setCategories] = useState([])
+
+  const category = [
+    {
+      name: "Head Phone",
+      image: iamgeOne
+    },
+    {
+      name: "Men Shirt",
+      image: iamgeTwo
+    },
+    {
+      name: "women Shoes",
+      image: iamgeThree
+    },
+    {
+      name: "Men Shoes",
+      image: iamgeFive
+    },
+    {
+      name: "Ladies Dress",
+      image: iamgeFour
+    },
+    {
+      name: "Women Bag",
+      image: iamgeSix
+    },
+    {
+      name: "Bag",
+      image: iamgeSix
+    },
+    {
+      name: "Men Shirt",
+      image: iamgeTwo
+    },
+    {
+      name: "Men Shoes",
+      image: iamgeFive
+    },
+  ]
 
   async function handleFetchCategories(headers) {
-		const response = await fetch(
+    const response = await fetch(
       // {process.env.API_URL}v1/customer/categories
-			`${process.env.API_URL}v1/customer/categories`, { headers: headers }
-		);
-		const data = await response.json();
-		if (data.success === true) {
-			setCategories(data?.data)
-		}
-	}
+      `${process.env.API_URL}v1/customer/categories`, { headers: headers }
+    );
+    const data = await response.json();
+    if (data.success === true) {
+      setCategories(data?.data)
+    }
+  }
 
   useEffect(() => {
-		const headers = {
-			"shop-id": localStorage.getItem('shop_id'),
-		}
-		handleFetchCategories(headers).then(r => console.log())
-	}, [])
+    const headers = {
+      "shop-id": localStorage.getItem('shop_id'),
+    }
+    handleFetchCategories(headers).then(r => console.log())
+  }, [])
 
 
-	const { connectors: { connect, drag }, hasSelectedNode, hasDraggedNode, actions: { setProp } } = useNode((state) => ({
-		hasSelectedNode: state.events.selected.size > 0,
-		hasDraggedNode: state.events.dragged.size > 0
-	}));
-	const { actions, query, enabled } = useEditor((state) => ({
-		enabled: true
-	}));
+  const { connectors: { connect, drag }, hasSelectedNode, hasDraggedNode, actions: { setProp } } = useNode((state) => ({
+    hasSelectedNode: state.events.selected.size > 0,
+    hasDraggedNode: state.events.dragged.size > 0
+  }));
+  const { actions, query, enabled } = useEditor((state) => ({
+    enabled: true
+  }));
 
-	const { value, value1 } = useContext(Context);
-	const editActive = value;
-	useEffect(() => {
-		if (value1 === true) {
-			const serialize = query.serialize();
-			save(serialize);
-		}
-	}, [value1]);
+  const { value, value1 } = useContext(Context);
+  const editActive = value;
+  useEffect(() => {
+    if (value1 === true) {
+      const serialize = query.serialize();
+      save(serialize);
+    }
+  }, [value1]);
   return (
     <section className='Category'>
       <Container>
@@ -67,10 +113,10 @@ const Category = ({ title,fontSize,save }) => {
                   onChange={(e) =>
                     setProp(
                       (props) =>
-                        (props.title = e.target.value.replace(
-                          /<\/?[^>]+(>|$)/g,
-                          ""
-                        ))
+                      (props.title = e.target.value.replace(
+                        /<\/?[^>]+(>|$)/g,
+                        ""
+                      ))
                     )
                   }
                   tagName='h2'
@@ -113,15 +159,21 @@ const Category = ({ title,fontSize,save }) => {
                   modules={[Navigation]}
                   className='mySwiper'
                 >
-                  {categories?.map((item, index) => {
+                  {category?.map((item, index) => {
                     return (
                       <SwiperSlide key={item.id}>
                         <div className='CategoryItem'>
                           <div className='img'>
-                            <img
-                              src={item?.image?.name}
-                              alt=''
+                            <Image
+                              src={item.image}
+                              alt="Picture of the author"
+                              width={100}
+                              height={90}
                             />
+                            {/* <img
+                             
+                              alt=''
+                            /> */}
                           </div>
                           <div className='text'>
                             <p>{item?.name}</p>

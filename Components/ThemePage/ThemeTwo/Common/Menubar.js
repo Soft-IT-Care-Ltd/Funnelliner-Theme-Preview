@@ -46,13 +46,7 @@ const Menubar = ({ name, ...props }) => {
     }
   }
 
-  useEffect(() => {
-    const headers = {
-      "shop-id": localStorage.getItem("shop_id"),
-    };
-	setShopName(localStorage.getItem('shop_name'));
-    handleFetchCategories(headers).then((r) => console.log("r", r));
-  }, []);
+
 
   return (
     <>
@@ -103,10 +97,10 @@ const Menubar = ({ name, ...props }) => {
                       <nav className='animated bounceInDown'>
                         <ul>
                           <li className='active'>
-                            <a href='#profile'>Home</a>
+                            <a href='/theme-two'>Home</a>
                           </li>
                           <li>
-                            <a href='#about-us'>About us</a>
+                            <a href='#'>About us</a>
                           </li>
                           <li className='sub-menu'>
                             <a href='#contact-us'>Contact Us</a>
@@ -146,7 +140,7 @@ const Menubar = ({ name, ...props }) => {
           <div className='DesktopMenu'>
             <Row className='navrow'>
               <Col lg={3}>
-                <Link className='navbar-brand' href={`/${shopName}`}>
+                <Link className='navbar-brand' href='/theme-two'>
                   <img src='/images/theme_2/logo.png' alt='site logo' />
                 </Link>
               </Col>
@@ -169,6 +163,11 @@ const Menubar = ({ name, ...props }) => {
                       Products
                     </Link>
                   </li> */}
+                   <li className='nav-item px-lg-2 mx-lg-1'>
+                    <a className='nav-link' href='/theme-two/all-products'>
+                     Shop
+                    </a>
+                  </li>
                   <li className='nav-item px-lg-2 mx-lg-1'>
                     <Link className='nav-link' href='/theme-two/all-products'>
                       Categories
@@ -176,23 +175,19 @@ const Menubar = ({ name, ...props }) => {
                     </Link>
                     <div className='dropdown'>
                       <ul className='dropdown-menu'>
-                        {categories.map((item, index) => {
-                          return (
-                            <li>
-                              <a className='drowpdown-item' href='#'>
-                                {item.name}
-                              </a>
-                            </li>
-                          );
-                        })}
+                        <li>
+                        Mens Fashion 
+                        </li>
+                        <li>
+                        womens Fashion 
+                        </li>
+                        <li>
+                        Baby Fashion
+                        </li>
                       </ul>
                     </div>
                   </li>
-                  <li className='nav-item px-lg-2 mx-lg-1'>
-                    <a className='nav-link' href='/theme-two/product-details'>
-                      Single product
-                    </a>
-                  </li>
+                 
                 </ul>
               </Col>
 
@@ -212,10 +207,10 @@ const Menubar = ({ name, ...props }) => {
                   <span className='bg-black text-white'>22</span>
                 </div>
 
-                <Link href={`/${shopName}/checkout`}>
+                <Link href='/theme-two/check_out'>
                   <div className='icondiv'>
                     <BsCart3 />
-                    <span className>{cart}</span>
+                    <span className>5</span>
                   </div>
                 </Link>
                 <p className='pt-2'>$240.93</p>

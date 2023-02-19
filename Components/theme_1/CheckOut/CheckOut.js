@@ -10,6 +10,7 @@ import { useRouter } from "next/router";
 import ShippingAddress from "../../../Components/theme_1/ShippingAddress/ShippingAddress";
 import { baseUrl, shopId } from "../../../constant/constant";
 import { TbCurrencyTaka } from "react-icons/tb";
+import iamgeOne from "../../../public/theme_1/images/product/headphoneProduct.jpg"
 
 import {
 	addToCart,
@@ -82,35 +83,60 @@ const CheckOut = () => {
 		watch,
 		formState: { errors },
 	} = useForm();
-	const handleSubmitOrder = (data) => {
-		const postBody = {
-			customer_name: data.customerName,
-			customer_phone: data.customerMobile,
-			customer_address: data.customerAddress,
-			product_id: productsId,
-			product_qty: cartQuantitys,
-		};
-		axios
-			.post(`${baseUrl}/api/v1/customer/order/store`, postBody, {
-				headers: headers,
-			})
-			.then((res) => {
-				if (res.status === 200) {
-					swal(
-						"Thank you!",
-						"Your order has been successfully placed",
-						"success"
-					);
-					handleClearCart();
+	// const handleSubmitOrder = (data) => {
+	// 	const postBody = {
+	// 		customer_name: data.customerName,
+	// 		customer_phone: data.customerMobile,
+	// 		customer_address: data.customerAddress,
+	// 		product_id: productsId,
+	// 		product_qty: cartQuantitys,
+	// 	};
+	// 	axios
+	// 		.post(`${baseUrl}/api/v1/customer/order/store`, postBody, {
+	// 			headers: headers,
+	// 		})
+	// 		.then((res) => {
+	// 			if (res.status === 200) {
+	// 				swal(
+	// 					"Thank you!",
+	// 					"Your order has been successfully placed",
+	// 					"success"
+	// 				);
+	// 				handleClearCart();
 
 
-				}
-			})
-			.catch((err) => {
-				console.log(err);
-				swal("Something went wrong !", "error");
-			});
-	};
+	// 			}
+	// 		})
+	// 		.catch((err) => {
+	// 			console.log(err);
+	// 			swal("Something went wrong !", "error");
+	// 		});
+	// };
+
+	const product = [
+		{
+			name: "Head Phone",
+			image: iamgeOne,
+			price: 100,
+			discount: 40,
+			quantity: 1
+		},
+		{
+			name: "Head Phone",
+			image: iamgeOne,
+			price: 100,
+			discount: 40,
+			quantity: 1
+		},
+		{
+			name: "Head Phone",
+			image: iamgeOne,
+			price: 100,
+			discount: 40,
+			quantity: 1
+		},
+		
+	]
 
 	return (<>
 		<Header />
@@ -133,99 +159,100 @@ const CheckOut = () => {
 					<Row>
 						<Col xs={12} lg={8}>
 							<div className='CheckOutTable'>
-								{cart.length < 1 ? (
-									<h2 className="text-center mt-3 text-warning">Your Cart is empty</h2>
-								) : (
-									<table className='table roundedCorners'>
-										<thead>
-											<tr>
-												<th>Product</th>
-												<th>Price</th>
-												<th>Quantity</th>
-												<th>Subtotal</th>
-											</tr>
-										</thead>
 
-										<tbody>
-											{cart &&
-												cart.map((item, index) => {
-													return (
-														<tr key={index}>
-															<td>
-																<div className='ProductFst d_flex'>
-																	<div className='svg'>
-																		<MdOutlineClose
-																			onClick={() => handleRemoveFromCart(item)}
-																		/>
-																	</div>
+								<table className='table roundedCorners'>
+									<thead>
+										<tr>
+											<th>Product</th>
+											<th>Price</th>
+											<th>Quantity</th>
+											<th>Subtotal</th>
+										</tr>
+									</thead>
 
-																	<div className='img'>
-																		{cart.length > 0 && (
-																			<img
-																				src={item?.main_image?.name}
-																				alt=''
-																			/>
-																		)}
-																	</div>
+									<tbody>
+										{
+											product.map((item, index) => {
+												return (
+													<tr key={index}>
+														<td>
+															<div className='ProductFst d_flex'>
+																<div className='svg'>
+																	<MdOutlineClose
 
-																	<div className='Description'>
-																		<p style={{ paddingLeft: "15px" }}>
-																			{item.product_name}
-																		</p>
-																	</div>
+																	/>
 																</div>
-															</td>
 
-															<td>
-																<p style={{ textAlign: "left" }}>
-																	TK{" "}
-																	<span
-																		style={{
-																			fontSize: "15px",
-																			color: "#3BB77E",
-																			fontWeight: "bold",
-																		}}
-																	>
-																		{item.price}
-																	</span>
-																</p>
-															</td>
-
-															<td>
-																<div className='PlusMinus'>
-																	<div
-																		onClick={() => handleDecreaseCart(item)}
-																		className='Minus'
-																	>
-																		<AiOutlineMinus />
-																	</div>
-
-																	<div className='InputNumber'>
-																		<h6 className='py-2'>
-																			{item.cartQuantity}
-																		</h6>
-																	</div>
-
-																	<div
-																		onClick={() => handleAddToCart(item)}
-																		className='Minus'
-																	>
-																		<AiOutlinePlus />
-																	</div>
+																<div className='img'>
+																	<img
+																		src={item?.image}
+																		alt=''
+																	/>
 																</div>
-															</td>
 
-															<td>
-																<h3 style={{ textAlign: "left" }}>
-																	TK {item.price * item.cartQuantity}
-																</h3>
-															</td>
-														</tr>
-													);
-												})}
-										</tbody>
-									</table>
-								)}
+																<div className='Description'>
+																	<p style={{ paddingLeft: "15px" }}>
+																		{item.name}
+																	</p>
+																</div>
+															</div>
+														</td>
+
+														<td>
+															<p style={{ textAlign: "left" }}>
+																TK{" "}
+																<span
+																	style={{
+																		fontSize: "15px",
+																		color: "#3BB77E",
+																		fontWeight: "bold",
+																	}}
+																>
+																	{item.price}
+																</span>
+															</p>
+														</td>
+
+														<td>
+															<div className='PlusMinus'>
+																<div
+																	
+																	className='Minus'
+																>
+																	<AiOutlineMinus />
+																</div>
+
+																<div className='InputNumber'>
+																	<h6 className='py-2'>
+																		{item?.quantity}
+																	</h6>
+																</div>
+
+																<div
+																	onClick={() => handleAddToCart(item)}
+																	className='Minus'
+																>
+																	<AiOutlinePlus />
+																</div>
+															</div>
+														</td>
+
+														<td>
+															<h3 style={{ textAlign: "left" }}>
+																TK 2000
+															</h3>
+														</td>
+													</tr>
+												)
+											})
+										}
+
+
+
+										
+									</tbody>
+								</table>
+
 							</div>
 
 							<section className='CheckOut'>
@@ -233,7 +260,7 @@ const CheckOut = () => {
 								<div className='CheckOutContent'>
 									<h2>Shipping Address</h2>
 									<div className='ProductDescriptionLeft'>
-										<form onSubmit={handleSubmit(handleSubmitOrder)}>
+										<form >
 											<div className='LoginItem'>
 												<div className='CustomeInput'>
 													<TextField
@@ -281,8 +308,8 @@ const CheckOut = () => {
 													)}
 												</div>
 												<div className='ProceedToCheckout'>
-													<Button type='submit' variant='contained'>
-														PLACE ORDER TK {cartSubTotal}
+													<Button  variant='contained'>
+														PLACE ORDER TK 500
 													</Button>
 												</div>
 											</div>
@@ -302,14 +329,15 @@ const CheckOut = () => {
 
 									<li className='d_flex'>
 										<div className='img'>
-											<img src={cart[0]?.main_image?.name} alt='' />
+											<Image src={product[0]?.image}/>
+											{/* <img src={product[0]?.image} alt='' /> */}
 										</div>
-										<p>TK {cartSubTotal}</p>
+										<p>TK 1000</p>
 									</li>
 
 									<li className='d_flex'>
 										<h5>Total Item</h5>
-										<p>{totalItem}</p>
+										<p>3</p>
 									</li>
 
 									<li className='d_flex'>
@@ -319,7 +347,7 @@ const CheckOut = () => {
 
 									<li className='d_flex'>
 										<h3>Grand total</h3>
-										<h4>TK {cartSubTotal}</h4>
+										<h4>TK 1000</h4>
 									</li>
 								</ul>
 							</div>
