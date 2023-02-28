@@ -195,7 +195,7 @@ const LandingOne = (props) => {
                   <h2> {props.orderTitle}</h2>
                   <h1>{props.productPrice} </h1>
 
-                  <Link href='' className={styles.bg} activeClass='active'>
+                  <Link href='#Order' className={styles.bg} activeClass='active'>
                     অর্ডার করুন
                   </Link>
                 </div>
@@ -375,7 +375,7 @@ const LandingOne = (props) => {
                 <img src='images/landing_1/order.png' alt='' />
 
                 <div className={styles.overlay_text}>
-                  <Link href='' activeClass='active' className={styles.bg}>
+                  <Link href='#Order' activeClass='active' className={styles.bg}>
                     {props.buttonInnerText}
                   </Link>
 
@@ -646,7 +646,7 @@ const LandingOne = (props) => {
         </Container>
       </section>
 
-      <section className='OrderConfirmFrom'>
+      <section className='OrderConfirmFrom' id="Order">
         <Container>
           <form>
             <Row>
@@ -699,7 +699,7 @@ const LandingOne = (props) => {
                     <h3>Paymet</h3>
 
                     <div className='CustomeInput d_flex'>
-                      <input type='checkbox' name='' id='CashOn' />
+                      <input type='checkbox' name='' id='CashOn' checked />
                       <label htmlFor='CashOn'>ক্যাশ অন ডেলিভারি</label>
                     </div>
 

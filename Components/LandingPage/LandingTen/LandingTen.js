@@ -91,7 +91,7 @@ export default function LandingTen() {
             <Container fluid className={styles.secBanner2}>
                 <div className={styles.banner2}>
                     <ul>
-                        <li> <Link href='#' className={styles.bg}> <AiOutlineShoppingCart/>Order Now</Link></li>
+                        <li> <Link href='#placeAnOrder' className={styles.bg}> <AiOutlineShoppingCart/>Order Now</Link></li>
                         <li>হটলাইন: 01600-324567</li>
                         <li> <span className={styles.myWhatsapp}>Whats App:</span> 01600-324567</li>
                     </ul>
@@ -186,7 +186,12 @@ export default function LandingTen() {
 
             <Container>
                 <div className={styles.sec3txtDiv}>
-                    <div className={styles.linkdiv}> <Link href='#' className={styles.bg}> <AiOutlineShoppingCart/>Order Now</Link></div>
+
+                    <div className={styles.linkdiv}> 
+
+                          <Link href='#placeAnOrder' className={styles.bg}> <AiOutlineShoppingCart/>Order Now</Link>
+                    </div>
+
                     <h2>দেশজুড়ে সারা বাংলাদেশে ফ্রি হোম ডেলিভারি এবং কুরিয়ার মাধ্যমেও বই পাঠানো হয়</h2>
                 </div>
             </Container>
@@ -254,7 +259,7 @@ export default function LandingTen() {
                   <div className={styles.banner5Button} >
                           <div >
                               <h2>নিচের বাটনে ক্লিক করে এখুনি অর্ডার করুন</h2>
-                              <Link href='#' className={styles.bg}> <AiOutlineShoppingCart/>Order Now</Link>
+                              <Link href='#placeAnOrder' className={styles.bg}> <AiOutlineShoppingCart/>Order Now</Link>
                           </div>
 
                   </div>
@@ -269,7 +274,8 @@ export default function LandingTen() {
                   OrderConfirmFrom
                 ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
           <section className={styles.section_gaps}></section>
-          <section className="OrderConfirmFrom">
+
+          <section className="OrderConfirmFrom" id="placeAnOrder">
 
           <Container>
 
@@ -300,7 +306,7 @@ export default function LandingTen() {
                     <h3>Paymet</h3>
 
                     <div className="CustomeInput d_flex">
-                      <input type="checkbox" name="" id='CashOn'/>
+                      <input type="checkbox" name="" id='CashOn' checked />
                       <label htmlFor="CashOn">ক্যাশ অন ডেলিভারি</label>
                     </div>
 

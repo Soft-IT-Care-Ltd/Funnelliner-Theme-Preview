@@ -487,7 +487,7 @@ const LandingThree = () => {
                     <h3>Paymet</h3>
 
                     <div className='CustomeInput d_flex'>
-                      <input type='checkbox' name='' id='CashOn' />
+                      <input type='checkbox' name='' id='CashOn' checked />
                       <label htmlFor='CashOn'>ক্যাশ অন ডেলিভারি</label>
                     </div>
 
@@ -565,9 +565,14 @@ const LandingThree = () => {
                 <div className='text text-center'>
                   <h3>সারাদেশে ফ্রি ডেলিভারি পেতে এখনি</h3>
 
+                <Link href="#placeAnOrder">
+
                   <Button className='button3' variant='primary'>
                     <BsFillCartFill /> অর্ডার করুন
                   </Button>
+
+                </Link>
+
                 </div>
               </div>
             </Col>

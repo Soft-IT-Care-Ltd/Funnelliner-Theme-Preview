@@ -53,7 +53,7 @@ const LandingSix = () => {
 
                                 <div className={styles.btnBox}>
                                     
-                                    <Link href='' className={styles.bg}> <AiOutlineShoppingCart/> অর্ডার করুন</Link>
+                                    <Link href='#placeAnOrder' className={styles.bg}> <AiOutlineShoppingCart/> অর্ডার করুন</Link>
 
                                 </div>
 
@@ -267,8 +267,8 @@ const LandingSix = () => {
 
                         <div className={styles.buttonGroup}>
 
-                            <Link href='' className={styles.bg}>  অর্ডার করুন</Link>
-                            <Link href='' className={styles.bg}>  যোগাযোগ করুন</Link>
+                            <Link href='#placeAnOrder' className={styles.bg}>  অর্ডার করুন</Link>
+                            <Link href='#placeAnOrder' className={styles.bg}>  যোগাযোগ করুন</Link>
 
                         </div>
 
@@ -324,7 +324,7 @@ const LandingSix = () => {
         {/* Section Gaps */}
         <div className={styles.section_gaps}></div>
 
-        <section className="OrderConfirmFrom">
+        <section className="OrderConfirmFrom" id="placeAnOrder">
 
             <Container>
 
@@ -355,7 +355,7 @@ const LandingSix = () => {
                         <h3>Paymet</h3>
 
                         <div className="CustomeInput d_flex">
-                            <input type="checkbox" name="" id='CashOn'/>
+                            <input type="checkbox" name="" id='CashOn' checked />
                             <label htmlFor="CashOn">ক্যাশ অন ডেলিভারি</label>
                         </div>
 

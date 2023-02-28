@@ -96,7 +96,7 @@ const LandingThirteen = () => {
 
                             <div className={styles.btnBox}>
                                         
-                                <Link href='' className={styles.bg}> অর্ডার করুন</Link>
+                                <Link href='#placeAnOrder' className={styles.bg}> অর্ডার করুন</Link>
 
                             </div>
                                 
@@ -367,7 +367,7 @@ const LandingThirteen = () => {
 
                 <div className={styles.btnBox}>
                                         
-                    <Link href='' className={styles.bg}>অর্ডার করতে এখানে ক্লিক করুন</Link>
+                    <Link href='#placeAnOrder' className={styles.bg}>অর্ডার করতে এখানে ক্লিক করুন</Link>
 
                 </div>
               
@@ -427,7 +427,7 @@ const LandingThirteen = () => {
 
                             <div className={styles.btnBox}>
                                             
-                                    <Link href='' className={styles.bg}><AiOutlineShoppingCart/> অর্ডার করুন</Link>
+                                    <Link href='#placeAnOrder' className={styles.bg}><AiOutlineShoppingCart/> অর্ডার করুন</Link>
 
                                 </div>
 
@@ -616,7 +616,7 @@ const LandingThirteen = () => {
         {/* Section Gaps */}
         <div className={styles.section_gaps}></div>
 
-        <section className="OrderConfirmFrom">
+        <section className="OrderConfirmFrom" id="placeAnOrder">
 
             <Container>
 
@@ -660,7 +660,7 @@ const LandingThirteen = () => {
                         <h3>Paymet</h3>
 
                         <div className="CustomeInput d_flex">
-                            <input type="checkbox" name="" id='CashOn'/>
+                            <input type="checkbox" name="" id='CashOn' checked/>
                             <label htmlFor="CashOn">ক্যাশ অন ডেলিভারি</label>
                         </div>
 

@@ -115,7 +115,7 @@ const LandingFour = () => {
                   <h1>শত  ভেজাল  ভিড়ে একমাত্র আমরাই আপনাকে দিচ্ছি খাঁটি ফরমালীন মুক্ত আম</h1>
                   <h3>বাজারে আমের দাম উঠা-নামা করতে পারে, <br /> তাই ফোন করে আমের দাম কনফার্ম হোন</h3>
 
-                  <Link href='' className={styles.bg}> <AiOutlineShoppingCart/> অর্ডার করুন</Link>
+                  <Link href='#placeAnOrder' className={styles.bg}> <AiOutlineShoppingCart/> অর্ডার করুন</Link>
 
                 </div>
 
@@ -349,7 +349,7 @@ const LandingFour = () => {
 
                 <h3>সারাদেশে ফ্রি ডেলিভারি পেতে এখনি</h3>
 
-                <Link href='' className={styles.bg}> <AiOutlineShoppingCart/> অর্ডার করুন</Link>
+                <Link href='#placeAnOrder' className={styles.bg}> <AiOutlineShoppingCart/> অর্ডার করুন</Link>
 
               </div>
 
@@ -462,7 +462,7 @@ const LandingFour = () => {
 
               <div className={styles.OrderNowtext}>
 
-                <Link href='' className={styles.bg}> <AiOutlineShoppingCart/> অর্ডার করুন</Link>
+                <Link href='#placeAnOrder' className={styles.bg}> <AiOutlineShoppingCart/> অর্ডার করুন</Link>
 
                 <Link href='tel:8801799733234'> +8801799733234 </Link>
 
@@ -484,7 +484,7 @@ const LandingFour = () => {
       {/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
         FormPart
       ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
-      <section className="OrderConfirmFrom">
+      <section className="OrderConfirmFrom" id="placeAnOrder">
 
         <Container>
         <form  onSubmit={handleSubmit(onSubmit)}>
@@ -536,7 +536,7 @@ const LandingFour = () => {
                   <h3>Paymet</h3>
 
                   <div className="CustomeInput d_flex">
-                    <input type="checkbox" name="" id='CashOn'/>
+                    <input type="checkbox" name="" id='CashOn' checked/>
                     <label htmlFor="CashOn">ক্যাশ অন ডেলিভারি</label>
                   </div>
 

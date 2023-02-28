@@ -42,7 +42,7 @@ export default function LandingTwelve() {
                                     <h1>ফোনে চার্জ হতে সময় লাগছে? <span className={styles.ColorCng}>'নিনজা টেকনিক'</span> ব্যবহার করে <span className={styles.ColorCng}>Smartphone, Smartwatch, wireless phone</span> চার্জ  করুন কম সময়ে।</h1>
                                  </div>
 
-                                 <li> <Link href='#' className={`${styles.bg} ${styles.bg1}`}> <AiOutlineShoppingCart/> অর্ডার করুন</Link></li>
+                                 <li> <Link href='#placeAnOrder' className={`${styles.bg} ${styles.bg1}`}> <AiOutlineShoppingCart/> অর্ডার করুন</Link></li>
                                  <div className={styles.BannerpadBtm}></div>
                                
                                 </Col>
@@ -263,7 +263,7 @@ export default function LandingTwelve() {
                                <div className={styles.banner5bgAbstTxt}>
                                    <h4>মুল্য-১২০০ টাকা</h4>
                                    <h5>সারা দেশে ফ্রি হোম ডেলিভারি</h5>
-                                   <li> <Link href='#' className={`${styles.bg} ${styles.bg2}`}> <AiOutlineShoppingCart/> অর্ডার করুন</Link></li>
+                                   <li> <Link href='#placeAnOrder' className={`${styles.bg} ${styles.bg2}`}> <AiOutlineShoppingCart/> অর্ডার করুন</Link></li>
                                    
                                </div>
                                
@@ -298,7 +298,7 @@ export default function LandingTwelve() {
 
 
                     <h2>নিচের বাটনে ক্লিক করে এখুনি অর্ডার করুন</h2>
-                    <li> <Link href='#' className={`${styles.bg} ${styles.bg3}`}> <AiOutlineShoppingCart/> অর্ডার করুন</Link></li>
+                    <li> <Link href='#placeAnOrder' className={`${styles.bg} ${styles.bg3}`}> <AiOutlineShoppingCart/> অর্ডার করুন</Link></li>
                   {/* <img src="images/landing_12/m11.svg" alt="img" /> */}
 
                 </div>
@@ -312,7 +312,7 @@ export default function LandingTwelve() {
             OrderConfirmFrom--
             ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
          <section className={styles.section_gaps}></section>
-          <section className="OrderConfirmFrom">
+          <section className="OrderConfirmFrom" id="placeAnOrder">
 
           <Container>
 
@@ -343,7 +343,7 @@ export default function LandingTwelve() {
                     <h3>Paymet</h3>
 
                     <div className="CustomeInput d_flex">
-                      <input type="checkbox" name="" id='CashOn'/>
+                      <input type="checkbox" name="" id='CashOn' checked/>
                       <label htmlFor="CashOn">ক্যাশ অন ডেলিভারি</label>
                     </div>
 

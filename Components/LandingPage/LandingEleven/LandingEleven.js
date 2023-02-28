@@ -97,7 +97,7 @@ const LandingEleven = () => {
 
                         <div className={styles.btnBox}>
                                         
-                            <Link href='' className={styles.bg}> <AiOutlineShoppingCart/> অর্ডার করুন</Link>
+                            <Link href='#placeAnOrder' className={styles.bg}> <AiOutlineShoppingCart/> অর্ডার করুন</Link>
 
                             <h2>ডেলিভারী চার্জ ফ্রি</h2>
 
@@ -221,7 +221,7 @@ const LandingEleven = () => {
 
                         <div className={styles.btnBox}>
                                         
-                            <Link href='' className={styles.bg}> <AiOutlineShoppingCart/> অর্ডার করুন</Link>
+                            <Link href='#placeAnOrder' className={styles.bg}> <AiOutlineShoppingCart/> অর্ডার করুন</Link>
 
 
                         </div>
@@ -387,7 +387,7 @@ const LandingEleven = () => {
 
                 <div className={styles.btnBox}>
                                         
-                <Link href='' className={styles.bg}> <AiOutlineShoppingCart/> অর্ডার করুন</Link>
+                <Link href='#placeAnOrder' className={styles.bg}> <AiOutlineShoppingCart/> অর্ডার করুন</Link>
 
                 </div>
 
@@ -418,7 +418,7 @@ const LandingEleven = () => {
         {/* Section Gaps */}
         <div className={styles.section_gaps}></div>
 
-        <section className="OrderConfirmFrom">
+        <section className="OrderConfirmFrom" id="placeAnOrder">
 
             <Container>
 
@@ -462,7 +462,7 @@ const LandingEleven = () => {
                         <h3>Paymet</h3>
 
                         <div className="CustomeInput d_flex">
-                            <input type="checkbox" name="" id='CashOn'/>
+                            <input type="checkbox" name="" id='CashOn' checked/>
                             <label htmlFor="CashOn">ক্যাশ অন ডেলিভারি</label>
                         </div>
 
@@ -641,7 +641,7 @@ const LandingEleven = () => {
 
                                 <div className={styles.btnBox}>
                                         
-                                    <Link href='' className={styles.bg}> <AiOutlineShoppingCart/> অর্ডার করুন</Link>
+                                    <Link href='#placeAnOrder' className={styles.bg}> <AiOutlineShoppingCart/> অর্ডার করুন</Link>
 
 
                                 </div>

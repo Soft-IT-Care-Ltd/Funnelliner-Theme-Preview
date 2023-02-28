@@ -311,7 +311,7 @@ const LandingOne = (props) => {
                 </h6>
 
                 <div className='OrderNow'>
-                  <Link href='' className='bg'>
+                  <Link href='#form_part' className='bg'>
                     অর্ডার করুন <BsArrowRight />{" "}
                   </Link>
                 </div>
@@ -747,7 +747,7 @@ const LandingOne = (props) => {
                   <img src='images/landing_2/video.png' alt='' />
                 </div>
 
-                <Link href='' className='bg'>
+                <Link href='#form_part' className='bg'>
                   অর্ডার করুন <BsArrowRight />{" "}
                 </Link>
               </div>
@@ -1208,6 +1208,7 @@ const LandingOne = (props) => {
                           id='delivary_input'
                           defaultChecked={true}
                           placeholder=''
+                          checked
                         />
                         <label htmlFor='delivary_input'>
                           {" "}

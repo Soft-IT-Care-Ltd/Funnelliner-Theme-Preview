@@ -51,7 +51,7 @@ const LandingFive = () => {
                       <h3 className={styles.bgh3txt}>ওজন ১ থেকে ১,৫ kg</h3>
                   </div>
 
-                  <Link href='#' className={styles.bg}> <AiOutlineShoppingCart/> অর্ডার করতে ক্লিক করুন </Link>
+                  <Link href='#placeAnOrder' className={styles.bg}> <AiOutlineShoppingCart/> অর্ডার করতে ক্লিক করুন </Link>
 
               </div>
 
@@ -108,7 +108,7 @@ const LandingFive = () => {
                       <h3 className={styles.bgh3txt}>ওজন ১ থেকে ১,৫ kg</h3>
                   </div>
      
-                  <Link href='#' className={`${styles.bg} ${styles.aLink}`}> <AiOutlineShoppingCart/> অর্ডার করতে ক্লিক করুন </Link>
+                  <Link href='#placeAnOrder' className={`${styles.bg} ${styles.aLink}`}> <AiOutlineShoppingCart/> অর্ডার করতে ক্লিক করুন </Link>
 
               </div>
 
@@ -267,7 +267,7 @@ const LandingFive = () => {
                   <div className={styles.card4abTextBox}>
                     <div className={styles.card4abText}>
                         <h2 className={styles.banner4h2}>ডিস্কাউন্ট মূল্যঃ ১৬৫০ টাকা</h2>
-                        <Link href='#' className={`${styles.bg} ${styles.mylink}`}> <AiOutlineShoppingCart/> অর্ডার করতে ক্লিক করুন </Link>
+                        <Link href='#placeAnOrder' className={`${styles.bg} ${styles.mylink}`}> <AiOutlineShoppingCart/> অর্ডার করতে ক্লিক করুন </Link>
                         <p className={styles.banner4P}>বহু গবেষণায় দেখা গেছে, সামুদ্রিক মাছ ফুসফুসের <br/> স্বাস্থ্য ভালো রাখতে কার্যকর</p>
                      </div>
 
@@ -297,7 +297,7 @@ const LandingFive = () => {
       ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
 <section className={styles.section_gaps}></section>
 
- <section className="OrderConfirmFrom">
+ <section className="OrderConfirmFrom" id="placeAnOrder">
 
 <Container>
 
@@ -328,7 +328,7 @@ const LandingFive = () => {
           <h3>Paymet</h3>
 
           <div className="CustomeInput d_flex">
-            <input type="checkbox" name="" id='CashOn'/>
+            <input type="checkbox" name="" id='CashOn' checked/>
             <label htmlFor="CashOn">ক্যাশ অন ডেলিভারি</label>
           </div>
 
