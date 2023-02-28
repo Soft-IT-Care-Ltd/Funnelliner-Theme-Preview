@@ -20,22 +20,22 @@ const LandingFour = () => {
   const [shopID, setShopID] = useState();
   const [quantity, setQuantity] = useState(1);
 
-  async function fetchProducts(headers) {
-    const response = await fetch(`${process.env.API_URL}v1/customer/products`, {
-      headers: headers,
-    });
-    const data = await response.json();
+  // async function fetchProducts(headers) {
+  //   const response = await fetch(`${process.env.API_URL}v1/customer/products`, {
+  //     headers: headers,
+  //   });
+  //   const data = await response.json();
 
-    setProduct(data.data[data.data?.length - 1]);
-  }
+  //   setProduct(data.data[data.data?.length - 1]);
+  // }
 
-  useEffect(() => {
-    const headers = {
-     "shop-id": localStorage.getItem("shop_id"),
-    };
-    fetchProducts(headers).then((r) => console.log());
-    setShopID(localStorage.getItem("shop_id"));
-  }, []);
+  // useEffect(() => {
+  //   const headers = {
+  //    "shop-id": localStorage.getItem("shop_id"),
+  //   };
+  //   fetchProducts(headers).then((r) => console.log());
+  //   setShopID(localStorage.getItem("shop_id"));
+  // }, []);
 
   const handleQuantityChange = (e) => {
     setQuantity(parseInt(e.target.value));
