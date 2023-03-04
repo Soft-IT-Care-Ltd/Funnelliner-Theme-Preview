@@ -273,6 +273,7 @@ export default function LandingTen() {
           {/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
                   OrderConfirmFrom
                 ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
+                
           <section className={styles.section_gaps}></section>
 
           <section className="OrderConfirmFrom" id="placeAnOrder">
@@ -339,7 +340,9 @@ export default function LandingTen() {
                       <div className="left d_flex">
                         
                         <div className="img">
+                          
                           <img src="images/product.svg" alt="" />
+
                         </div>
 
                         <p>Flower Of Story Men’s Perfume Set Boss</p>
