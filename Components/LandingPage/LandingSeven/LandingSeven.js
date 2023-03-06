@@ -9,7 +9,10 @@ import { IoGameControllerOutline, IoBatteryChargingOutline } from "react-icons/i
 import { AiOutlineShoppingCart} from 'react-icons/ai';
 import { RiShoppingCart2Line } from "react-icons/ri";
 
-// lightgalary
+import Menubar from "../Common/Menubar/Menubar";
+import landingImageUrl from "../../../public/images/landing_7/logo.svg";
+
+
 
 
 
@@ -27,6 +30,8 @@ export default function LandingSeven() {
 
     <div className={styles.LandingSeven}>
         
+
+
       {/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
         Banner
       ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
@@ -34,9 +39,11 @@ export default function LandingSeven() {
 
          <Container fluid>
 
+         <Menubar logoImage={landingImageUrl}></Menubar>
+
                 <div className={styles.logoBox}>
 
-                    <img src="images/landing_7/logo.svg" alt="img" />
+                    {/* <img src="images/landing_7/logo.svg" alt="img" /> */}
 
                 </div>
 

@@ -5,7 +5,7 @@ const index = () => {
 
     return (
 
-        <div className='five'>
+        <div className='Landing__Five'>
 
             <LandingFive></LandingFive>
         

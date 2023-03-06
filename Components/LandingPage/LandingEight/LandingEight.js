@@ -10,6 +10,10 @@ import { FiMail } from 'react-icons/fi';
 import { RiShoppingCart2Line } from 'react-icons/ri';
 import styles from '../../../styles/landing_eight/landing_eight.module.css';
 
+// logo
+import Menubar from "../Common/Menubar/Menubar";
+import landingImageUrl from "../../../public/images/landing_8/logo.svg";
+
 const LandingEight = () => {
 
     const today = new Date();
@@ -28,13 +32,15 @@ const LandingEight = () => {
 
                 <Container>
 
+                <Menubar logoImage={landingImageUrl}></Menubar>
+
                     <Row className='justify-content-center'>
 
                         <Col lg={12}>
 
                         <div className={styles.LogoDiv}>
 
-                                <img className={styles.imgBlack} src="images/landing_8/logo.svg" alt="" />
+                                {/* <img className={styles.imgBlack} src="images/landing_8/logo.svg" alt="" /> */}
 
 
                         </div>

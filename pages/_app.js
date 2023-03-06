@@ -18,6 +18,16 @@ import '../styles/main_page/main_page.css';
 // import "../styles/landing_one/landing_one.css";
 import "../styles/landing_two/landing_two.css";
 import "../styles/landing_two/landing_two_media.css";
+import "../styles/landing_four/landing_four.css";
+import "../styles/landing_five/landing_five.css";
+import "../styles/landing_six/landing_six.css";
+import "../styles/landing_seven/landing_seven.css";
+import "../styles/landing_eight/landing_eight.css";
+import "../styles/landing_nine/landing_nine.css";
+import "../styles/landing_ten/landing_ten.css";
+import "../styles/landing_eleven/landing_eleven.css";
+import "../styles/landing_twelve/landing_twelve.css";
+import "../styles/landing_thirteen/landing_thirteen.css";
 
 // Theme Css
 import "../styles/theme_1/style.css";

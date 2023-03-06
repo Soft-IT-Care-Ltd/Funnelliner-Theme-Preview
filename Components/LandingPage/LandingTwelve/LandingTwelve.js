@@ -9,6 +9,9 @@ import { FiMail} from "react-icons/fi";
 import { FaFacebookF,FaLinkedinIn } from "react-icons/fa";
 import { RiShoppingCart2Line } from "react-icons/ri";
 
+import Menubar from "../Common/Menubar/Menubar";
+import landingImageUrl from "../../../public/images/landing_12/logo.svg";
+
 
 
 
@@ -24,7 +27,9 @@ export default function LandingTwelve() {
                 Banner
               ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
         <section>
+
             <Container fluid className={styles.BannerCon}>
+
                                     <div >
                                         <div className={styles.BannerRelBox}>
                                             <img className={styles.BannerAbsBox} src="images/landing_12/m3.svg" alt="img" />
@@ -33,12 +38,17 @@ export default function LandingTwelve() {
 
 
                 <div className={styles.Banner}> 
+
                     <Container className={styles.BannerCon1}>
+
+                        <Menubar logoImageLeft={landingImageUrl}></Menubar>
+
                             <Row className={styles.BannerCon1}>
+
                                 <Col xs={12} sm={6} className={styles.myColP}>
 
                                 <div className={styles.BannerTxtBox}>
-                                    <img className={styles.LogoLD} src='images/landing_12/logo.svg' alt='img'></img>
+                                    {/* <img className={styles.LogoLD} src='images/landing_12/logo.svg' alt='img'></img> */}
                                     <h1>ফোনে চার্জ হতে সময় লাগছে? <span className={styles.ColorCng}>'নিনজা টেকনিক'</span> ব্যবহার করে <span className={styles.ColorCng}>Smartphone, Smartwatch, wireless phone</span> চার্জ  করুন কম সময়ে।</h1>
                                  </div>
 

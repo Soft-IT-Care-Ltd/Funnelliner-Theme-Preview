@@ -3,7 +3,7 @@ import LandingFour from '../../Components/LandingPage/LandingFour/LandingFour'
 
 const index = () => {
   return (
-        <div className='LandingNine'>
+        <div className='Landing__Four'>
 
            <LandingFour/>
 

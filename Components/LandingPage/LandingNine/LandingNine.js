@@ -8,6 +8,11 @@ import { FiFacebook, FiInstagram, FiTwitter } from 'react-icons/fi';
 import { RiShoppingCart2Line } from 'react-icons/ri';
 import styles from '../../../styles/landing_nine/landing_nine.module.css';
 
+// logo
+
+import Menubar from "../Common/Menubar/Menubar";
+import landingImageUrl from "../../../public/images/landing_9/logo9.svg";
+
 const LandingNine = () => {
 
       const today = new Date();
@@ -25,6 +30,9 @@ const LandingNine = () => {
 
             <Container>
 
+            <Menubar logoImageLeft={landingImageUrl}></Menubar>
+
+
                 <Row>
 
                     <Col lg={9}>
@@ -32,7 +40,7 @@ const LandingNine = () => {
                         <div className={styles.BannerContent}>
                             <div className={styles.Logo}>
 
-                              <img className={styles.imgBlack} src="images/landing_9/logo9.svg" alt="" />
+                              {/* <img className={styles.imgBlack} src="images/landing_9/logo9.svg" alt="" /> */}
 
 
                             </div>

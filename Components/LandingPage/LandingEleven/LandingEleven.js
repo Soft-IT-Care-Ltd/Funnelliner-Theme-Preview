@@ -9,6 +9,10 @@ import { FiFacebook, FiInstagram, FiMail, FiTwitter } from 'react-icons/fi';
 import { RiShoppingCart2Line } from 'react-icons/ri';
 import styles from '../../../styles/landing_eleven/landing_eleven.module.css';
 
+import Menubar from "../Common/Menubar/Menubar";
+import landingImageUrl from "../../../public/images/landing_11/logo.svg";
+
+
 
 const LandingEleven = () => {
     
@@ -43,13 +47,15 @@ const LandingEleven = () => {
 
             <Container>
 
+            <Menubar logoImageLeft={landingImageUrl}></Menubar>
+
                 <Row>
 
                     <Col lg={5}>
 
                         <div className={styles.Logo}>
 
-                            <img className='' src="images/landing_11/logo.svg" alt="" />
+                            {/* <img className='' src="images/landing_11/logo.svg" alt="" /> */}
 
                         </div>
 

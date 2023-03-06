@@ -9,6 +9,9 @@ import { IoCallOutline } from "react-icons/io5";
 import { FiMail,FiFacebook,FiTwitter } from "react-icons/fi";
 import { RiShoppingCart2Line } from "react-icons/ri";
 
+import Menubar from "../Common/Menubar/Menubar";
+import landingImageUrl from "../../../public/images/landing_5/logo.svg";
+
 
 
 const LandingFive = () => {
@@ -32,12 +35,15 @@ const LandingFive = () => {
 
         <Container className={styles.BigDivece1}>
 
+        <Menubar logoImageLeft={landingImageUrl}></Menubar>
+
+
           <Row className='d_flex'>
 
             <Col lg={6}>
 
               <div className={styles.BannerLogo}>
-                <img  src="images/landing_5/logo.svg" alt="" />
+                {/* <img  src="images/landing_5/logo.svg" alt="" /> */}
               </div>
 
               <div className={styles.BannerText}>

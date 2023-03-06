@@ -4,7 +4,7 @@ import LandingSix from '../../Components/LandingPage/LandingSix/LandingSix'
 const index = () => {
   return (
     <>
-    <div className="LandingSix">
+    <div className='Landing__Six'>
         <LandingSix></LandingSix>
 
     </div>

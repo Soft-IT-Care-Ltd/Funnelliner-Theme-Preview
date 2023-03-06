@@ -10,6 +10,9 @@ import { FiFacebook, FiInstagram, FiTwitter } from 'react-icons/fi';
 import { RiShoppingCart2Line } from 'react-icons/ri';
 import styles from '../../../styles/landing_thirteen/landing_thirteen.module.css';
 
+import Menubar from "../Common/Menubar/Menubar";
+import landingImageUrl from "../../../public/images/landing_13/logo_milk.svg";
+
 const LandingThirteen = () => {
 
     const today = new Date();
@@ -25,9 +28,11 @@ const LandingThirteen = () => {
         ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
        <section className={styles.topBar}>
 
+             <Menubar logoImage={landingImageUrl}></Menubar>
+
             <div className={styles.LogoDiv}>
 
-                <img className='' src="images/landing_13/logo_milk.svg" alt="" />
+                {/* <img className='' src="images/landing_13/logo_milk.svg" alt="" /> */}
 
             </div>
 

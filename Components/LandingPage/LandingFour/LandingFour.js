@@ -12,6 +12,9 @@ import { useForm } from "react-hook-form";
 import axios from "axios";
 import swal from "sweetalert";
 
+import Menubar from "../Common/Menubar/Menubar";
+import landingImageUrl from "../../../public/images/landing_4/logo.svg";
+
 
 
 
@@ -101,13 +104,15 @@ const LandingFour = () => {
 
         <Container>
 
+        <Menubar logoImageLeft={landingImageUrl}></Menubar>
+
           <Row>
 
             <Col lg={6}>
 
               <div className={styles.BannerContent}>
                 <div className={styles.Logo}>
-                  <img src="images/landing_4/logo.svg" alt="" />
+                  {/* <img src="images/landing_4/logo.svg" alt="" /> */}
                 </div>
 
                 <div className={styles.text}>

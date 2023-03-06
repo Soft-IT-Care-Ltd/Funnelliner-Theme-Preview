@@ -7,6 +7,10 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 import { RiShoppingCart2Line } from 'react-icons/ri';
 import styles from '../../../styles/landing_six/landing_six.module.css';
 
+import Menubar from "../Common/Menubar/Menubar";
+import landingImageUrl from "../../../public/images/landing_6/bike_logo.svg";
+import landingImageUrl2 from "../../../public/images/landing_6/logo-2.svg";
+
 const LandingSix = () => {
 
     const today = new Date();
@@ -23,6 +27,13 @@ const LandingSix = () => {
         <section className={styles.Banner}>
 
             <Container>
+                <div className={styles.imgBlack}>
+                    <Menubar logoImageLeft={landingImageUrl}></Menubar>
+                </div>
+
+                <div className={styles.imgWhite}>
+                    <Menubar logoImageLeft={landingImageUrl2}></Menubar>
+                </div>
 
                 <Row>
 
@@ -32,8 +43,8 @@ const LandingSix = () => {
 
                             <div className={styles.Logo}>
 
-                                <img className={styles.imgBlack} src="images/landing_6/bike_logo.svg" alt="" />
-                                <img className={styles.imgWhite} src="images/landing_6/logo-2.svg" alt="" />
+                                {/* <img className={styles.imgBlack} src="images/landing_6/bike_logo.svg" alt="" /> */}
+                                {/* <img className={styles.imgWhite} src="images/landing_6/logo-2.svg" alt="" /> */}
                                 
 
                             </div>

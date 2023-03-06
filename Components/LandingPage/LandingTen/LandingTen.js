@@ -8,6 +8,9 @@ import { IoCallOutline } from "react-icons/io5";
 import { FiMail,FiFacebook,FiTwitter } from "react-icons/fi";
 import { RiShoppingCart2Line } from "react-icons/ri";
 
+import Menubar from "../Common/Menubar/Menubar";
+import landingImageUrl from "../../../public/images/landing_10/logo.svg";
+
 
 
 export default function LandingTen() {
@@ -27,6 +30,8 @@ export default function LandingTen() {
         <section className={styles.banner}>
                
               <Container>
+
+              <Menubar logoImageLeft={landingImageUrl}></Menubar>
                
                   <Row className={styles.Rowrvs}>
 
@@ -35,7 +40,11 @@ export default function LandingTen() {
                             
 
                             <div className={styles.TopTxtdev}>
-                               <div className={styles.logo}><img src="images/landing_10/logo.svg" alt="img" /></div>
+                               <div className={styles.logo}>
+
+                                {/* <img src="images/landing_10/logo.svg" alt="img" /> */}
+                                
+                                </div>
                                <h1>জান্নাতে চাবি কুরআন মজিদ পড়ুন সহজ সরল পবিত্র জীবন গড়ুন</h1>
                                <span className={styles.span1}>বাংলা অনুবাদ ও সংক্ষিপ্ত তফসীর</span>
                                <h5>পূর্বের হাদিয়া ১,৭৯০/- টাকা</h5>
