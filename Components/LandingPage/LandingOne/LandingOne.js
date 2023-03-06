@@ -21,6 +21,14 @@ import { RiShoppingCart2Line } from "react-icons/ri";
 // import { useEditor, useNode } from "@craftjs/core";
 import ContentEditable from "react-contenteditable";
 import Context from "../../Context";
+import Order from "../Common/Order";
+
+
+// Menu Image Url
+import landingImageUrl from "../../../public/images/landing_1/logo.png";
+import Menubar from "../Common/Menubar/Menubar";
+
+
 
 const LandingOne = (props) => {
   const baseUrl = "https://funnelliner.com";
@@ -83,22 +91,16 @@ const LandingOne = (props) => {
 
   return (
     <div className={styles.LandingOne}>
+
+      {/* Menubar */}
+      <Menubar logoImage={landingImageUrl}></Menubar>
+
       {/* Banner */}
       <section id='banner'>
         <Container>
           <Row className='d_flex'>
             <Col lg={6}>
               <div className={styles.banner_content}>
-                {/* <!-- logo --> */}
-                <div className='logo Desktop'>
-                  <img
-                    src={
-                      logo === undefined ? "images/landing_1/logo.png" : logo
-                    }
-                    alt=''
-                  />
-                </div>
-
                 {/* <!-- text --> */}
                 <div className={styles.text}>
                   <h3>{props.heroContent}</h3>
@@ -107,12 +109,6 @@ const LandingOne = (props) => {
             </Col>
 
             <Col lg={6}>
-              <div className={styles.banner_content}>
-                {/* <!-- logo --> */}
-                <div className={styles["logo Mobile"]}>
-                  <img src='/images/landing_1/logo.png' alt='' />
-                </div>
-              </div>
 
               <div className={styles.banner_img}>
                 <img src='/images/landing_1/banner.png' alt='' />
@@ -645,119 +641,12 @@ const LandingOne = (props) => {
           </div>
         </Container>
       </section>
+      
+      {/* order */}
+      <section id="Order">
+        
+        <Order></Order>
 
-      <section className='OrderConfirmFrom' id="Order">
-        <Container>
-          <form>
-            <Row>
-              {/* left */}
-              <Col lg={7}>
-                <div className='OrderConfirmLeft'>
-                  <h3>Billing details</h3>
-
-                  <div className='CustomeInput'>
-                    <input
-                      {...register("customerName", { required: true })}
-                      type='text'
-                      placeholder=' আপনার নাম লিখুন'
-                    />
-                    {errors.customerName && (
-                      <span style={{ color: "red" }}>Name is required</span>
-                    )}
-                  </div>
-
-                  <div className='CustomeInput'>
-                    <input
-                      {...register(
-                        "customerMobile",
-                        { required: true },
-                        { min: 11, max: 15 }
-                      )}
-                      type='text'
-                      placeholder=' আপনার মোবাইল নাম্বার লিখুন'
-                    />
-                    {errors.customerMobile && (
-                      <span style={{ color: "red" }}>
-                        Valid Mobile Number require
-                      </span>
-                    )}
-                  </div>
-
-                  <div className='CustomeInput'>
-                    <input
-                      {...register("customerAddress", { required: true })}
-                      type='text'
-                      placeholder=' আপনার সম্পূর্ণ ঠিকানা লিখুন'
-                    />
-                    {errors.customerAddress && (
-                      <span style={{ color: "red" }}>Address is required</span>
-                    )}
-                  </div>
-
-                  {/* Payment */}
-                  <div className='Payment'>
-                    <h3>Paymet</h3>
-
-                    <div className='CustomeInput d_flex'>
-                      <input type='checkbox' name='' id='CashOn' checked />
-                      <label htmlFor='CashOn'>ক্যাশ অন ডেলিভারি</label>
-                    </div>
-
-                    <div className='ArrowBg'>
-                      <p>Pay with cash on delivery.</p>
-                    </div>
-                  </div>
-                </div>
-              </Col>
-
-              {/* right */}
-              <Col lg={5}>
-                <div className='OrderConfirmRight'>
-                  <h3>Your order</h3>
-
-                  <ul>
-                    <li>
-                      <h4>Product</h4>
-                      <h5>Subtotal</h5>
-                    </li>
-
-                    <li>
-                      <div className='left d_flex'>
-                        <div className='img'>
-                          <img src='images/product.svg' alt='' />
-                        </div>
-
-                        <p>Flower Of Story Men’s Perfume Set Boss</p>
-                      </div>
-
-                      <div className='right d_flex'>
-                        <input type='number' />
-
-                        <h5>BDT 1,690.00</h5>
-                      </div>
-                    </li>
-
-                    <li>
-                      <h5>Subtotal</h5>
-                      <h5>1,690.00</h5>
-                    </li>
-
-                    <li>
-                      <h4>Total</h4>
-                      <h4>1,690.00</h4>
-                    </li>
-                  </ul>
-
-                  <button type='submit'>
-                    {" "}
-                    <RiShoppingCart2Line />
-                    Place Order BDT 49.00
-                  </button>
-                </div>
-              </Col>
-            </Row>
-          </form>
-        </Container>
       </section>
 
       {/* Fotoer */}

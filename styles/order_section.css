@@ -98,12 +98,12 @@
   content: "";
   position: absolute;
   left: 5px;
-  top: 13px;
+  top: 15px;
   background: white;
   width: 2px;
   height: 2px;
   box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white,
-    4px -6px 0 white, 4px -8px 0 white;
+  4px -6px 0 white, 4px -8px 0 white;
   transform: rotate(45deg);
 }
 
@@ -199,7 +199,7 @@
 
 .OrderConfirmRight button {
   width: 100%;
-  background: var(--bg_color2);
+  background: #FF466D;
   padding: 12px;
   border-radius: 10px;
   font-size: 18px;
@@ -261,16 +261,60 @@
   margin-top: 0;
 }
 
+#form_part button{
+  border: none;
+}
+
 /* ------------------------------------------------------------------------------------------------------
   ------------------------------------------------------------------------------------------------------
       Media
   ------------------------------------------------------------------------------------------------------
   ------------------------------------------------------------------------------------------------------*/
 @media (max-width: 900px) {
+
   .OrderConfirmRight {
     margin-top: 50px;
   }
   .OrderConfirmLeft {
     width: 100%;
   }
+  .OrderConfirmLeft .Payment {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 500px) {
+  
+  .OrderConfirmRight ul .left{
+    display: block;
+  }
+
+  .OrderConfirmRight ul .img img{
+    height: 60px;
+    width: 60px;
+  }
+
+  .OrderConfirmRight ul .left p {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .OrderConfirmRight ul .right{
+    display: block;
+    text-align: right;
+  }
+
+  .OrderConfirmRight ul .right input {
+    width: 80%;
+  }
+
+  .OrderConfirmRight ul h5{
+    margin-top: 10px;
+  }
+
+  .OrderConfirmRight ul li {
+    padding: 15px 20px;
+}
+
 }
