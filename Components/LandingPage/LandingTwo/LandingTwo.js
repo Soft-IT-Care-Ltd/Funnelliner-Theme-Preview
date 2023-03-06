@@ -1383,7 +1383,7 @@ const LandingOne = (props) => {
                 <ul>
                   <li className='d_flex'>
                     <FiMail />{" "}
-                    <a href='mailto:oder@freshen.com'>oder@freshen.com</a>{" "}
+                    <a href='mailto:oder@freshen.com'>support@funnelliner.com</a>{" "}
                   </li>
                 </ul>
               </div>

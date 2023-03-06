@@ -501,7 +501,7 @@
 
 
 
-/* Other----- */
+/* Other-----Ibrahim */
 
 
 .tinyFooter p a{
@@ -527,11 +527,33 @@
 
   }
 
+  .FromH2{
+    text-align: center;
+    padding-bottom: 75px !important ; 
+  }
+
+
+
 /* ==============FooterWidget end=========================================================== */
 
 
 /* ===================================================================================================
 ================================= Media Section small desktop==================================================== */
+@media (max-width: 1440px){
+
+    .LandingThree .BannerSection .title h1 {
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 46px;
+        line-height: 146.1%;
+    }
+
+
+}
+
+
+
+
 @media (max-width: 1305px) {
     .LandingThree .BannerSection .title h1 {
         color: #ffffff;
@@ -914,6 +936,13 @@
     .LandingThree .button3{
         padding: 0px 20px !important;
     }
+
+    .FromH2{
+        text-align: center;
+        padding-bottom: 55px !important ; 
+      }
+    
+
 }
 
 /* ===================================================================================================

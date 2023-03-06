@@ -17,12 +17,12 @@ const index = () => {
 
              cardOneTitle={"Executive Night 25ml"}
              cardOneText={"পারফিউম এটি শুধুমাত্র একটি সুবাস নয় এটি একটি ঐতিহ্য"}
-             cardTwoTitle={"Executive Night 25ml"}
-             cardTwoText={"পারফিউম এটি শুধুমাত্র একটি সুবাস নয় এটি একটি ঐতিহ্য"}
-             cardThreeTitle={"Executive Night 25ml"}
-             cardThreeText={"পারফিউম এটি শুধুমাত্র একটি সুবাস নয় এটি একটি ঐতিহ্য"}
-             cardFourTitle={"Executive Night 25ml"}
-             cardFourText={"পারফিউম এটি শুধুমাত্র একটি সুবাস নয় এটি একটি ঐতিহ্য"}
+             cardTwoTitle={"Boss Classic 25ml"}
+             cardTwoText={"মনের স্থিতি উন্নয়ন করে আপনাকে আরাম এবং নির্ভরশীলতা দেয়।"}
+             cardThreeTitle={"Jiangbei 25ml"}
+             cardThreeText={"আপনাকে সামর্থ্য দেয় যে আপনি স্বস্তি এবং অভিনব হতে পারেন।"}
+             cardFourTitle={"Cologne 25ml"}
+             cardFourText={"আপনার মনকে শান্ত করতে পারে এবং চিন্তা কমাতে সাহায্য করতে পারে।"}
              cardTitleFontSize={23}
              cardTextFontSize={17}
 
@@ -32,9 +32,9 @@ const index = () => {
              whyThisProductForYou={"নিচের এই কারণ গুলো যদি আপনার সাথে হয়ে থাক তবে পারফিউম টি আপনার জন্য"}
              whyThisProductFontSize={30}
              reason_1={"ট্রাভেল করায় সৃষ্টি হয় ঘাম।যা আপনার গায়ে সৃষ্টি করে দুর্গন্ধ।"}
-             reason_2={"ট্রাভেল করায় সৃষ্টি হয় ঘাম।যা আপনার গায়ে সৃষ্টি করে দুর্গন্ধ।"}
-             reason_3={"ট্রাভেল করায় সৃষ্টি হয় ঘাম।যা আপনার গায়ে সৃষ্টি করে দুর্গন্ধ।"}
-             reason_4={"ট্রাভেল করায় সৃষ্টি হয় ঘাম।যা আপনার গায়ে সৃষ্টি করে দুর্গন্ধ।"}
+             reason_2={"বাসে অনেক মানুষের বাজে গন্ধের সৃষ্টি হয়। আপনি ভুক্তভোগী।"}
+             reason_3={"ঘামের জন্য মিটিং-এ আত্মবিশ্বাসের সাথে কথা বলতে পারছেন না ।"}
+             reason_4={"চাচ্ছেন এমন পারফিউম ব্যবহার করতে যা দীর্ঘ সময় স্মেল দিবে।"}
              reasonFontSize={20}
              whyOurProductIsGood={"আমাদের পারফিউম কেন ভালো?"}
              whyOurProductIsGoodFontSize={30}

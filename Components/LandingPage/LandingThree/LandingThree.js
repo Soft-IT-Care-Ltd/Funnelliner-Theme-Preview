@@ -435,6 +435,9 @@ const LandingThree = () => {
         <Container>
           <form>
             <Row>
+
+            <h2 className="FromH2">তাই আর দেরি না করে আজই অর্ডার করুন</h2>
+
               {/* left */}
               <Col lg={7}>
                 <div className='OrderConfirmLeft'>
@@ -515,7 +518,7 @@ const LandingThree = () => {
                         <img src="images/product.svg" alt="" />
                         </div>
 
-                        <p>Flower Of Story Men’s Perfume Set Boss</p>
+                        <p>Ghee Of Story Ghee Set Boss</p>
                       </div>
 
                       <div className='right d_flex'>
@@ -526,7 +529,7 @@ const LandingThree = () => {
                           min={1}
                         />
 
-<h5>BDT 1,690.00</h5>
+                        <h5>BDT 1,690.00</h5>
                       </div>
                     </li>
 
