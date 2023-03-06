@@ -125,6 +125,15 @@
     padding: 0;
 }
 
+
+.Landing__Three .Menubar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: none;
+}
+
 /* ==============Banner Section================================================================ */
 
 .LandingThree .BannerSection {
@@ -133,8 +142,7 @@
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
-    padding-top: 100px;
-    padding-bottom: 150px;
+    padding: 150px 0;
 }
 
 .LandingThree .BannerSection .title {

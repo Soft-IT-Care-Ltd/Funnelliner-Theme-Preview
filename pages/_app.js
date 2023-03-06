@@ -8,6 +8,8 @@ import store from "../redux/store";
 // Common Css
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/common.css";
+import "../styles/order_section.css";
+import "../styles/common_component.css";
 
 // main_page_css
 import '../styles/main_page/main_page.css';

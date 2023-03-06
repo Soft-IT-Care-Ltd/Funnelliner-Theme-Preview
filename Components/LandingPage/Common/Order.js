@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { RiShoppingCart2Line } from "react-icons/ri";
 
 const Order = () => {
 
@@ -38,7 +39,7 @@ const Order = () => {
                   <h3>Paymet</h3>
 
                   <div className="CustomeInput d_flex">
-                    <input type="checkbox" name="" id='CashOn'/>
+                    <input type="checkbox" checked name="" id='CashOn'/>
                     <label htmlFor="CashOn">ক্যাশ অন ডেলিভারি</label>
                   </div>
 
@@ -100,7 +101,7 @@ const Order = () => {
                   
                 </ul>
 
-                  <button> <RiShoppingCart2Line/> Place Order BDT 49.00</button>
+                  <button> <RiShoppingCart2Line/> Place Order BDT 1,690.00</button>
 
               </div>
 

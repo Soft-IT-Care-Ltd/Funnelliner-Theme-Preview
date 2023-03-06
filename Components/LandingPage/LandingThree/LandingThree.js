@@ -16,6 +16,12 @@ import { RiShoppingCart2Line } from "react-icons/ri";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
+
+// Menu Image Url
+import landingImageUrl from "../../../public/images/landing_3/logo.png";
+import Menubar from "../Common/Menubar/Menubar";
+
+
 const LandingThree = () => {
   const [product, setProduct] = useState({});
   const [shopID, setShopID] = useState();
@@ -88,7 +94,13 @@ const LandingThree = () => {
   const year = today.getFullYear();  
 
   return (
-    <>
+    <div className="Landing__Three">
+
+
+      {/* Menubar */}
+      <Menubar logoImageLeft={landingImageUrl}></Menubar>
+
+
       {/* ------------------------------------------------------------------------   -----------------------------------------------------------
             Banner
         --------------------------------------------------------------------------------------------------------------------------------------*/}
@@ -96,9 +108,6 @@ const LandingThree = () => {
         <Container>
           <Row>
             <Col lg={8}>
-              <div className='logo'>
-                <img src='images/landing_3/logo.png' alt='' />
-              </div>
 
               <div className='title'>
                 <h1>
@@ -728,7 +737,7 @@ const LandingThree = () => {
       {/* -----------------------------------------------------------------------------------------------------------------------------------
             footerWidget Section
         --------------------------------------------------------------------------------------------------------------------------------------*/}
-    </>
+    </div>
   );
 };
 

@@ -17,6 +17,17 @@ import axios from "axios";
 
 import { useEditor, useNode } from "@craftjs/core";
 import ContentEditable from "react-contenteditable";
+
+
+// Menu Image Url
+import landingImageUrl from "../../../public/images/landing_2/logo.png";
+import Menubar from "../Common/Menubar/Menubar";
+
+
+
+
+
+
 const LandingOne = (props) => {
   const [product, setProduct] = useState({});
   const [shopID, setShopID] = useState();
@@ -165,44 +176,9 @@ const LandingOne = (props) => {
 
   return (
     <div className='LandingTwo'>
-      {/* Banner */}
-      <section className='Logo'>
-        <img
-          src={logo === undefined ? "images/landing_2/logo.png" : logo}
-          alt=''
-        />
-        {editActive === true && (
-          <>
-            {" "}
-            <input
-              type='file'
-              id='file'
-              onChange={handleChangeLogo}
-              ref={inputFile}
-              style={{ display: "none" }}
-            />
-            <span
-              style={{ marginLeft: "4px", cursor: "pointer" }}
-              onClick={onButtonClick}
-            >
-              <svg
-                fill='#000'
-                height='20px'
-                width='20px'
-                xmlns='http://www.w3.org/2000/svg'
-                viewBox='0 0 306.637 306.637'
-                xmlSpace='preserve'
-              >
-                <path d='M12.809 238.52L0 306.637l68.118-12.809 184.277-184.277-55.309-55.309L12.809 238.52zm47.981 41.423l-41.992 7.896 7.896-41.992L197.086 75.455l34.096 34.096L60.79 279.943zM251.329 0l-41.507 41.507 55.308 55.308 41.507-41.507L251.329 0zm-20.294 41.507l20.294-20.294 34.095 34.095-20.294 20.294-34.095-34.095z' />
-              </svg>
-            </span>
-          </>
-        )}
-        {/* <img src='images/landing_2/logo.png' alt='' /> */}
-        <div className='LogoOverlay'>
-          <img src='images/landing_2/top_overlay.png' alt='' />
-        </div>
-      </section>
+
+      {/* Menubar */}
+      <Menubar logoImage={landingImageUrl}></Menubar>
 
       {/* Banner */}
       <section className='Banner'>
