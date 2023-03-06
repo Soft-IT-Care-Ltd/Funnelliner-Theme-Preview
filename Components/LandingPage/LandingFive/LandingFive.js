@@ -301,7 +301,9 @@ const LandingFive = () => {
 
 <Container>
 
-  <Row>
+  <Row className={styles.OrderConfirmRow}>
+
+  <h2 className={styles.FromH2}>তাই আর দেরি না করে আজই অর্ডার করুন</h2>
 
     {/* left */}
     <Col lg={7}>
@@ -364,7 +366,7 @@ const LandingFive = () => {
                 <img src="images/product.svg" alt="" />
               </div>
 
-              <p>Flower Of Story Men’s Perfume Set Boss</p>
+              <p>Hilsa Of Story Hilsa Set Boss</p>
 
             </div>
 
@@ -412,11 +414,11 @@ const LandingFive = () => {
         <div className={styles.footerDiv}>
            <Row>
                <Col xs={12} sm={4}>
-                  <h2 className={styles.footerh2}>যোগাযোগ</h2>
+                  <h2 className={styles.footerh2}>Contact Us</h2>
                   <div className={styles.hr}></div>
                         <ul>
-                          <li className={styles.footerS}> <IoCallOutline className={styles.foottericon2}/> <span className={styles.footerSpan}>00 0392 96 32</span></li>
-                          <li> <FiMail className={styles.foottericon2}/> <span className={styles.footerSpan}>oder@freshen.com</span></li>
+                          <li className={styles.footerS}> <IoCallOutline className={styles.foottericon2}/> <span className={styles.footerSpan}>+8801894844452</span></li>
+                          <li> <FiMail className={styles.foottericon2}/> <span className={styles.footerSpan}>support@funnelliner.com</span></li>
                         </ul>
                      <div className={styles.footericon3}>
                      
@@ -425,7 +427,7 @@ const LandingFive = () => {
               </Col>
 
               <Col xs={12} sm={4}>
-                    <h2 className= {`${styles.footerh2} ${styles.footerh2TB}`}>প্রয়োজনীয় লিংক</h2>
+                    <h2 className= {`${styles.footerh2} ${styles.footerh2TB}`}>Important Link</h2>
                     <div className={styles.hrDev}></div>
 
 
@@ -433,8 +435,8 @@ const LandingFive = () => {
                           <ul>
                             
                           
-                            <li className={styles.footerS}> <span className= {styles.footerSpan} ><Link href="#">প্রাইভেসী পলিসি </Link></span></li>
-                            <li> <span className={styles.footerSpan}> <Link href="#">শর্তাবলী </Link></span></li>
+                            <li className={styles.footerS}> <span className= {styles.footerSpan} ><Link href="#"> Refund Policy  </Link></span></li>
+                            <li> <span className={styles.footerSpan}> <Link href="#">Privacy Policy </Link></span></li>
 
 
                         </ul> 

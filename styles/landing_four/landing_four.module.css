@@ -206,7 +206,9 @@
     border-radius: 20px;
     padding: 50px;
     margin-top: 30px;
+    height: 292px;
 }
+
 
 .WhyUsImg .WhyOverlay .WhyUsItem img{
     height: 50px;
@@ -372,6 +374,10 @@
    text-align: center;
   }
   
+  .FromH2{
+    text-align: center;
+    padding-bottom: 50px !important; 
+  }
  
 
 
@@ -417,6 +423,17 @@
         line-height: 50px;
     }
 
+
+    .WhyUsImg .WhyOverlay .WhyUsItem{
+        background: var(--white_color);
+        border-radius: 20px;
+        padding: 30px;
+        margin-top: 30px;
+        height: 292px;
+    }
+    
+    
+
 }
 
 @media (max-width: 1024px) {
@@ -443,6 +460,17 @@
     .FooterRight img{
         height: 120px;
     }
+
+
+    .WhyUsImg .WhyOverlay .WhyUsItem{
+        background: var(--white_color);
+        border-radius: 20px;
+        padding: 30px;
+        margin-top: 40px;
+        height: 292px;
+    }
+    
+
 
 }
 
@@ -533,6 +561,14 @@
         margin-top: 60px;
     }
 
+    .WhyUsImg .WhyOverlay .WhyUsItem{
+        background: var(--white_color);
+        border-radius: 20px;
+        padding: 30px;
+        margin-top: 30px;
+        height: 320px;
+    }
+    
 
 
 }
@@ -587,6 +623,15 @@
         width: 100%;
         text-align: center;
       }
+
+
+      .WhyUsImg .WhyOverlay .WhyUsItem{
+        background: var(--white_color);
+        border-radius: 20px;
+        padding: 23px;
+        margin-top: 30px;
+        height: 292px;
+    }
 
 }
 

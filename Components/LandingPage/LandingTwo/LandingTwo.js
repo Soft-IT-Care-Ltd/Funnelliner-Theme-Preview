@@ -155,6 +155,12 @@ const LandingOne = (props) => {
   const today = new Date();
   const year = today.getFullYear();
 
+  // Form 
+
+  const handleQuantityChange = (e) => {
+    setQuantity(parseInt(e.target.value));
+  };
+
 
 
   return (
@@ -1145,7 +1151,7 @@ const LandingOne = (props) => {
           <div className='form_part_content'>
 
               <Row>
-                <Col lg={6} sm={6}>
+                <Col lg={6} md={6}>
                   <div className='left_part'>
                     <h3>Billing details</h3>
 
@@ -1223,7 +1229,7 @@ const LandingOne = (props) => {
                   </div>
                 </Col>
 
-                <Col lg={6} sm={6}>
+                <Col lg={6} md={6}>
                   <div className='right_part'>
                     <h3>Your order</h3>
 
@@ -1240,21 +1246,42 @@ const LandingOne = (props) => {
                             <img src="images/product.svg" alt="" />
                             </div>
                             <div className='text'>
-                              <h4>{product?.product_name}</h4>
+                              <h4>{product?.product_name} Flower Of Story Men’s Perfume Set Boss</h4>
                             </div>
+
                           </div>
                           {/* middle */}
-                          <div className='middle'>
+
+                          <div className="right d_flex">
+
+                              <input
+                              type='number'
+                              onChange={handleQuantityChange}
+                              defaultValue={1}
+                              min={1}
+                              />
+
+                                <h5>BDT 1,690.00</h5>
+
+                          </div>
+
+                          
+                          {/* <div className='middle'>
                             <Select
                               onChange={setQuantity}
                               options={options}
                               placeholder='1'
                             />
-                          </div>
+
+
+                          </div> */}
+
                           {/* amount */}
-                          <div className='amount'>
+
+                          {/* <div className='amount'>
                             <h3> 1999</h3>
-                          </div>
+                          </div> */}
+
                         </li>
                         <li className='d_flex d_justify'>
                           <h5>Subtotal</h5>
@@ -1297,8 +1324,8 @@ const LandingOne = (props) => {
           <img src='images/landing_1/footer_right.png' alt='' />
         </div>
 
-        <Container>
-          <Row>
+        <Container className="FooterContentCon">
+          <Row >
             <Col lg={4} sm={4}>
               <div className='FooterContent'>
                 <h3>প্রয়োজনে কল করুন</h3>

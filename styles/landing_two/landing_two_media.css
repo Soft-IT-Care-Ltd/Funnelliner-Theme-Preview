@@ -235,13 +235,32 @@
         line-height: 35px;
         width: 100%;
     }
+
     .LandingTwo .WhyGood {
         background: #DE5074;
     }
+
     .LandingTwo .container a.bg, .LandingTwo .container button.bg {
         padding: 15px 30px;
         padding-bottom: 12px;
     }
 
+
+    .LandingTwo .right input{
+        border: 1px solid #cccccc;
+        margin: 0px 10px;
+    }
+
+    .LandingTwo .product_part ul li .left .img img {
+        height: 38px;
+    }
+
+    .FooterContentCon{
+        text-align: center;
+    }
+    .FooterContentCon li{
+        text-align: center;
+        justify-content: center;
+    }
 
 }

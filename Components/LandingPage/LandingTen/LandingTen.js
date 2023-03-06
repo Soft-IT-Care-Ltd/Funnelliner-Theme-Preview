@@ -10,7 +10,6 @@ import { RiShoppingCart2Line } from "react-icons/ri";
 
 
 
-
 export default function LandingTen() {
 
       const today = new Date();

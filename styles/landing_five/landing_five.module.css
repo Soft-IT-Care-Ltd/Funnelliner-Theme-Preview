@@ -7,6 +7,7 @@
   --bg_color2: #FCDC00;
   --bg_color3: #FD346E;
   --white_color: #fff;
+  overflow-x: hidden;
 }
 
 .container{
@@ -360,8 +361,8 @@ text-align: center;
     color: #6B6785;
     padding-top:90px;
     padding-bottom: 65px;
-    padding-left: 14%;
-    padding-right: 14%;
+    padding-left: 25%;
+    padding-right: 25%;
 
     text-align: justify;
     text-align: center;
@@ -509,6 +510,25 @@ padding-top: 30px;
     background-color: #FCDC00;
 }
 
+/* Order Confram */
+
+.OrderConfirmRow{
+
+    padding-bottom: 70px;
+}
+
+.FromH2{
+    text-align: center;
+    padding-bottom: 50px !important; 
+    padding-top: 30px !important;
+    font-size: 35px;
+  }
+
+
+
+
+
+
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
     START  PART-----Foooter
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
@@ -565,7 +585,12 @@ transform-origin: 1s;
 margin-bottom: 12px;
 
 }
+
 .footerDiv .foottericon2{
+    color: #FFFFFF;
+}
+
+.footerDiv a{
     color: #FFFFFF;
 }
 
@@ -639,6 +664,7 @@ margin-bottom: 12px;
     .LandingFive  a.bg{
         font-size: 25px;
         line-height: 42px;
+        padding: 22px 30px;
     }
     
     .card4abTextBox .banner4P{
@@ -843,6 +869,16 @@ margin-bottom: 12px;
             font-size: 19px;
         }
 
+
+        .absoluteimg1box .banner3ptxt2{
+            
+            padding-left: 15%;
+            padding-right: 15%;
+        
+        }
+        
+     
+
  }
 
 @media (max-width: 767.98px) {  
@@ -906,6 +942,14 @@ margin-bottom: 12px;
         height: 53px;
         width: 173;
     }
+
+
+    .FromH2{
+        text-align: center;
+        padding-bottom: 50px !important; 
+        padding-top: 30px !important;
+        font-size: 25px;
+      }
     
 
 }

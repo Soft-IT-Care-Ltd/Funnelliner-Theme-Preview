@@ -732,3 +732,32 @@ select:focus {
 .LandingThirteen .OrderConfirmLeft .Payment .ArrowBg p{
   color: #fff;
 }
+
+
+
+
+
+
+@media (max-width: 900px) {
+
+  .OrderConfirmRight{
+      margin-top: 50px;
+  }
+  .OrderConfirmLeft {
+      width: 100%;
+  }
+
+}
+
+/* ibrahim */
+
+@media (max-width: 500px) {
+
+  .OrderConfirmLeft .Payment {
+  
+      width: 300px;
+     
+  }
+
+  
+}

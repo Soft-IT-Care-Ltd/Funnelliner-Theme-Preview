@@ -25,7 +25,7 @@
 .LandingTwo .container h3 {
     font-weight: 500;
     font-size: 25px;
-    line-height: 28px;
+    line-height: 40px;
 }
 .LandingTwo .container h6 {
     line-height: 35px;
@@ -552,6 +552,15 @@
 
 .LandingTwo .form_part_content .dexcription button svg{
     margin-right: 10px;
+}
+
+.LandingTwo .right input{
+    border: 1px solid #cccccc;
+    margin: 0px 10px;
+    padding: 4px 0px;
+   text-align: center;
+   width: 85px;
+   border-radius: 10px;
 }
 
 
