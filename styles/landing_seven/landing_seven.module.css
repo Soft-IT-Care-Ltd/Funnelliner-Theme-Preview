@@ -160,7 +160,7 @@ color: #fff;
   
   @keyframes mymove {
     0%{rotate: 0;}
-    25%{scale: .5;}
+    25%{scale: .1;}
     50%{scale: 1;}
     100% {rotate: 360deg;}
   }
@@ -594,6 +594,10 @@ width: 100%;
 } */
 
 
+.footerSection{
+    padding-bottom: 50px;
+}
+
 .banner3TopTxtF{
     text-align: center;
 }
@@ -654,6 +658,20 @@ width: 100%;
     color: #9FDA12;
     font-size: 18px;
 }
+
+
+.lastlinks {
+    text-align: center;
+    font-size: 17px;
+    color:#BABABA;
+}
+
+.lastlinks a{
+    padding: 0 50px;
+    font-size: 17px;
+    color:#BABABA;
+}
+
 
 
 

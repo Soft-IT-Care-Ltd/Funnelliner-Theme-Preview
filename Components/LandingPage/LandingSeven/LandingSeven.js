@@ -101,9 +101,12 @@ export default function LandingSeven() {
 
                     <Col xs={12} md={9} lg={7} >
                         <div className={styles.banner2Txt}>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh diam
-                                    velit velit aliquam. Aliquam lorem risus a neque, ligula hac hendrerit
-                                    lectus. Eget et sit suspendisse elementum vitae.</p>
+                            <p>Capture sharp, cinematic images from the heavens with the best drones.
+                               And, they have become vital tools, especially for landscape and architecture
+                               shooters and videographers.
+
+                            </p>
+
                             <h2>BDT 29,500</h2>
                         </div>
 
@@ -162,7 +165,8 @@ export default function LandingSeven() {
                                 <div className={styles.myIcontxtBox}>
 
                                     <h2>4K Video Quality</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Nibh diam velit velit aliquam.</p>
+
+                                    <p>Best 4K drones – the best cameras in the sky.all with at least a 12MP 4K capable camera that hangs by a stabilized gimbal.</p>
 
                                 </div>
                                 
@@ -187,7 +191,7 @@ export default function LandingSeven() {
                                 <div className={styles.myIcontxtBox}>
 
                                     <h2>Best Stabilization</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Nibh diam velit velit aliquam.</p>
+                                    <p>A high-quality quadcopter can add production value to a film project or help you get a unique view for your travel vlog.</p>
 
                                 </div>
                                 
@@ -212,7 +216,7 @@ export default function LandingSeven() {
                                 <div className={styles.myIcontxtBox}>
 
                                     <h2>Full 360 Degree Control</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Nibh diam velit velit aliquam.</p>
+                                    <p>Equip your Mavic Mini with a 360° propeller guard that fully protects the propellers and improves flight Safety.</p>
 
                                 </div>
                                 
@@ -237,7 +241,7 @@ export default function LandingSeven() {
                                 <div className={styles.myIcontxtBox}>
 
                                     <h2>Day-Long Battery Life</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Nibh diam velit velit aliquam.</p>
+                                    <p>Work with both DJI Mavic Mini series and DJI Mini 2 series film project or help you get a unique view.</p>
 
                                 </div>
                                 
@@ -469,7 +473,7 @@ export default function LandingSeven() {
                         <img src="images/product.svg" alt="" />
                       </div>
 
-                      <p>Flower Of Story Men’s Perfume Set Boss</p>
+                      <p>Drone Of Story Drone Set Boss</p>
 
                     </div>
 
@@ -508,10 +512,6 @@ export default function LandingSeven() {
       </section>
 
 
-
-
-      
-      
       
       {/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
         Banner  -- Footer
@@ -551,22 +551,22 @@ export default function LandingSeven() {
                 </div>
             </div>
 
-          {/* <div className={styles.lastlinks}>
+          <div className={styles.lastlinks}>
               <Link href="#">Terms & Condition</Link>
               <Link href="#">Privacy Policy</Link>
               <Link href="#">FAQs</Link> 
-          </div> */}
+          </div>
         
              
               <div className={styles.socialBox}>
 
                  {/* Tiny Footer */}
-          <div className='tinyFooter'>
-              
-              <p>@ {year} All Rights Reserved </p>
-              <p>System developed by <Link href='https://funnelliner.com/'>Funnel Liner</Link> </p>
+                  <div className='tinyFooter'>
+                      
+                      <p>@ {year} All Rights Reserved </p>
+                      <p>System developed by <Link href='https://funnelliner.com/'>Funnel Liner</Link> </p>
 
-        </div>
+                </div>
 
               </div>
             

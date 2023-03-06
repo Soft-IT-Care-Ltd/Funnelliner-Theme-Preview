@@ -391,7 +391,7 @@ const LandingSix = () => {
                                 <img src="images/product.svg" alt="" />
                             </div>
 
-                            <p>Flower Of Story Men’s Perfume Set Boss</p>
+                            <p>Scooter Of Story Scooter Set Boss</p>
 
                             </div>
 

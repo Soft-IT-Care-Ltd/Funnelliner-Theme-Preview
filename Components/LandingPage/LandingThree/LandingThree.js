@@ -645,12 +645,12 @@ const LandingThree = () => {
                 <ul className=''>
                   <li>
                     <BsTelephone />
-                    00 0392 96 32
+                    +8801894844452
                   </li>
 
                   <li>
                     <FiMail />
-                    oder@freshen.com
+                    support@funnelliner.com
                   </li>
                 </ul>
               </div>
