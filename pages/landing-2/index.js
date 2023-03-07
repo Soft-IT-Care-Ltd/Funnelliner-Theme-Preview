@@ -3,7 +3,7 @@ import LandingTwo from '../../Components/LandingPage/LandingTwo/LandingTwo'
 import { Editor, Frame } from "@craftjs/core";
 const index = () => {
   return (
-        <div className='LandingNine'>
+        <div className='Landing__Two'>
 
           <Editor resolver={{ LandingTwo }}>
             <Frame>

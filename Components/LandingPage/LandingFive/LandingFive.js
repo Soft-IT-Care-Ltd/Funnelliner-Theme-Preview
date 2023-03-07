@@ -8,6 +8,7 @@ import { FaFish } from "react-icons/fa";
 import { IoCallOutline } from "react-icons/io5";
 import { FiMail,FiFacebook,FiTwitter } from "react-icons/fi";
 import { RiShoppingCart2Line } from "react-icons/ri";
+import Order from "../Common/Order";
 
 import Menubar from "../Common/Menubar/Menubar";
 import landingImageUrl from "../../../public/images/landing_5/logo.svg";
@@ -125,7 +126,7 @@ const LandingFive = () => {
           </Row>
 
         </Container>
- {/* For Small  devices-end (dispay None)----------------------------------------- */}
+        {/* For Small  devices-end (dispay None)----------------------------------------- */}
 
 
 
@@ -284,131 +285,31 @@ const LandingFive = () => {
       {/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
         Banner------5
       ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
-<Container className={styles.mainlinkdiv}>
-<div className={styles.cercleRed}><img src="images/landing_5/b10.svg" alt="img" /></div>
+        <Container className={styles.mainlinkdiv}>
+        <div className={styles.cercleRed}><img src="images/landing_5/b10.svg" alt="img" /></div>
 
-      <div >
-         <div className={styles.banner5Link1}> <Link className={styles.mypadding} href="#"><b>100% fresh</b> পদ্মার ইলিশ </Link> <FaFish  className={styles.Bannerbanner5Icon}/></div>
-         <div className={styles.banner5Link1}> <Link className={styles.mypadding} href="#">৩০০০ টাকার মাছ কিনলে হোম ডেলিভারি ফ্রি </Link> <FaFish  className={styles.Bannerbanner5Icon}/></div>
-         <div className={styles.banner5Link1}> <Link className={styles.mypadding} href="#"><b>20%</b> অগ্রিম বিকাশ এবং ব্যালেন্স ক্যাশ অফ ডেলিভারি। </Link> <FaFish  className={styles.Bannerbanner5Icon}/></div>
-         <div className={styles.banner5Link1}> <Link className={styles.mypadding} href="#">মাছ কুটে, পিস করে কেটে, এই দরেই বিক্রি করা হচ্ছে </Link> <FaFish  className={styles.Bannerbanner5Icon}/></div>
-        
-      </div>
-     
-
-</Container>
-
-{/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-       OrderConfirmFrom
-      ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
-<section className={styles.section_gaps}></section>
-
- <section className="OrderConfirmFrom" id="placeAnOrder">
-
-<Container>
-
-  <Row className={styles.OrderConfirmRow}>
-
-  <h2 className={styles.FromH2}>তাই আর দেরি না করে আজই অর্ডার করুন</h2>
-
-    {/* left */}
-    <Col lg={7}>
-
-      <div className="OrderConfirmLeft">
-
-        <h3>Billing details</h3>
-
-        <div className="CustomeInput">
-          <input type="text" name="" placeholder='আপনার নাম লিখুন *' />
-        </div>
-
-        <div className="CustomeInput">
-          <input type="text" name="" placeholder='আপনার মোবাইল নাম্বার লিখুন *' />
-        </div>
-
-        <div className="CustomeInput">
-          <input type="text" name="" placeholder='আপনার সম্পূর্ণ ঠিকানা লিখুন *' />
-        </div>
-
-        {/* Payment */}
-        <div className="Payment">
-
-          <h3>Paymet</h3>
-
-          <div className="CustomeInput d_flex">
-            <input type="checkbox" name="" id='CashOn' checked/>
-            <label htmlFor="CashOn">ক্যাশ অন ডেলিভারি</label>
-          </div>
-
-          <div className="ArrowBg">
-            <p>Pay with cash on delivery.</p>
-          </div>
-
-        </div>
-
-      </div>
-
-    </Col>
-
-    {/* right */}
-    <Col lg={5}>
-
-      <div className="OrderConfirmRight">
-
-        <h3>Your order</h3>
-
-        <ul>
-
-          <li>
-            <h4>Product</h4>
-            <h5>Subtotal</h5>
-          </li>
-
-          <li>
-
-            <div className="left d_flex">
-              
-              <div className="img">
-                <img src="images/product.svg" alt="" />
+              <div >
+                <div className={styles.banner5Link1}> <Link className={styles.mypadding} href="#"><b>100% fresh</b> পদ্মার ইলিশ </Link> <FaFish  className={styles.Bannerbanner5Icon}/></div>
+                <div className={styles.banner5Link1}> <Link className={styles.mypadding} href="#">৩০০০ টাকার মাছ কিনলে হোম ডেলিভারি ফ্রি </Link> <FaFish  className={styles.Bannerbanner5Icon}/></div>
+                <div className={styles.banner5Link1}> <Link className={styles.mypadding} href="#"><b>20%</b> অগ্রিম বিকাশ এবং ব্যালেন্স ক্যাশ অফ ডেলিভারি। </Link> <FaFish  className={styles.Bannerbanner5Icon}/></div>
+                <div className={styles.banner5Link1}> <Link className={styles.mypadding} href="#">মাছ কুটে, পিস করে কেটে, এই দরেই বিক্রি করা হচ্ছে </Link> <FaFish  className={styles.Bannerbanner5Icon}/></div>
+                
               </div>
+            
 
-              <p>Hilsa Of Story Hilsa Set Boss</p>
+        </Container>
 
-            </div>
+        {/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
+         OrderConfirmFrom
+        ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
+         
+         <section className={styles.section_gaps}></section>
 
-            <div className="right d_flex">
-
-              <input type="number" />
-
-              <h5>BDT 1,690.00</h5>
-
-            </div>
-
-          </li>
-
-          <li>
-            <h5>Subtotal</h5>
-            <h5>1,690.00</h5>
-          </li>
-
-          <li>
-            <h4>Total</h4>
-            <h4>1,690.00</h4>
-          </li>
+        <section id="Order">
           
-        </ul>
+          <Order></Order>
 
-          <button> <RiShoppingCart2Line/> Place Order BDT 49.00</button>
-
-      </div>
-
-    </Col>
-
-  </Row>
-
-</Container>
-
-</section>
+        </section>
 
 
 

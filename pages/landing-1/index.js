@@ -3,14 +3,15 @@ import LandingOne from '../../Components/LandingPage/LandingOne/LandingOne'
 
 const index = () => {
   return (
-    <div className='LandingOne'>
+    <div className='Landing__One'>
+      
             <LandingOne
             
               heroContent={"ভালোবাসার উপহারটি মূল্যবান হয়। প্রিয়জনের রাগ ভাঙাতে ফুল Coustomize Chocklet Gift Box কার্ড মুহূর্তের মধ্যে প্রিয়জনের মুখে হাসি ফোটাবে।"}
               orderTitle={"আপনার এবং আপনার প্রিয়জনদের জন্য সেরা উপহার মুল্য- টাকা"}
               orderTitleFontSize={25}
               productPrice={"মুল্য- 1200 টাকা"}
-              whyBuyOurProduct={"Customized Chocolet gift box েকন কিনবেন?"}
+              whyBuyOurProduct={"Customized Chocolet gift box কেন কিনবেন?"}
               whyChooseUsTittleOne={"প্রিয়জনের অভিমান ভাঙ্গাতে"}
               whyChooseUsDecOne={"স্মৃতিময় পুরোনো ছবি দিয়ে সাজিয়ে নিতে পারেন Chocolate gift box"}
               whyChooseUsTittleTwo={"প্রিয়জনের অভিমান ভাঙ্গাতে"}

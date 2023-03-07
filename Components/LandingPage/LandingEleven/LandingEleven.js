@@ -9,6 +9,7 @@ import { FiFacebook, FiInstagram, FiMail, FiTwitter } from 'react-icons/fi';
 import { RiShoppingCart2Line } from 'react-icons/ri';
 import styles from '../../../styles/landing_eleven/landing_eleven.module.css';
 
+import Order from "../Common/Order";
 import Menubar from "../Common/Menubar/Menubar";
 import landingImageUrl from "../../../public/images/landing_11/logo.svg";
 

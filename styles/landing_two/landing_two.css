@@ -6,6 +6,11 @@
     padding: 0;
 }
 
+
+.Landing__Two .Menubar{
+    border: none;
+}
+
 /* =============== COMMON CSS FOR WEB SITE =============== */
 :root {
     --two_header_color: #381F22;

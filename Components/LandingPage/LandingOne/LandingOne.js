@@ -93,11 +93,17 @@ const LandingOne = (props) => {
     <div className={styles.LandingOne}>
 
       {/* Menubar */}
-      <Menubar logoImage={landingImageUrl}></Menubar>
+      
 
       {/* Banner */}
-      <section id='banner'>
+      <section id='banner' className={styles.banner}>
+
+        <Menubar logoImageLeft={landingImageUrl}></Menubar>
+
         <Container>
+
+        
+
           <Row className='d_flex'>
             <Col lg={6}>
               <div className={styles.banner_content}>

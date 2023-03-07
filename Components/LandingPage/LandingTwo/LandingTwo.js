@@ -17,6 +17,7 @@ import axios from "axios";
 
 import { useEditor, useNode } from "@craftjs/core";
 import ContentEditable from "react-contenteditable";
+import Order from "../Common/Order";
 
 
 // Menu Image Url
@@ -1114,181 +1115,14 @@ const LandingOne = (props) => {
       </section>
 
       {/* From Part */}
-      <section id='form_part' className='section_gaps'>
-        <Container>
-          <Row className='justify-content-md-center'>
-            <Col lg={6}>
-              <div className='header text-center'>
-                <h2>অর্ডার কনফার্ম করতে নিচের ফর্মটি পূরণ করুন।</h2>
-              </div>
-            </Col>
-          </Row>
 
-          <div className='form_part_content'>
+      <section id="Order">
+        
+        <Order></Order>
 
-              <Row>
-                <Col lg={6} md={6}>
-                  <div className='left_part'>
-                    <h3>Billing details</h3>
-
-                    {/* item */}
-                    <div className='custome_input'>
-                      <label>
-                        আপনার নাম লিখুন <span>*</span>
-                      </label>
-                      <input
-                        {...register("customerName", { required: true })}
-                        type='text'
-                        placeholder=' আপনার নাম লিখুন'
-                      />
-                      {errors.customerName && (
-                        <span style={{ color: "red" }}>Name is require</span>
-                      )}
-                    </div>
-
-                    {/* item */}
-                    <div className='custome_input'>
-                      <label>
-                        আপনার মোবাইল নাম্বার লিখুন <span>*</span>
-                      </label>
-                      <input
-                        type='text'
-                        placeholder=' আপনার মোবাইল নাম্বার লিখুন'
-                        {...register(
-                          "customerMobile",
-                          { required: true },
-                          { min: 11, max: 15 }
-                        )}
-                      />
-                      {errors.customerMobile && (
-                        <span style={{ color: "red" }}>
-                          Valid Mobile Number require
-                        </span>
-                      )}
-                    </div>
-
-                    {/* item */}
-                    <div className='custome_input'>
-                      <label>
-                        আপনার সম্পূর্ণ ঠিকানা লিখুন <span>*</span>
-                      </label>
-                      <input
-                        type='text'
-                        placeholder=' আপনার সম্পূর্ণ ঠিকানা লিখুন'
-                        {...register("customerAddress", { required: true })}
-                      />
-                      {errors.customerAddress && (
-                        <span style={{ color: "red" }}>Address require</span>
-                      )}
-                    </div>
-
-                    <div className='payment'>
-                      <h4>Paymet</h4>
-                      <div className='custome_input checkbox d_flex'>
-                        <input
-                          type='checkbox'
-                          id='delivary_input'
-                          defaultChecked={true}
-                          placeholder=''
-                          checked
-                        />
-                        <label htmlFor='delivary_input'>
-                          {" "}
-                          ক্যাশ অন ডেলিভারি{" "}
-                        </label>
-                      </div>
-
-                      <div className='arrow_bg'>
-                        <p>Pay with cash on delivery.</p>
-                      </div>
-                    </div>
-                  </div>
-                </Col>
-
-                <Col lg={6} md={6}>
-                  <div className='right_part'>
-                    <h3>Your order</h3>
-
-                    <div className='product_part'>
-                      <ul>
-                        <li className='d_flex d_justify'>
-                          <h3>Product</h3>
-                          <p>Subtotal</p>
-                        </li>
-                        <li className='d_flex d_justify'>
-                          {/* left */}
-                          <div className='left d_flex'>
-                            <div className='img'>
-                            <img src="images/product.svg" alt="" />
-                            </div>
-                            <div className='text'>
-                              <h4>{product?.product_name} Flower Of Story Men’s Perfume Set Boss</h4>
-                            </div>
-
-                          </div>
-                          {/* middle */}
-
-                          <div className="right d_flex">
-
-                              <input
-                              type='number'
-                              onChange={handleQuantityChange}
-                              defaultValue={1}
-                              min={1}
-                              />
-
-                                <h5>BDT 1,690.00</h5>
-
-                          </div>
-
-                          
-                          {/* <div className='middle'>
-                            <Select
-                              onChange={setQuantity}
-                              options={options}
-                              placeholder='1'
-                            />
-
-
-                          </div> */}
-
-                          {/* amount */}
-
-                          {/* <div className='amount'>
-                            <h3> 1999</h3>
-                          </div> */}
-
-                        </li>
-                        <li className='d_flex d_justify'>
-                          <h5>Subtotal</h5>
-                          <h3> 1999</h3>
-                        </li>
-                        <li className='d_flex d_justify'>
-                          <h3>Total</h3>
-                          <h3> 1999</h3>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div className='dexcription'>
-                      <p>
-                        Your personal data will be used to process your order,
-                        support your experience throughout this website, and for
-                        other purposes described in our
-                        <a href='#'>privacy policy</a>.
-                      </p>
-                      <button className='bg' type='submit'>
-                        <i className='fas fa-lock' /> Place Order ৳ TK{" "}
-                        1999
-                      </button>
-                    </div>
-                  </div>
-                </Col>
-              </Row>
-
-          </div>
-        </Container>
       </section>
+
+      
 
       {/* Fotoer */}
       <section id='Footer'>
