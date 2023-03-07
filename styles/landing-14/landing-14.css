@@ -1,0 +1,784 @@
+/* =================================================================================
+Common
+===================================================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&family=Noto+Serif+Bengali&display=swap');
+
+
+.Landing__14{
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.Landing__14 h1{
+    font-size: 81px;
+    color:#FFFFFF;
+    font-weight: 600;
+}
+
+.Landing__14 h2{
+    font-size: 40px;
+    line-height: 60px;
+    color: #EC3361;
+    font-weight: 600;
+    font-family: 'Noto Serif Bengali', serif;
+}
+
+.Landing__14 p{
+    font-size: 18px;
+    line-height: 27px;
+    color: #192335;
+    font-weight: 400;
+   
+}
+
+
+/* Link  Button*/
+         
+.Landing__14 a {
+    transition: 0.5s;
+    /* display: block; */
+    font-weight: 600;
+    text-decoration: none;
+}
+ 
+.Landing__14 a.bg{
+    margin-top: 30px;
+    padding: 14px 40px;
+    color: #FFFFFF; 
+    background-image: linear-gradient(to right,  #EC3361 0%, #C20A22 51%, #EC3361  100%);
+    background-size: 200% auto;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 37px;
+    transition: .05s;
+}
+
+
+.Landing__14 a.bg:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+ 
+.Landing__14 a svg{
+    font-size: 24px;
+    margin-top: -5px;
+    margin-right: 10px;
+}
+
+/* Button 2 */
+
+.Landing__14 a.bg2{
+    margin-top: 30px;
+    padding: 14px 40px;
+    color: #fff;
+    background-size: 200% auto;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 37px;
+    border: 2px solid #C20A22 ;
+    margin-left: 30px;
+    transition: .05s;
+   
+}
+
+
+.Landing__14 a.bg2:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    background-image: linear-gradient(to right,  #C20A22 0%, #EC3361 51%, #C20A22  100%);
+    transform: scale(1.1);
+}
+ 
+
+.section_gap{
+    padding-top: 100px;
+}
+
+
+/* ===========================================================================================================
+Banner
+===============================================================================================================*/
+
+.Landing__14 .Conpad {
+
+        padding: 0 ;
+}
+
+
+
+
+.Landing__14 .BannerBg {
+
+        background-image: url('../../public/images/landing_14/bg.png');  
+        padding-bottom: 100px;
+        background-size: cover;
+        position: relative;  
+}
+
+.Landing__14 .BannerBgAbsImg1 {
+
+   position: absolute;
+   bottom: 0;
+   width: 100%; 
+}
+
+.Landing__14 .BannerToptxt {
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.51);
+
+}
+
+.Landing__14 .BannerToptxt h4 {
+    font-size: 20px;
+    line-height: 27px;
+    color:#FFFFFF;
+
+}
+
+.Landing__14 .BannerToptxtBox {
+    padding-top: 74px;
+    padding-bottom: 328px;
+    text-align: center;   
+}
+
+.Landing__14 .BannerToptxtBox img{
+    padding-bottom: 56px;  
+    
+}
+
+.Landing__14  .BannertxtBoxRel{
+    position: relative;
+
+}
+
+
+.Landing__14  .BannertxtBoxAbs1{
+    position: absolute;
+    top: 40px;
+    left: 250px;
+    font-size: 81px;
+    color:#FFFFFF;
+    margin-left: 18%;  
+}
+
+.Landing__14  .BannertxtBoxAbs2{
+    position: absolute;
+    top: 170px;
+    margin-left: 24%;  
+}
+
+.Landing__14 .BannerToptxtBox p {
+    padding:0px 20% ;
+    font-size: 24px;
+    line-height: 31px;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+}
+
+.Landing__14 .BannerToptxtBox h2 {
+    padding-top: 54px;
+
+
+}
+
+/* ===========================================================================================================
+         Sharee House
+===============================================================================================================*/
+
+.Landing__14 .Sharee_house h2{
+
+    padding-top: 52px;
+    padding-bottom: 22px;
+
+}
+
+.Landing__14 .Sharee_houseRow{
+
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+.Landing__14 .Sharee_Row img {
+
+    width: 100%;
+  
+}
+
+.Landing__14 .BordarMainDivCol {
+   position:relative;
+  
+}
+
+
+.Landing__14 .BordarMainDiv{
+    position: absolute;
+    height: 450px;
+    width: 92%;
+    z-index: -1;
+    margin-top: -20px;
+    margin-left: 15px;
+}
+
+.Landing__14 .BordarMainDiv1{
+  float: left;
+  border: 1px solid #5C0510;
+  width: 50%;
+  height: 50%;
+}
+
+.Landing__14 .BordarMainDiv2{
+  float: left;
+  border: 1px solid #5C0510;
+  width: 50%;
+  height: 50%;
+}
+
+.Landing__14 .BordarMainDiv3{
+  float: left;
+  border: 1px solid #5C0510;
+  width: 50%;
+  height: 50%;
+}
+
+.Landing__14 .BordarMainDiv4{
+  float: left;
+  border: 1px solid #5C0510;
+  width: 50%;
+  height: 50%;
+}
+
+
+.Landing__14 .FloatSolve{
+    clear:both;
+  
+}
+
+
+/* ===========================================================================================================
+       Shipping Icon
+===============================================================================================================*/
+
+.Landing__14 .ConPad {
+        padding: 0;
+
+}
+.Landing__14 .BggImg {
+    background-image: url('../../public/images/landing_14/bgg.png');
+    background-size:cover ;
+    padding: 47px 0px;
+
+}
+
+.Landing__14 .BggImgFlex{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    text-align: center;
+
+}
+
+
+.Landing__14 .BggImgFlex h4{
+    color: #FDFDFD;
+    padding-top: 10px;
+    font-size: 24px;
+  
+}
+
+
+
+
+/* ===========================================================================================================
+       Card
+===============================================================================================================*/
+.Landing__14 .CardConBg {
+
+    background-color: #FEF5F7;
+    padding: 100px 0;
+}
+
+.Landing__14 .CardMidImg{
+    padding-left: 10%;
+    Width:85%
+}
+
+.Landing__14 .CardImg{
+
+    Width:100%;
+    height: 280px; 
+    
+}
+.Landing__14 .CardTopH2{
+    padding-bottom: 70px;
+    padding: 0 15% 70px 15%;
+    text-align: center;
+    
+}
+
+.Landing__14 .CardImgRel{
+    position: relative;
+   
+}
+
+.Landing__14 .Cardpad{
+    padding: 25px 30px;
+}
+
+
+
+.Landing__14 .CardImgAbs1{
+    position: absolute;
+    top:47px;
+    font-size: 32px;
+    line-height: 42px;
+    color:#C20A22;
+    font-weight: 600;
+}
+
+.Landing__14 .CardImgAbs2{
+    position: absolute;
+    top:100px;
+    font-size: 18px;
+    line-height: 27px;
+    color:#192335;
+    padding-right: 10px;
+    
+    
+}
+
+
+
+
+/* ===========================================================================================================
+        Price Section 2
+===============================================================================================================*/
+
+.Landing__14 .BggImg2{
+    background-image: url('../../public/images/landing_14/img12.png');
+    background-size:cover ;
+    padding: 50px 0px;
+    border-radius: 10px;
+}
+
+.Landing__14 .BggImgFlex2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+
+
+.Landing__14 .BggImg2 h3{
+    font-size: 60px;
+    line-height: 79px;
+    color:#FDFDFD;
+    font-weight: 600;
+
+}
+
+.Landing__14 .BggImg2 h5{
+    font-size: 32px;
+    line-height: 42px;
+    color:#FDFDFD;
+}
+
+.Landing__14 .BggImg2 .bg3{
+
+    padding: 24px 70px;
+    margin-top: 15px;
+
+}
+
+
+
+/* ===========================================================================================================
+        Video
+===============================================================================================================*/
+
+
+.Landing__14 .VideoDivh2{
+    text-align: center;
+    padding-bottom: 70px;
+
+}
+
+.Landing__14 iframe {
+    width: 100%;
+    height: 758px;
+    border-radius: 10px;
+
+}
+
+/* ===========================================================================================================
+         Sharee House
+===============================================================================================================*/
+
+
+.Landing__14 .SliderImg{
+    height: 412px;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+   
+}
+
+.Landing__14 .SliderImg img{
+  /* width: 100%; */
+  box-sizing: border-box;
+   
+}
+
+.Landing__14 .SliderImg:hover .ClipBox{
+   background-color: #EC3361;
+   
+}
+
+.Landing__14 .SliderImg:hover img{
+     transform: scale(1.02);
+}
+
+
+.Landing__14 .ClipBox{
+    position: absolute;
+    bottom: 0;
+    clip-path: polygon(0 43%, 100% 0, 100% 100%, 0 100%);
+    height:80%;
+    width: 100%;
+    background-color:#F1F1F1;
+    z-index: -1;
+    border-radius: 10px 30px 20px 20px;
+  
+    
+}
+
+.Landing__14 .SliderBtn{
+   width: 100%;
+   text-align: center;
+   padding-top: 50px;
+    
+}
+
+.Landing__14 .SliderBtn button{
+  padding:0 10px;
+  font-size: 20px;
+  color: #DBDBDB;
+  background: none;
+  border: none;
+}
+
+.Landing__14 .SliderBtn button:hover{
+  font-size: 30px;
+  color:#192335;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+/* ===========================================================================================================
+          Gift Section
+===============================================================================================================*/
+
+
+.Landing__14 .GiftMain{
+    clip-path: polygon(100% 55%, 50% 92%, 0 59%, 0 0, 100% 0);
+    background-color: #FEF5F7;
+    padding-top: 100px;
+    padding-bottom: 670px;
+
+}
+.Landing__14 .GiftH2{
+    text-align: center;
+    padding: 0 20%;
+    padding-bottom: 70px;
+
+}
+
+
+.Landing__14 .GiftRow{
+        display: flex;
+        align-items: center;
+  
+}
+.Landing__14 .GiftImg{
+        width: 100%;
+  
+}
+
+.Landing__14 .GiftUlBox {
+    padding-left: 108px;
+}
+
+.Landing__14 .GiftUlBox li{
+    display: flex;
+    padding-top: 25px;
+}
+.Landing__14 .GiftUlBox li p{
+    font-size: 24px;
+    line-height: 36px;
+    color:#192335;
+    font-weight: 600;
+}
+
+.Landing__14 .GiftUlBox li img{
+    padding-right: 18px;
+   margin-bottom: auto;
+}
+
+.Landing__14 .GiftH3{
+    text-align: center;
+    font-size: 60px;
+    color: #192335;
+    font-weight: 600;
+    padding: 0 5%;
+
+}
+
+
+
+.Landing__14 .PriceBox{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.Landing__14 .PriceBox .priceImgBg{
+    top:-600px;
+    position: absolute ;
+    height: 584px;
+
+}
+
+
+
+/* ===========================================================================================================
+         priceing
+===============================================================================================================*/
+
+.Landing__14 .PriceBoxTxtDiv{
+    top:-480px;
+    position: absolute ;
+    text-align: center;
+  
+}
+
+.Landing__14 .PriceBoxTxtDiv h4{
+    font-size: 32px;
+    line-height: 42px;
+    color:#EC3361;
+    padding-bottom: 15px;
+}
+
+.Landing__14 .PriceBoxTxtDiv svg{
+    font-size: 32px;
+    line-height: 42px;
+    color:#F29D00;
+}
+
+.Landing__14 .PriceBoxTxtDiv h3{
+    font-size: 60px;
+    line-height: 79px;
+    color:#FEF5F7;   
+    padding-top: 25px;
+}
+
+.Landing__14 .PriceBoxTxtDiv .bg4{
+    font-size: 32px;
+    border-radius: 50px;
+    padding: 24px 67px ;
+    
+}
+
+
+
+
+/* ===========================================================================================================
+         Order Comfirm 
+===============================================================================================================*/
+
+.Landing__14 .OrderBg{
+    position: relative;
+    background-color: #FEF5F7;
+  
+}
+.Landing__14 .FooterAbs1{
+    position: absolute;
+    top:0%;
+    left:-500px;
+    z-index: 0;
+    width:700px;
+    opacity: .1;
+  
+}
+.Landing__14 .FooterAbs2{
+    position: absolute;
+    top:0%;
+    right:-500px;
+    width:700px;
+    opacity: .1;
+}
+
+
+
+
+
+
+
+.Landing__14 .ArrowBg p{
+        color: #FEF5F7 !important;
+  
+}
+
+
+/* ===========================================================================================================
+         Footer
+===============================================================================================================*/
+
+
+.Landing__14 .FooterBg{
+
+    background-image: url('../../public/images/landing_14/bg2.png');
+    padding:100px 0px ;
+    background-size: cover;
+
+}
+
+.Landing__14 .footerLogoDiv{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding: 0 5%;
+    padding-bottom: 50px;
+}
+
+.Landing__14 .footerLogo{
+    text-align: center;
+    padding-bottom: 50px;
+
+  
+}
+
+.Landing__14 .FooterUlBox li a{
+    font-size: 18px;
+    line-height: 30px;
+    color:#fff;
+    font-weight: 400;
+}
+
+.Landing__14 .FooterUlBox {
+    text-align: left;
+    
+}
+.Landing__14 .FooterUlBox h4{
+    color: #5C0510;
+    font-size: 24px;
+    line-height: 28px;
+    padding-bottom: 25px;
+    font-weight: 600;
+
+}
+
+.Landing__14 .FooterUlBox li {
+  padding-bottom: 15px;
+}
+
+.Landing__14 .FooterUlBox li svg{
+    font-size: 18px;
+    line-height: 30px;
+    color: #5C0510;
+}
+
+.Landing__14 .midUl {
+    padding-top: 20px;
+}
+
+.Landing__14 .midUl h4{
+    padding-bottom: 10px;
+}
+
+.Landing__14 .midUl h5{
+    font-size: 40px;
+    line-height: 54px;
+    color:#F8F8F8;
+    font-weight: 600;
+}
+
+.Landing__14 .FooterUlBox img{
+   width: 18px;
+   margin-right: 10px;
+}
+
+
+.Landing__14 .Hr{
+    border-bottom: 2px solid #FF94AE;
+    text-align: center;
+    margin-top:-15px;
+}
+
+.Landing__14 .HrTxt span{
+    font-size: 24px;
+    line-height: 28px;
+    color:#5C0510;
+    font-weight: 600;
+    padding: 15px 20px;
+    background: #EC3361;
+}
+.Landing__14 .HrTxt {
+  text-align: center;
+}
+
+/* ===========================================================================================================
+    Sharee House
+===============================================================================================================*/
+
+.ShippingAddress p{
+    color: #FFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
