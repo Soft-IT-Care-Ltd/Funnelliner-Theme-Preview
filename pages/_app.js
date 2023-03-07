@@ -16,8 +16,10 @@ import '../styles/main_page/main_page.css';
 
 // landing Css
 // import "../styles/landing_one/landing_one.css";
+import "../styles/landing_one/landing_one.css";
 import "../styles/landing_two/landing_two.css";
 import "../styles/landing_two/landing_two_media.css";
+import "../styles/landing_three/landing_three.css";
 import "../styles/landing_four/landing_four.css";
 import "../styles/landing_five/landing_five.css";
 import "../styles/landing_six/landing_six.css";
@@ -34,7 +36,7 @@ import "../styles/theme_1/style.css";
 import "../styles/theme_two/theme_two.css";
 // import '../styles/theme_two/theme_two_media.css';
 
-import "../styles/landing_three/landing_three.css";
+
 import SSRProvider from "react-bootstrap/SSRProvider";
 import Head from "next/head";
 

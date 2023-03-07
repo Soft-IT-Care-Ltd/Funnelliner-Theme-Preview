@@ -84,12 +84,13 @@
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
     START banner PART
   --------------------------------------------------------------------------------------------------------------------------------------------------- */
-.LandingOne #banner {
+.LandingOne .banner {
     background: url('../../public/images/landing_1/banner_bg.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 50px 0;
+    background-color: #FF466D;
+    padding: 20px 0 50px 0;
 }
 
 .LandingOne .banner_content .text {

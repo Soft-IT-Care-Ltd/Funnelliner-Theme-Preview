@@ -94,18 +94,23 @@ const LandingThree = () => {
   const year = today.getFullYear();  
 
   return (
-    <div className="Landing__Three">
+    
+    <div className="LandingThree">
 
 
-      {/* Menubar */}
-      <Menubar logoImageLeft={landingImageUrl}></Menubar>
+     
 
 
       {/* ------------------------------------------------------------------------   -----------------------------------------------------------
             Banner
         --------------------------------------------------------------------------------------------------------------------------------------*/}
       <section className='BannerSection'>
+
         <Container>
+
+                   {/* Menubar */}
+                   <Menubar logoImageLeft={landingImageUrl}></Menubar>
+
           <Row>
             <Col lg={8}>
 
