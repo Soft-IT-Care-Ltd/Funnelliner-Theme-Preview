@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../styles/landing-16/landing_sixteen.module.css'
+import styles from '../../../styles/landing-16/landing_sixteen.module.css'
 import { Col, Container, Row } from 'react-bootstrap';
 import Link from 'next/link';
 
@@ -12,8 +12,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 // import required modules
-import {FreeMode, Autoplay, Pagination,Navigation } from "swiper";
+import {FreeMode, Autoplay, Pagination, Navigation } from "swiper";
+
 
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight} from "react-icons/md";
 import { FiPhoneCall} from "react-icons/fi";
@@ -28,10 +30,13 @@ import { VscDebugBreakpointData } from "react-icons/vsc";
 const LandingSixteen = () => {
 
        const swiperRef = useRef();
+       
+       const today = new Date();
+       const year = today.getFullYear();
 
   return (
 
-    <section className={styles.LandingSixteen}>
+       <section className={styles.LandingSixteen}>
 
             {/* =========================================================================================================
                    Banner One 
@@ -79,9 +84,8 @@ const LandingSixteen = () => {
                         </Container>
 
 
-
-
                     </div>
+
             </Container>
 
             {/* =========================================================================================================
@@ -162,97 +166,74 @@ const LandingSixteen = () => {
                           
                             <Swiper
                                    slidesPerView={3}
-                                   spaceBetween={0}
-
-                                   // pagination={{
-                                   // clickable: true,
-                                   // }}
-
-                                   // navigation={{
-                                   // clickable: true,
-                                   // }}
-                                 
-                                   onBeforeInit={(swiper) => {
-                                          swiperRef.current = swiper;
-                                        }}
-
-                                   autoplay={{
-                                          delay: 3500,
-                                          disableOnInteraction: false,
-                                        }}
-                                   
+                                   spaceBetween={30}
+                                   navigation={true} 
+                                   modules={[Navigation]}
+                                   className="mySwiper"
                                    loop={true}
 
                                    breakpoints={{
-                                   240: {
-                                   slidesPerView: 2,
-                                   slidesPerGroup:2,
-                                   spaceBetween: 0,
-                                   },
-                                   768: {
-                                   slidesPerView: 3,
-                                   slidesPerGroup:3,
-                                   spaceBetween: 0,
-                                   },
-                                   1024: {
-                                   slidesPerView: 3,
-                                   slidesPerGroup:3,
-                                   spaceBetween: 0,
-                                   },
-                                   }}
-                                   modules={[FreeMode, Autoplay, Pagination]}
-
-                                   className="mySwiper"
+                                          240: {
+                                            slidesPerView: 2,
+                                            slidesPerGroup: 2,
+                                            spaceBetween: 0,
+                                          },
+                                          768: {
+                                            slidesPerView: 3,
+                                            slidesPerGroup: 3,
+                                            spaceBetween: 20,
+                                          },
+                                          1024: {
+                                            slidesPerView: 3,
+                                            slidesPerGroup: 3,
+                                            spaceBetween: 30,
+                                          },
+                                        }}
                             >
+
+                                   {/* item */}
                                    <SwiperSlide className={styles.SliderImg}>
                                           <Link href="#">
                                                <img src='images/landing_16/img4.png' alt='img'></img>
                                           </Link>
                                    </SwiperSlide>
-                                
+
+                                   {/* item */}
                                    <SwiperSlide className={styles.SliderImg}>
                                           <Link href="#">
                                                <img src='images/landing_16/img5.png' alt='img'></img>
                                           </Link>
                                    </SwiperSlide>
-                                
+
+                                   {/* item */}
                                    <SwiperSlide className={styles.SliderImg}>
                                           <Link href="#">
                                                <img src='images/landing_16/img6.png' alt='img'></img>
                                           </Link>
                                    </SwiperSlide>
-                                
+
+                                   {/* item */}
                                    <SwiperSlide className={styles.SliderImg}>
                                           <Link href="#">
                                                <img src='images/landing_16/img4.png' alt='img'></img>
                                           </Link>
                                    </SwiperSlide>
-                                
+
+                                   {/* item */}
                                    <SwiperSlide className={styles.SliderImg}>
                                           <Link href="#">
                                                <img src='images/landing_16/img5.png' alt='img'></img>
                                           </Link>
                                    </SwiperSlide>
-                                
+
+                                   {/* item */}
                                    <SwiperSlide className={styles.SliderImg}>
                                           <Link href="#">
                                                <img src='images/landing_16/img6.png' alt='img'></img>
                                           </Link>
                                    </SwiperSlide>
-                                
-                                  
-                                
+
                             </Swiper>
-
-                            <div className={styles.SliderBtn}>
-                                   <button className={styles.SliderBtn1} onClick={() => swiperRef.current?.slidePrev()}>
-                                          <MdOutlineKeyboardArrowLeft></MdOutlineKeyboardArrowLeft>
-                                   </button>
-
-                                   <button className={styles.SliderBtn2} onClick={() => swiperRef.current?.slideNext()}>
-                                          <MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight>
-                                   </button>
-                            </div>
                                                         
                        </Col>
                  </Row>
@@ -364,17 +345,17 @@ const LandingSixteen = () => {
               <Container fluid>
                      
                                    
-                                   <div className={styles.Banner4txth2}>
+                     <div className={styles.Banner4txth2}>
 
-                                          <img src="images/landing_16/img12.png" alt="" />
+                            <img src="images/landing_16/img12.png" alt="" />
 
-                                          <div  className={`${styles.Banner4txtbox} ${styles.Bannertxtbox}`}>
-                                                 <h5>১২০০ টাকা</h5>
-                                                 <p>সারা দেশে ফ্রি হোম ডেলিভারি</p>
-                                                 <Link className={styles.Btnbg} href='#Order'>অর্ডার করুন</Link>
-                                          </div>
+                            <div  className={`${styles.Banner4txtbox} ${styles.Bannertxtbox}`}>
+                                   <h5>১২০০ টাকা</h5>
+                                   <p>সারা দেশে ফ্রি হোম ডেলিভারি</p>
+                                   <Link className={styles.Btnbg} href='#Order'>অর্ডার করুন</Link>
+                            </div>
 
-                                   </div>
+                     </div>
                             
                   
                       
@@ -385,169 +366,115 @@ const LandingSixteen = () => {
                {/* section Gap */}
               <div className={styles.section_gap}></div>
 
-    </section>
+            
 
-  )
-}
+              {/* =========================================================================================================
+                            Slider-2   LandingSixteen1 Component 
+              =============================================================================================================*/}
 
- {/* =========================================================================================================
-                   Slider-2   LandingSixteen1 Component 
- =============================================================================================================*/}
-
-
-
-const LandingSixteen1 = () => {
-
-   const swiperRef = useRef();
-
-       return (
-          <div>
-
-
-                     
-            <section  className={styles.LandingSixteen}>
 
               <Container >
+
                      <Row>
 
                             <h2 className={styles.slider2h2}>কি কি আছে আমাদের <img src="images/landing_16/logo.svg" alt="Img" />এর হানি নাট কম্বোতে ?</h2>
 
 
-                            <Col>
+                            <Col lg={12}>
                             
                                    <Swiper
                                           slidesPerView={3}
-                                          spaceBetween={0}
-
-                                          // pagination={{
-                                          // clickable: true,
-                                          // }}
-
-                                          // navigation={{
-                                          // clickable: true,
-                                          // }}
-                                   
-                                          onBeforeInit={(swiper) => {
-                                                 swiperRef.current = swiper;
-                                          }}
-
-                                          autoplay={{
-                                                 delay: 3500,
-                                                 disableOnInteraction: false,
-                                          }}
-                                          
+                                          spaceBetween={30}
+                                          navigation={true} modules={[Navigation]}
+                                          className="mySwiper"
                                           loop={true}
 
                                           breakpoints={{
-                                          240: {
-                                          slidesPerView: 2,
-                                          slidesPerGroup:2,
-                                          spaceBetween: 0,
-                                          },
-                                          768: {
-                                          slidesPerView: 3,
-                                          slidesPerGroup:3,
-                                          spaceBetween: 0,
-                                          },
-                                          1024: {
-                                          slidesPerView: 4,
-                                          slidesPerGroup:4,
-                                          spaceBetween: 0,
-                                          },
-                                          }}
-                                          modules={[FreeMode, Autoplay, Pagination]}
-
-                                          className="mySwiper"
+                                                 240: {
+                                                   slidesPerView: 2,
+                                                   slidesPerGroup: 2,
+                                                   spaceBetween: 0,
+                                                 },
+                                                 768: {
+                                                   slidesPerView: 3,
+                                                   slidesPerGroup: 3,
+                                                   spaceBetween: 0,
+                                                 },
+                                                 1024: {
+                                                   slidesPerView: 4,
+                                                   slidesPerGroup: 4,
+                                                   spaceBetween: 0,
+                                                 },
+                                               }}
                                    >
-                                          <SwiperSlide className={styles.SliderImg}>
-                                                 <Link href="#">
-                                                        <img src='images/landing_16/img13.png' alt='img'></img>
-                                                        <h4>প্রিমিয়াম খেজুর</h4>
-                                                 </Link>
-                                          </SwiperSlide>
-                                   
-                                          <SwiperSlide className={styles.SliderImg}>
-                                                 <Link href="#">
-                                                        <img src='images/landing_16/img14.png' alt='img'></img>
-                                                        <h4>ইন্ডিয়ান বাদাম</h4>
-                                                 </Link>
-                                          </SwiperSlide>
-                                   
-                                          <SwiperSlide className={styles.SliderImg}>
-                                                 <Link href="#">
-                                                        <img src='images/landing_16/img15.png' alt='img'></img>
-                                                        <h4>ইন্ডিয়ান বাদাম</h4>
-                                                 </Link>
-                                          </SwiperSlide>
-                                   
-                                          <SwiperSlide className={styles.SliderImg}>
-                                                  <Link href="#">
-                                                        <img src='images/landing_16/img16.png' alt='img'></img>
-                                                        <h4>ইরানি কাজুবাদাম</h4>
-                                                 </Link>
-                                          </SwiperSlide>
-                                   
-                                          <SwiperSlide className={styles.SliderImg}>
-                                                 <Link href="#">
-                                                        <img src='images/landing_16/img13.png' alt='img'></img>
-                                                        <h4>প্রিমিয়াম খেজুর</h4>
-                                                 </Link>
 
-                                          </SwiperSlide>
-                                   
+                                          {/* item */}
                                           <SwiperSlide className={styles.SliderImg}>
                                                  <Link href="#">
-                                                        <img src='images/landing_16/img14.png' alt='img'></img>
-                                                        <h4>ইন্ডিয়ান বাদাম</h4>
+                                                 <img src='images/landing_16/img13.png' alt='img'></img>
                                                  </Link>
-
                                           </SwiperSlide>
-                                   
+
+                                          {/* item */}
+                                          <SwiperSlide className={styles.SliderImg}>
+                                                 <Link href="#">
+                                                 <img src='images/landing_16/img14.png' alt='img'></img>
+                                                 </Link>
+                                          </SwiperSlide>
+
+                                          {/* item */}
+                                          <SwiperSlide className={styles.SliderImg}>
+                                                 <Link href="#">
+                                                 <img src='images/landing_16/img15.png' alt='img'></img>
+                                                 </Link>
+                                          </SwiperSlide>
+
+                                          {/* item */}
+                                          <SwiperSlide className={styles.SliderImg}>
+                                                 <Link href="#">
+                                                 <img src='images/landing_16/img16.png' alt='img'></img>
+                                                 </Link>
+                                          </SwiperSlide>
+
+                                          {/* item */}
+                                          <SwiperSlide className={styles.SliderImg}>
+                                                 <Link href="#">
+                                                 <img src='images/landing_16/img13.png' alt='img'></img>
+                                                 </Link>
+                                          </SwiperSlide>
+
+                                          {/* item */}
+                                          <SwiperSlide className={styles.SliderImg}>
+                                                 <Link href="#">
+                                                 <img src='images/landing_16/img14.png' alt='img'></img>
+                                                 </Link>
+                                          </SwiperSlide>
+
                                    </Swiper>
-
-                                   <div className={styles.SliderBtn}>
-                                          <button className={styles.SliderBtn1} onClick={() => swiperRef.current?.slidePrev()}>
-                                                 <MdOutlineKeyboardArrowLeft></MdOutlineKeyboardArrowLeft>
-                                          </button>
-
-                                          <button className={styles.SliderBtn2} onClick={() => swiperRef.current?.slideNext()}>
-                                                 <MdOutlineKeyboardArrowRight></MdOutlineKeyboardArrowRight>
-                                          </button>
-                                   </div>
                                                                
                             </Col>
                      </Row>
-                     </Container>
 
-              </section>
+              </Container>
+
+              
 
               {/* section Gap */}
               <div className={styles.section_gap}></div>
 
-         </div>
-       )
-     }
-     
-{/* =========================================================================================================
-                   LandingSixteen2 Component
-=============================================================================================================*/}
+              
+              {/* =========================================================================================================
+                            LandingSixteen2 Component
+              =============================================================================================================*/}
       
-
-
-const LandingSixteen2 = () => {
-
-       const today = new Date();
-       const year = today.getFullYear();
-
-  return (
-
-    <section  className={styles.LandingSixteen}>
 
                {/* =========================================================================================================
                             Love Section
                =============================================================================================================*/}
                <section>
+
                       <Container>
+
                              <Row className={styles.BannerRow}>
 
                                  {/* col---- */}
@@ -699,7 +626,9 @@ const LandingSixteen2 = () => {
                    Footer
                =============================================================================================================*/}
               <section>
+
                    <Container fluid className={styles.ContainerPad}>
+
                      <div className={styles.FooterBg}>
 
                             <Container>
@@ -833,62 +762,15 @@ const LandingSixteen2 = () => {
       
 
 
-
-
-
-
-              {/* =========================================================================================================
-                   Banner One 
-               =============================================================================================================*/}
-      
-
-
-
-
-              {/* =========================================================================================================
-                   Banner One 
-               =============================================================================================================*/}
-      
-
-
-
-
-
-
-
-
-
-
-    </section>
+       </section>
   )
+
 }
 
 
 
-            {/* =========================================================================================================
-                   Banner One 
-            =============================================================================================================*/}
-      
-
-
-
-            {/* =========================================================================================================
-                   Banner One 
-            =============================================================================================================*/}
-      
-
-
-
-
-
-
-
-
-
-
-
+          
      export {
-       LandingSixteen,
-       LandingSixteen1,
-       LandingSixteen2
+       LandingSixteen
+       
      }
