@@ -21,10 +21,10 @@ import {FreeMode, Autoplay, Pagination,Navigation } from "swiper";
 import ShippingAddress from '../../Components/LandingPage/Common/ShippingAddress';
 
 // ShippingAddress Img
-import DelivaryImgUrl1 from '../../public/images/landing_14/delivary1.png'
-import DelivaryImgUrl2 from '../../public/images/landing_14/delivary2.png'
-import DelivaryImgUrl3 from '../../public/images/landing_14/delivary3.png'
-import DelivaryImgUrl4 from '../../public/images/landing_14/delivary4.png'
+import DelivaryImgUrl1 from '../../public/images/landing_14/delivary1.png';
+import DelivaryImgUrl2 from '../../public/images/landing_14/delivary2.png';
+import DelivaryImgUrl3 from '../../public/images/landing_14/delivary3.png';
+import DelivaryImgUrl4 from '../../public/images/landing_14/delivary4.png';
 
 
 const index = () => {

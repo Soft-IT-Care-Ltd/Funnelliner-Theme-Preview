@@ -52,6 +52,13 @@ ShippingAddress
     object-fit: contain;
 }
 
+@media (max-width: 1023px) {
+
+    .ShippingAddressItem {
+        margin-bottom: 20px;
+    }
+  
+}
 
 
 /* ------------------------------------------------------------------------------------------- 
