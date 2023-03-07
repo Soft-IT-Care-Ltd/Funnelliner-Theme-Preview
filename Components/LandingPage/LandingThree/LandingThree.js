@@ -16,7 +16,7 @@ import { RiShoppingCart2Line } from "react-icons/ri";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 
-
+import Order from "../Common/Order";
 // Menu Image Url
 import landingImageUrl from "../../../public/images/landing_3/logo.png";
 import Menubar from "../Common/Menubar/Menubar";
@@ -445,130 +445,11 @@ const LandingThree = () => {
       {/* -----------------------------------------------------------------------------------------------------------------------------------
             OrderConfirmFrom Section
         --------------------------------------------------------------------------------------------------------------------------------------*/}
-      <section className='OrderConfirmFrom' id='placeAnOrder'>
-        <Container>
-          <form>
-            <Row>
+            <section id="Order">
+        
+              <Order></Order>
 
-            <h2 className="FromH2">তাই আর দেরি না করে আজই অর্ডার করুন</h2>
-
-              {/* left */}
-              <Col lg={7}>
-                <div className='OrderConfirmLeft'>
-                  <h3>Billing details</h3>
-
-                  <div className='CustomeInput'>
-                    <input
-                      type='text'
-                      name=''
-                      {...register("customerName", { required: true })}
-                      placeholder='আপনার নাম লিখুন *'
-                    />
-                    {errors.customerName && (
-                      <span style={{ color: "red" }}>Name is required</span>
-                    )}
-                  </div>
-
-                  <div className='CustomeInput'>
-                    <input
-                      type='text'
-                      name=''
-                      {...register(
-                        "customerMobile",
-                        { required: true },
-                        { min: 11, max: 15 }
-                      )}
-                      placeholder='আপনার মোবাইল নাম্বার লিখুন *'
-                    />
-                    {errors.customerMobile && (
-                      <span style={{ color: "red" }}>
-                        Valid Mobile Number require
-                      </span>
-                    )}
-                  </div>
-
-                  <div className='CustomeInput'>
-                    <input
-                      type='text'
-                      name=''
-                      {...register("customerAddress", { required: true })}
-                      placeholder='আপনার সম্পূর্ণ ঠিকানা লিখুন *'
-                    />
-                    {errors.customerAddress && (
-                      <span style={{ color: "red" }}>Address is required</span>
-                    )}
-                  </div>
-
-                  {/* Payment */}
-                  <div className='Payment'>
-                    <h3>Paymet</h3>
-
-                    <div className='CustomeInput d_flex'>
-                      <input type='checkbox' name='' id='CashOn' checked />
-                      <label htmlFor='CashOn'>ক্যাশ অন ডেলিভারি</label>
-                    </div>
-
-                    <div className='ArrowBg'>
-                      <p>Pay with cash on delivery.</p>
-                    </div>
-                  </div>
-                </div>
-              </Col>
-
-              {/* right */}
-              <Col lg={5}>
-                <div className='OrderConfirmRight'>
-                  <h3>Your order</h3>
-
-                  <ul>
-                    <li>
-                      <h4>Product</h4>
-                      <h5>Subtotal</h5>
-                    </li>
-
-                    <li>
-                      <div className='left d_flex'>
-                        <div className='img'>
-                        <img src="images/product.svg" alt="" />
-                        </div>
-
-                        <p>Ghee Of Story Ghee Set Boss</p>
-                      </div>
-
-                      <div className='right d_flex'>
-                        <input
-                          type='number'
-                          onChange={handleQuantityChange}
-                          defaultValue={1}
-                          min={1}
-                        />
-
-                        <h5>BDT 1,690.00</h5>
-                      </div>
-                    </li>
-
-                    <li>
-                      <h5>Subtotal</h5>
-                      <h5>1,690.00</h5>
-                    </li>
-
-                    <li>
-                      <h4>Total</h4>
-                      <h4>1,690.00</h4>
-                    </li>
-                  </ul>
-
-                  <button type='submit'>
-                    {" "}
-                    <RiShoppingCart2Line /> Place Order TK{" "}
-                    1,690.00
-                  </button>
-                </div>
-              </Col>
-            </Row>
-          </form>
-        </Container>
-      </section>
+            </section>
 
       {/* -----------------------------------------------------------------------------------------------------------------------------------
             FreeDelivery Section
