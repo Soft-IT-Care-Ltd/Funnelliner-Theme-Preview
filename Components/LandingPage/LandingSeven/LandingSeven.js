@@ -16,8 +16,6 @@ import landingImageUrl from "../../../public/images/landing_7/logo.svg";
 
 
 
-
-
 export default function LandingSeven() {
 
   const today = new Date();
@@ -414,7 +412,7 @@ export default function LandingSeven() {
         ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
       <section className={styles.section_gaps}></section>
 
-      <section id="Order">
+      <section id="placeAnOrder">
         
         <Order></Order>
 

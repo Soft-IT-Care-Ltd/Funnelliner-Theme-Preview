@@ -827,8 +827,55 @@
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
-    START  PART
+   Order Confram
 --------------------------------------------------------------------------------------------------------------------------------------------------- */
+.Landing__Two .OrderConfirmRight button{
+    background: #DE5478;
+    border: none;
+}
+
+
+.Landing__Two .OrderConfirmFrom{
+    background-color: #F5F5F5;
+    padding-top: 50px;
+}
+
+.Landing__Two.ArrowBg p{
+    color: #FFFFFF !important;
+    font-size: 14px;
+    padding-left: 24px !important;
+    font-weight: 400 ;
+}
+.Landing__Two .ArrowBg {
+    background: #DE5478 !important;
+}
+ 
+.Landing__Two .OrderConfirmLeft .Payment .CustomeInput input + label:before {
+    content: '';
+    background: #DE5478 ;
+    border-radius: 5px;
+    color: #DE5478 ;
+}
+
+.Landing__Two .OrderConfirmRight button{
+    background: #DE5478;
+    border: none;
+    color: #ffffff;
+}
+
+.Landing__Two .OrderConfirmLeft .Payment .ArrowBg::after {
+    position: absolute;
+    content: '';
+    top: -15px;
+    left: 20%;
+    width: 30px;
+    height: 15px;
+    border-bottom: solid 15px;
+    border-left: solid 15px transparent;
+    border-right: solid 15px transparent;
+    color: #DE5478;
+}
+
 
 
 

@@ -197,7 +197,8 @@ const LandingOne = (props) => {
                   <h2> {props.orderTitle}</h2>
                   <h1>{props.productPrice} </h1>
 
-                  <Link href='#Order' className={styles.bg} activeClass='active'>
+                  <Link href='#placeAnOrder' className={styles.bg} activeClass='active'>
+                    
                     অর্ডার করুন
                   </Link>
                 </div>
@@ -377,7 +378,7 @@ const LandingOne = (props) => {
                 <img src='images/landing_1/order.png' alt='' />
 
                 <div className={styles.overlay_text}>
-                  <Link href='#Order' activeClass='active' className={styles.bg}>
+                  <Link href='#placeAnOrder' activeClass='active' className={styles.bg}>
                     {props.buttonInnerText}
                   </Link>
 
@@ -649,7 +650,7 @@ const LandingOne = (props) => {
       </section>
       
       {/* order */}
-      <section id="Order">
+      <section id="placeAnOrder">
         
         <Order></Order>
 
