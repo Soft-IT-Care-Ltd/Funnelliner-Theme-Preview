@@ -55,9 +55,9 @@ const index = () => {
 
                                     <h1>মধু বলতেই সুন্দরবনের মিশ্র ফুলের প্রাকৃতিক খাঁটি মধু অন্যতম.</h1>
 
-                                    <Link href='#Order' className={styles.bg}><AiOutlineShoppingCart/> অর্ডার করুন </Link>
+                                    <Link href='#placeAnOrder' className={styles.bg}><AiOutlineShoppingCart/> অর্ডার করুন </Link>
 
-                                    <Link href='#Order' className={styles.bg2}> ১৬৫০ টাকা </Link>
+                                    <Link href='#placeAnOrder' className={styles.bg2}> ১৬৫০ টাকা </Link>
 
                                     <div className={styles.uldiv}>
 
@@ -257,7 +257,7 @@ const index = () => {
 
                                     <h6> সারা দেশে ফ্রি হোম ডেলিভারি </h6>
 
-                                    <Link href='#Order' className={`${styles.bg} ${styles.bg3}`}><AiOutlineShoppingCart/> অর্ডার করুন </Link>
+                                    <Link href='#placeAnOrder' className={`${styles.bg} ${styles.bg3}`}><AiOutlineShoppingCart/> অর্ডার করুন </Link>
 
                                 </div>
 
@@ -470,7 +470,7 @@ const index = () => {
 
                         <h6> সারা দেশে ফ্রি হোম ডেলিভারি </h6>
 
-                        <Link href='#Order' className={`${styles.bg} ${styles.bg3}`}><AiOutlineShoppingCart/> অর্ডার করুন </Link>
+                        <Link href='#placeAnOrder' className={`${styles.bg} ${styles.bg3}`}><AiOutlineShoppingCart/> অর্ডার করুন </Link>
 
                     </div>
 
@@ -598,7 +598,7 @@ const index = () => {
 
                             <h5 className={styles.LastOrderDivAbs1}>সারা দেশে ফ্রি হোম ডেলিভারি</h5>
                             <h6 className={styles.LastOrderDivAbs2}>ডিস্কাউন্ট মূল্যঃ ১৬৫০ টাকা</h6>
-                            <Link href='#Order' className={` ${styles.bg3} ${styles.bg7} ${styles.bg8}`}><AiOutlineShoppingCart/> অর্ডার করুন </Link>
+                            <Link href='#placeAnOrder' className={` ${styles.bg3} ${styles.bg7} ${styles.bg8}`}><AiOutlineShoppingCart/> অর্ডার করুন </Link>
 
 
                         </div>
@@ -624,7 +624,7 @@ const index = () => {
             ===============================================================================================================*/}
               
       
-              <section className="OrderConfirmFrom " id="Order">
+                <section className="OrderConfirmFrom " id="placeAnOrder">
 
                     <section>
 

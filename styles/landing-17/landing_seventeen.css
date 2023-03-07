@@ -2,7 +2,7 @@
     left: 10px;
     right: auto;
     padding: 10px 20px !important;
-    background: yellow;
+    background: #FFCB05;
     border-radius: 50px;
 }
 
@@ -10,12 +10,12 @@
     left: 10px;
     right: auto;
     padding: 10px 20px !important;
-    background: yellow;
+    background: #FFCB05;
     border-radius: 50px;
 }
 
 .swiper-button-next:after, .swiper-button-prev:after {
-    font-size: 20px !important;
+    font-size: 15px !important;
     color: #42210B;
 }
 

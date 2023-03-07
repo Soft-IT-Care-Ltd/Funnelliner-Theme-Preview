@@ -2,8 +2,6 @@ import React from 'react'
 import styles from '../../../styles/landing-16/landing_sixteen.module.css'
 import { Col, Container, Row } from 'react-bootstrap';
 import Link from 'next/link';
-
-
 import  { useRef, useState } from "react";
 
 // Import Swiper React components
@@ -23,8 +21,7 @@ import { IoIosMail} from "react-icons/io";
 import { RiShoppingCart2Line} from "react-icons/ri";
 import { VscDebugBreakpointData } from "react-icons/vsc";
 
-
-
+import Order from "../Common/Order";
 
 
 const LandingSixteen = () => {
@@ -55,7 +52,7 @@ const LandingSixteen = () => {
                                     <div className={styles.Bannertxtbox}>    
                                         <h1> ড্রাই ফ্রুটের অনন্য স্বাদ আর ন্যাচারাল হানির পুষ্টিকর গুন এখন এক জায়গায় </h1>
                                         <h4>হানি বি <span>এর সাথে !</span></h4>
-                                        <Link className={styles.Btnbg} href='#Order'>অর্ডার করুন</Link>
+                                        <Link className={styles.Btnbg} href='#placeAnOrder'>অর্ডার করুন</Link>
                                         <h5>১২০০ টাকা</h5>
 
                                     </div>
@@ -352,7 +349,7 @@ const LandingSixteen = () => {
                             <div  className={`${styles.Banner4txtbox} ${styles.Bannertxtbox}`}>
                                    <h5>১২০০ টাকা</h5>
                                    <p>সারা দেশে ফ্রি হোম ডেলিভারি</p>
-                                   <Link className={styles.Btnbg} href='#Order'>অর্ডার করুন</Link>
+                                   <Link className={styles.Btnbg} href='#placeAnOrder'>অর্ডার করুন</Link>
                             </div>
 
                      </div>
@@ -487,7 +484,7 @@ const LandingSixteen = () => {
                                     <div className={styles.LoveTextBox} >    
                                         <h2> সুস্থ সবল জীবনযাপন করতে আর শারীরিক শক্তি বৃদ্ধি করতে অর্ডার করুন আজই </h2>
                                         <h5>১২০০ টাকা</h5>
-                                        <Link className={styles.Btnbg} href='#Order'>অর্ডার করুন</Link>
+                                        <Link className={styles.Btnbg} href='#placeAnOrder'>অর্ডার করুন</Link>
                                       
 
                                     </div>
@@ -510,108 +507,9 @@ const LandingSixteen = () => {
               ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
               <section className={styles.section_gap}></section>
 
-              <section className="OrderConfirmFrom" id="Order">
-
-              <Container>
-
-              <Row>
-
-              {/* left */}
-              <Col lg={7}>
-
-              <div className="OrderConfirmLeft">
-
-                     <h3>Billing details</h3>
-
-                     <div className="CustomeInput">
-                     <input type="text" name="" placeholder='আপনার নাম লিখুন *' />
-                     </div>
-
-                     <div className="CustomeInput">
-                     <input type="text" name="" placeholder='আপনার মোবাইল নাম্বার লিখুন *' />
-                     </div>
-
-                     <div className="CustomeInput">
-                     <input type="text" name="" placeholder='আপনার সম্পূর্ণ ঠিকানা লিখুন *' />
-                     </div>
-
-                     {/* Payment */}
-                     <div className="Payment">
-
-                     <h3>Paymet</h3>
-
-                     <div className="CustomeInput d_flex">
-                     <input type="checkbox" name="" id='CashOn' checked/>
-                     <label htmlFor="CashOn">ক্যাশ অন ডেলিভারি</label>
-                     </div>
-
-                     <div className="ArrowBg">
-                     <p>Pay with cash on delivery.</p>
-                     </div>
-
-                     </div>
-
-              </div>
-
-              </Col>
-
-              {/* right */}
-              <Col lg={5}>
-
-              <div className="OrderConfirmRight">
-
-                     <h3>Your order</h3>
-
-                     <ul>
-
-                     <li>
-                     <h4>Product</h4>
-                     <h5>Subtotal</h5>
-                     </li>
-
-                     <li>
-
-                     <div className="left d_flex">
-                            
-                            <div className="img">
-                            <img src="images/product.svg" alt="" />
-                            </div>
-
-                            <p>Flower Of Story Men’s Perfume Set Boss</p>
-
-                     </div>
-
-                     <div className="right d_flex">
-
-                            <input type="number" />
-
-                            <h5>BDT 1,690.00</h5>
-
-                     </div>
-
-                     </li>
-
-                     <li>
-                     <h5>Subtotal</h5>
-                     <h5>1,690.00</h5>
-                     </li>
-
-                     <li>
-                     <h4>Total</h4>
-                     <h4>1,690.00</h4>
-                     </li>
-                     
-                     </ul>
-
-                     <button> <RiShoppingCart2Line/> Place Order BDT 49.00</button>
-
-              </div>
-
-              </Col>
-
-              </Row>
-
-              </Container>
+              <section id="placeAnOrder">
+              
+                     <Order></Order>
 
               </section>
 

@@ -14,14 +14,16 @@ import "swiper/css/navigation";
 // import required modules
 import { FreeMode, Autoplay, Pagination, Navigation } from "swiper";
 
-import {
-  MdOutlineKeyboardArrowLeft,
-  MdOutlineKeyboardArrowRight,
-} from "react-icons/md";
+
 import { FiPhoneCall } from "react-icons/fi";
 import { IoIosMail } from "react-icons/io";
 import { RiShoppingCart2Line } from "react-icons/ri";
 import { VscDebugBreakpointData } from "react-icons/vsc";
+
+import Order from "../Common/Order";
+
+
+
 
 const LandingSeventeen = () => {
   const swiperRef = useRef();
@@ -63,7 +65,7 @@ const LandingSeventeen = () => {
                       হানি বি <span>এর সাথে !</span>
                     </h4>
                     <h5>মাত্র ১২০০ টাকা</h5>
-                    <Link className={styles.Btnbg} href="#Order">
+                    <Link className={styles.Btnbg} href="#placeAnOrder">
                       অর্ডার করুন
                     </Link>
                   </div>
@@ -336,7 +338,7 @@ const LandingSeventeen = () => {
                 দেশ সেরা হানি নাট এখন <br /> আপনাদের হাতের কাছেই !
               </h6>
               <h5>মাত্র ১২০০ টাকা</h5>
-              <Link className={styles.Btnbg} href="#Order">
+              <Link className={styles.Btnbg} href="#placeAnOrder">
                 অর্ডার করুন
               </Link>
             </div>
@@ -375,7 +377,7 @@ const LandingSeventeen = () => {
                 slidesPerView={2}
                 spaceBetween={100}
                 navigation={true} 
-                modules={[Navigation]}
+                modules={[Navigation,]}
                 className="mySwiper"
                 loop={true}
 
@@ -512,7 +514,7 @@ const LandingSeventeen = () => {
                 alt="img"
               />
               <h5>মাত্র ১২০০ টাকা</h5>
-              <Link className={styles.Btnbg} href="#Order">
+              <Link className={styles.Btnbg} href="#placeAnOrder">
                 অর্ডার করুন
               </Link>
             </div>
@@ -524,107 +526,28 @@ const LandingSeventeen = () => {
                         OrderConfirmFrom
                 ===============================================================================================================*/}
 
-      <section className="OrderConfirmFrom BgChange" id="Order">
-        <section>
-          <Container className={styles.OrderBg}>
-            <Row>
-              {/* left */}
-              <Col lg={7}>
-                <div className="OrderConfirmLeft">
-                  <h3 className={styles.OrderBgh3}>Billing details</h3>
 
-                  <div className="CustomeInput">
-                    <input
-                      type="text"
-                      name=""
-                      placeholder="আপনার নাম লিখুন *"
-                    />
-                  </div>
+                <section id="placeAnOrder">
 
-                  <div className="CustomeInput">
-                    <input
-                      type="text"
-                      name=""
-                      placeholder="আপনার মোবাইল নাম্বার লিখুন *"
-                    />
-                  </div>
+                        <Container className={styles.OrderBg}>
 
-                  <div className="CustomeInput">
-                    <input
-                      type="text"
-                      name=""
-                      placeholder="আপনার সম্পূর্ণ ঠিকানা লিখুন *"
-                    />
-                  </div>
+                                <Row>
+                                
+                                        <Order></Order>
+                                
+                                </Row>
 
-                  {/* Payment */}
-                  <div className="Payment">
-                    <h3 className={styles.OrderBgh3}>Paymet</h3>
+                        </Container>
 
-                    <div className="CustomeInput d_flex">
-                      <input type="checkbox" name="" id="CashOn" checked />
-                      <label htmlFor="CashOn">ক্যাশ অন ডেলিভারি</label>
-                    </div>
-
-                    <div className="ArrowBg">
-                      <p>Pay with cash on delivery.</p>
-                    </div>
-                  </div>
-                </div>
-              </Col>
-
-              {/* right */}
-              <Col lg={5}>
-                <div className="OrderConfirmRight">
-                  <h3 className={styles.OrderBgh3}>Your order</h3>
-
-                  <ul>
-                    <li>
-                      <h4>Product</h4>
-                      <h5>Subtotal</h5>
-                    </li>
-
-                    <li>
-                      <div className="left d_flex">
-                        <div className="img">
-                          <img src="images/product.svg" alt="" />
-                        </div>
-
-                        <p>Honey Of Story Honey Set Boss</p>
-                      </div>
-
-                      <div className="right d_flex">
-                        <input type="number" />
-
-                        <h5>BDT 1,690.00</h5>
-                      </div>
-                    </li>
-
-                    <li>
-                      <h5>Subtotal</h5>
-                      <h5>1,690.00</h5>
-                    </li>
-
-                    <li>
-                      <h4>Total</h4>
-                      <h4>1,690.00</h4>
-                    </li>
-                  </ul>
-
-                  <button>
-                    {" "}
-                    <RiShoppingCart2Line /> Place Order BDT 49.00
-                  </button>
-                </div>
-              </Col>
-            </Row>
-          </Container>
-        </section>
-      </section>
+                </section>
+              
+           
+        
+     
 
       <section className={styles.section_gap}></section>
 
-      {/* =========================================================================================================
+                 {/* =========================================================================================================
                         Footer----
                 ===============================================================================================================*/}
 
