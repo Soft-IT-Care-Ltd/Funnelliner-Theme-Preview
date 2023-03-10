@@ -49,11 +49,11 @@ const index = () => {
                                     <div className="Landing__18__Banner__Img d_flex d_justify">
                                         
                                         <div className="">
-                                            <img src="/images/Landing_18/banner1.png" alt="" />
+                                            <img src="/images/landing_18/banner1.png" alt="" />
                                         </div>
 
                                         <div className="">
-                                            <img src="/images/Landing_18/banner2.png" alt="" />
+                                            <img src="/images/landing_18/banner2.png" alt="" />
                                         </div>
                                         
                                     </div>
@@ -79,7 +79,7 @@ const index = () => {
 
                                 <div className="Landing__18__Banner__Right">
 
-                                    <img src="/images/Landing_18/banner3.png" alt="" />
+                                    <img src="/images/landing_18/banner3.png" alt="" />
 
                                 </div>
 
@@ -172,7 +172,7 @@ const index = () => {
             <div className="Landing__18__WhyBuy">
 
                 <div className="Landing__18__whybuy__bg">
-                    <img src="/images/Landing_18/whybuy_bg.png" alt="" />
+                    <img src="/images/landing_18/whybuy_bg.png" alt="" />
                 </div>
 
                 <Container>
@@ -187,15 +187,15 @@ const index = () => {
 
                                 <ul>
 
-                                    <li> <img src="images/Landing_18/tik.png" alt="" />  গুঁড়া করার জন্য ব্যবহৃত  বিভিন্ন আইটেম খাঁটি গুঁড়া মশলা আমাদের দেশের বিভিন্ন জায়গা থেকে সংগ্রহ করা হয়। নিজেরা সংগ্রহ করা হয় বলে এর গুণগত মান নিয়ে কোন প্রকার সন্দেহের অবকাশ থাকে না। </li>
+                                    <li> <img src="/images/landing_18/tik.png" alt="" />  গুঁড়া করার জন্য ব্যবহৃত  বিভিন্ন আইটেম খাঁটি গুঁড়া মশলা আমাদের দেশের বিভিন্ন জায়গা থেকে সংগ্রহ করা হয়। নিজেরা সংগ্রহ করা হয় বলে এর গুণগত মান নিয়ে কোন প্রকার সন্দেহের অবকাশ থাকে না। </li>
 
-                                    <li> <img src="images/Landing_18/tik.png" alt="" />   রঙ সহ বিভিন্ন প্রকার কমদামি উপকরণের মিশ্রণ থেকে সম্পূর্ণ নিরাপদ।  </li>
-                                    <li> <img src="images/Landing_18/tik.png" alt="" />  এই গুঁড়া BSTI (Bangladesh Standard and Testing Institution) অনুমোদিত।   </li>
-                                    <li> <img src="images/Landing_18/tik.png" alt="" />  সম্পূর্ণ নিজস্ব তত্ত্বাবধানে পরিষ্কার করে শুকানো হয়। এরপর ভাঙানো হয়।  </li>
-                                    <li> <img src="images/Landing_18/tik.png" alt="" />  বাজারের খোলা পণ্যে অনেক ক্ষেত্রেই কাঠের গুঁড়া ও আটার ভুষির মতন উপাদানের মিশ্রণ যোগ করে গুঁড়ার পরিমাণ বৃদ্ধি করা হয়। কিন্তু আমাদের খাঁটি গুঁড়া মশলা কিছু মেশানো হয় না।  </li>
-                                    <li> <img src="images/Landing_18/tik.png" alt="" />  রান্নায় আনবে পারফেক্ট স্বাদ, সুগন্ধ ও তৃপ্তি  </li>
-                                    <li> <img src="images/Landing_18/tik.png" alt="" />  অনেকদিন সংরক্ষণ করতে পারবেন  </li>
-                                    <li> <img src="images/Landing_18/tik.png" alt="" />  শতভাগ নিরাপদ ও বিশুদ্ধ  </li>
+                                    <li> <img src="/images/landing_18/tik.png" alt="" />   রঙ সহ বিভিন্ন প্রকার কমদামি উপকরণের মিশ্রণ থেকে সম্পূর্ণ নিরাপদ।  </li>
+                                    <li> <img src="/images/landing_18/tik.png" alt="" />  এই গুঁড়া BSTI (Bangladesh Standard and Testing Institution) অনুমোদিত।   </li>
+                                    <li> <img src="/images/landing_18/tik.png" alt="" />  সম্পূর্ণ নিজস্ব তত্ত্বাবধানে পরিষ্কার করে শুকানো হয়। এরপর ভাঙানো হয়।  </li>
+                                    <li> <img src="/images/landing_18/tik.png" alt="" />  বাজারের খোলা পণ্যে অনেক ক্ষেত্রেই কাঠের গুঁড়া ও আটার ভুষির মতন উপাদানের মিশ্রণ যোগ করে গুঁড়ার পরিমাণ বৃদ্ধি করা হয়। কিন্তু আমাদের খাঁটি গুঁড়া মশলা কিছু মেশানো হয় না।  </li>
+                                    <li> <img src="/images/landing_18/tik.png" alt="" />  রান্নায় আনবে পারফেক্ট স্বাদ, সুগন্ধ ও তৃপ্তি  </li>
+                                    <li> <img src="/images/landing_18/tik.png" alt="" />  অনেকদিন সংরক্ষণ করতে পারবেন  </li>
+                                    <li> <img src="/images/landing_18/tik.png" alt="" />  শতভাগ নিরাপদ ও বিশুদ্ধ  </li>
 
                                 </ul>
 
@@ -207,7 +207,7 @@ const index = () => {
 
                             <div className="Landing__18__WhyBuy__Img">
 
-                                <img src="/images/Landing_18/whybuy.png" alt="" />
+                                <img src="/images/landing_18/whybuy.png" alt="" />
                                 
                                 <div className="Order">
                                     <Link href='tel:01894844452'>01894844452</Link>
@@ -231,7 +231,7 @@ const index = () => {
             <div className="Landing__18__StartingPrice">
 
                 <div className="Landing__18__StartingPrice__bg">
-                    <img src="/images/Landing_18/startprice_bg.png" alt="" />
+                    <img src="/images/landing_18/startprice_bg.png" alt="" />
                 </div>
 
                 <Container>
@@ -242,7 +242,7 @@ const index = () => {
 
                             <div className="Landing__18__StartingPrice__Img">
 
-                                <img src="/images/Landing_18/startprice.png" alt="" />
+                                <img src="/images/landing_18/startprice.png" alt="" />
 
                                 <div className="Landing__18__StartingPrice__Text">
 
@@ -292,7 +292,7 @@ const index = () => {
                                         <div className="Landing__18__Slider__Item">
 
                                             <div className="Landing__18__Slider__Img">
-                                                <img src="/images/Landing_18/slider3.png" alt="" />    
+                                                <img src="/images/landing_18/slider3.png" alt="" />    
                                             </div> 
                                             
                                             <div className="Landing__18__Slider__Text">
@@ -310,7 +310,7 @@ const index = () => {
                                         <div className="Landing__18__Slider__Item">
 
                                             <div className="Landing__18__Slider__Img">
-                                                <img src="/images/Landing_18/slider2.png" alt="" />    
+                                                <img src="/images/landing_18/slider2.png" alt="" />    
                                             </div> 
                                             
                                             <div className="Landing__18__Slider__Text">
@@ -328,7 +328,7 @@ const index = () => {
                                         <div className="Landing__18__Slider__Item">
 
                                             <div className="Landing__18__Slider__Img">
-                                                <img src="/images/Landing_18/slider1.png" alt="" />    
+                                                <img src="/images/landing_18/slider1.png" alt="" />    
                                             </div> 
                                             
                                             <div className="Landing__18__Slider__Text">
@@ -346,7 +346,7 @@ const index = () => {
                                         <div className="Landing__18__Slider__Item">
 
                                             <div className="Landing__18__Slider__Img">
-                                                <img src="/images/Landing_18/slider4.png" alt="" />    
+                                                <img src="/images/landing_18/slider4.png" alt="" />    
                                             </div> 
                                             
                                             <div className="Landing__18__Slider__Text">
@@ -364,7 +364,7 @@ const index = () => {
                                         <div className="Landing__18__Slider__Item">
 
                                             <div className="Landing__18__Slider__Img">
-                                                <img src="/images/Landing_18/slider3.png" alt="" />    
+                                                <img src="/images/landing_18/slider3.png" alt="" />    
                                             </div> 
                                             
                                             <div className="Landing__18__Slider__Text">
@@ -382,7 +382,7 @@ const index = () => {
                                         <div className="Landing__18__Slider__Item">
 
                                             <div className="Landing__18__Slider__Img">
-                                                <img src="/images/Landing_18/slider2.png" alt="" />    
+                                                <img src="/images/landing_18/slider2.png" alt="" />    
                                             </div> 
                                             
                                             <div className="Landing__18__Slider__Text">
@@ -400,7 +400,7 @@ const index = () => {
                                         <div className="Landing__18__Slider__Item">
 
                                             <div className="Landing__18__Slider__Img">
-                                                <img src="/images/Landing_18/slider1.png" alt="" />    
+                                                <img src="/images/landing_18/slider1.png" alt="" />    
                                             </div> 
                                             
                                             <div className="Landing__18__Slider__Text">
@@ -418,7 +418,7 @@ const index = () => {
                                         <div className="Landing__18__Slider__Item">
 
                                             <div className="Landing__18__Slider__Img">
-                                                <img src="/images/Landing_18/slider4.png" alt="" />    
+                                                <img src="/images/landing_18/slider4.png" alt="" />    
                                             </div> 
                                             
                                             <div className="Landing__18__Slider__Text">
@@ -452,7 +452,7 @@ const index = () => {
             ===============================================================================================================*/}
             <section className='Landing__18__Feature'>
 
-                <img src="/images/Landing_18/feature_bg.png" alt="" />
+                <img src="/images/landing_18/feature_bg.png" alt="" />
 
                 <div className="Landing__18__Feature__Content">
 
@@ -466,13 +466,13 @@ const index = () => {
 
                                 <ul>
 
-                                    <li> <img src="/images/Landing_18/featureli.png" alt="" /> এতে আছে নাইজেরিসিন নামক যৌগ যা ইনসুলিন রেজিস্ট্যান্স কমিয়ে ডায়াবেটিস নিয়ন্ত্রণে সাহায্য করে।</li>
-                                    <li> <img src="/images/Landing_18/featureli.png" alt="" /> আমাদের সেরা খাঁটি গুঁড়া মশলা দাঁতের ব্যথা উপশমে বেশ কার্যকরী। </li>
-                                    <li> <img src="/images/Landing_18/featureli.png" alt="" /> এতে অ্যান্টিমাইক্রোবিয়াল উপাদান – ক্যারিওফিলিন বিদ্যমান। </li>
-                                    <li> <img src="/images/Landing_18/featureli.png" alt="" /> এতে বিদ্যমান ইউজেনল খাদ্যে বিষক্রিয়া সারাতে সহায়তা করে। </li>
-                                    <li> <img src="/images/Landing_18/featureli.png" alt="" /> সর্দি – কাশি কমাতে দারুণভাবে কাজ করে। খাঁটি গুঁড়ো যা কোনো চিন্তা ছাড়াই ব্যবহার করা যেতে পারে। </li>
-                                    <li> <img src="/images/Landing_18/featureli.png" alt="" /> সাইনাসের ব্যথা উপশমে কাজ করে।  আপনি গুণমান সম্পর্কে আত্মবিশ্বাসী হতে পারেন </li>
-                                    <li> <img src="/images/Landing_18/featureli.png" alt="" /> এতে আছে নাইজেরিসিন নামক যৌগ যা ইনসুলিন রেজিস্ট্যান্স কমিয়ে ডায়াবেটিস নিয়ন্ত্রণে সাহায্য করে। </li>
+                                    <li> <img src="/images/landing_18/featureli.png" alt="" /> এতে আছে নাইজেরিসিন নামক যৌগ যা ইনসুলিন রেজিস্ট্যান্স কমিয়ে ডায়াবেটিস নিয়ন্ত্রণে সাহায্য করে।</li>
+                                    <li> <img src="/images/landing_18/featureli.png" alt="" /> আমাদের সেরা খাঁটি গুঁড়া মশলা দাঁতের ব্যথা উপশমে বেশ কার্যকরী। </li>
+                                    <li> <img src="/images/landing_18/featureli.png" alt="" /> এতে অ্যান্টিমাইক্রোবিয়াল উপাদান – ক্যারিওফিলিন বিদ্যমান। </li>
+                                    <li> <img src="/images/landing_18/featureli.png" alt="" /> এতে বিদ্যমান ইউজেনল খাদ্যে বিষক্রিয়া সারাতে সহায়তা করে। </li>
+                                    <li> <img src="/images/landing_18/featureli.png" alt="" /> সর্দি – কাশি কমাতে দারুণভাবে কাজ করে। খাঁটি গুঁড়ো যা কোনো চিন্তা ছাড়াই ব্যবহার করা যেতে পারে। </li>
+                                    <li> <img src="/images/landing_18/featureli.png" alt="" /> সাইনাসের ব্যথা উপশমে কাজ করে।  আপনি গুণমান সম্পর্কে আত্মবিশ্বাসী হতে পারেন </li>
+                                    <li> <img src="/images/landing_18/featureli.png" alt="" /> এতে আছে নাইজেরিসিন নামক যৌগ যা ইনসুলিন রেজিস্ট্যান্স কমিয়ে ডায়াবেটিস নিয়ন্ত্রণে সাহায্য করে। </li>
 
                                 </ul>
 
@@ -493,7 +493,7 @@ const index = () => {
             ===============================================================================================================*/}
             <section className='Landing__18__Order'>
 
-                <img className='Order_bg' src="/images/Landing_18/order_bg.png" alt="" />
+                <img className='Order_bg' src="/images/landing_18/order_bg.png" alt="" />
 
                 <div className="Landing__18__Order__Content">
 
@@ -523,7 +523,7 @@ const index = () => {
             ===============================================================================================================*/}
             <footer className='Landing__18__Footer'>
 
-                <img className='footer_bg' src="/images/Landing_18/footer_bg.png" alt="" />
+                <img className='footer_bg' src="/images/landing_18/footer_bg.png" alt="" />
 
                 <div className="Landing__18__Footer__Content">
 
@@ -535,7 +535,7 @@ const index = () => {
                                 
                                 <div className="Landing__18__Footer__Content">
                                 
-                                    <img src="/images/Landing_18/banner2.png" alt="" />
+                                    <img src="/images/landing_18/banner2.png" alt="" />
 
                                     <ul>
                                         <li><Link href=''>Privacy Policy</Link></li>
