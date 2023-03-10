@@ -15,7 +15,8 @@
 
 
 .Landing__Four .OrderConfirmFrom{
-    background-color: #F5F5F5;
+    background-image: url('../../public/images/landing_4/yellowcombbg.png');
+    background-color: #F8D663;
     padding-top: 50px;
 }
 

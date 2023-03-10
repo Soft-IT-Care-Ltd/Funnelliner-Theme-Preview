@@ -6,6 +6,8 @@ import  { useRef, useState } from "react";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { BsFacebook,BsInstagram,BsYoutube } from "react-icons/bs";
+
 
 // Import Swiper styles
 import "swiper/css";
@@ -13,9 +15,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 // import required modules
 import {FreeMode, Autoplay, Pagination, Navigation } from "swiper";
-
-
-import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight} from "react-icons/md";
 import { FiPhoneCall} from "react-icons/fi";
 import { IoIosMail} from "react-icons/io";
 import { RiShoppingCart2Line} from "react-icons/ri";
@@ -606,6 +605,16 @@ const LandingSixteen = () => {
                                           <div className={styles.FooterBgTxtBox}>
                                                  <h4>অর্ডার পেতে কল করুন এই নাম্বারে</h4>
                                                  <h5>+8801894844452</h5>  
+
+                                                 
+                                          </div>
+
+                                          <div className={styles.SocialIconBox}>
+                                                    
+                                                    <Link href="#"> <BsFacebook/> </Link>
+                                                    <Link href="#"> <BsInstagram/> </Link>
+                                                    <Link href="#"> <BsYoutube/> </Link>
+                                                    
                                           </div>
 
                                       </Col>

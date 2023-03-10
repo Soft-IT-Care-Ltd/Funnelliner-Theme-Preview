@@ -130,7 +130,7 @@
 }
 
 .Banner .titleHeader h1{
-    font-size: 80px;
+    font-size: 83px;
     letter-spacing: 0.11em;
     margin-right: 30px;
 }
@@ -366,6 +366,13 @@
     .LandingSix .container{
         width: 90%;
     }
+
+    .Banner .titleHeader h1{
+        font-size: 70px;
+        letter-spacing: 0.11em;
+        margin-right: 30px;
+    }
+    
 
     .LandingSix .container h3 {
         font-size: 22px;

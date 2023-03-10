@@ -873,6 +873,24 @@
 }
 
 
+/* tine Footer */
+
+.tinyFooter p a{
+    display: inline;
+    font-size: 24px;
+    font-weight: 600;
+    color: #42210B;
+    padding: 0 5px;
+  }
+
+.tinyFooter p {
+        line-height: 40px;
+        text-align: center;
+  }
+
+.tinyFooter  {
+       margin-top: 50px;
+  }
 
 
 
@@ -1341,5 +1359,13 @@
         margin-top: -30px;
     }
 
+
+    .LandingOne a.bg,
+    .LandingOne button.bg{
+        padding: 12px 30px;
+        font-size: 20px;
+        line-height: 35px;
+    }
+    
 
 }

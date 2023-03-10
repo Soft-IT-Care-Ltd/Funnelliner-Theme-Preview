@@ -36,6 +36,9 @@ const LandingOne = (props) => {
 
   const [shopID, setShopID] = useState();
 
+  const today = new Date();
+  const year = today.getFullYear();   
+
   const {
     register,
     handleSubmit,
@@ -730,6 +733,16 @@ const LandingOne = (props) => {
                 </ul>
               </div>
             </Col>
+
+
+             {/* Tiny Footer */}
+            <div className={styles.tinyFooter}>
+                
+                <p>@ {year} All Rights Reserved </p>
+                <p>System developed by <Link href='https://funnelliner.com/'>Funnel Liner</Link> </p>
+
+          </div>
+
           </Row>
         </Container>
       </section>

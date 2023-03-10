@@ -665,7 +665,7 @@
 
   }
   .Banner6TxtBox h2 {
-       color: #FFFBF9;      
+       color: #FFFBF9 !important;      
   }
 
   .Banner6TxtBox li{

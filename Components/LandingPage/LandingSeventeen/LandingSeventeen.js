@@ -4,8 +4,11 @@ import { Col, Container, Row } from "react-bootstrap";
 import Link from "next/link";
 
 import { useRef, useState } from "react";
+import { BsFacebook,BsInstagram,BsYoutube } from "react-icons/bs";
+
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+
 
 // Import Swiper styles
 import "swiper/css";
@@ -13,7 +16,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 // import required modules
 import { FreeMode, Autoplay, Pagination, Navigation } from "swiper";
-
 
 import { FiPhoneCall } from "react-icons/fi";
 import { IoIosMail } from "react-icons/io";
@@ -106,11 +108,17 @@ const LandingSeventeen = () => {
                    Slider One 
             ===============================================================================================================*/}
       <section className={styles.SecSlider}>
+
         <Container>
+
           <div className={styles.SliderTopTxt}>
+
             <h3 className={styles.SliderTopTxtDev}>
+
               আমাদের হানি নাট তৈরি হয় বিশ্বসেরা ইনগ্রিডিয়েন্টস দিয়ে
+
             </h3>
+
             <img
               className={styles.SliderTopTxtAbsImg}
               src="images/landing_17/img3.svg"
@@ -119,7 +127,9 @@ const LandingSeventeen = () => {
           </div>
 
           <Row className={styles.SliderTop_gap}>
+
             <Col>
+            
               <Swiper
                  slidesPerView={3}
                  spaceBetween={30}
@@ -623,6 +633,15 @@ const LandingSeventeen = () => {
                   <div className={styles.FooterBgTxtBox}>
                     <h4>অর্ডার পেতে কল করুন এই নাম্বারে</h4>
                     <h5>+8801894844452</h5>
+
+                     <div className={styles.SocialIconBox}>
+                                                    
+                        <Link href="#"> <BsFacebook/> </Link>
+                        <Link href="#"> <BsInstagram/> </Link>
+                        <Link href="#"> <BsYoutube/> </Link>
+                                                    
+                      </div>
+                    
                   </div>
                 </Col>
 

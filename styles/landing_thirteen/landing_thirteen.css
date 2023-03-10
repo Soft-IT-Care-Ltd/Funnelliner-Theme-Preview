@@ -9,7 +9,7 @@
 
 
 .Landing__Thirteen .OrderConfirmRight button{
-    background: #663807;
+    background: #93CA41;
     border: none;
 }
 
@@ -27,18 +27,18 @@
 }
 
 .Landing__Thirteen .ArrowBg {
-    background: #663807 !important;
+    background: #93CA41 !important;
 }
  
 .Landing__Thirteen .OrderConfirmLeft .Payment .CustomeInput input + label:before {
     content: '';
-    background: #663807 ;
+    background: #93CA41 ;
     border-radius: 5px;
-    color:#663807 ;
+    color:#93CA41 ;
 }
 
 .Landing__Thirteen .OrderConfirmRight button{
-    background: #663807;
+    background: #93CA41;
     border: none;
     color: #ffffff;
 }
@@ -53,5 +53,5 @@
     border-bottom: solid 15px;
     border-left: solid 15px transparent;
     border-right: solid 15px transparent;
-    color:#663807;
+    color:#93CA41;
 }

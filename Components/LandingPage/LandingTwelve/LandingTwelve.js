@@ -297,14 +297,14 @@ export default function LandingTwelve() {
       
 
                 <div className={styles.Banner6TxtBox}>
-                <div className={styles.Banner6Rel}>
-                   <img className={styles.Banner6Abs1} src="images/landing_12/m11.svg" alt="img" />
-                   <img className={styles.Banner6Abs2} src="images/landing_12/m13.svg" alt="img" />
-                   <img className={styles.Banner6Abs3} src="images/landing_12/m14.svg" alt="img" />
-                   <img className={styles.Banner6Abs4} src="images/landing_12/m12.svg" alt="img" />
-                   <img className={styles.Banner6Abs5} src="images/landing_12/m15.svg" alt="img" />
+                    <div className={styles.Banner6Rel}>
+                      <img className={styles.Banner6Abs1} src="images/landing_12/m11.svg" alt="img" />
+                      <img className={styles.Banner6Abs2} src="images/landing_12/m13.svg" alt="img" />
+                      <img className={styles.Banner6Abs3} src="images/landing_12/m14.svg" alt="img" />
+                      <img className={styles.Banner6Abs4} src="images/landing_12/m12.svg" alt="img" />
+                      <img className={styles.Banner6Abs5} src="images/landing_12/m15.svg" alt="img" />
 
-               </div>
+                  </div>
 
 
 

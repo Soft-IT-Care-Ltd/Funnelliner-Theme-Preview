@@ -1,7 +1,22 @@
 /* OrderConfirmFrom */
 
+.OrderConfirmFrom{
+
+  padding: 100px 0px !important;
+  border-radius: 10px;
+
+}
+
+.OrderConfirmFrom h2{
+  padding-bottom: 50px;
+  text-align: center;
+
+}
+
+
 .OrderConfirmLeft {
   width: 90%;
+  
 }
 
 .OrderConfirmLeft .CustomeInput {
@@ -130,6 +145,7 @@
   margin: 0;
   padding: 0;
   color: #000000;
+  font-size: 18px !important;
 }
 
 /* OrderConfirmRight */
@@ -285,6 +301,12 @@
 }
 
 @media (max-width: 500px) {
+
+  .OrderConfirmFrom{
+
+    padding: 50px 0px !important;
+  
+  }
   
   .OrderConfirmRight ul .left{
     display: block;

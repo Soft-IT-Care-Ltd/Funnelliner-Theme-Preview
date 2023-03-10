@@ -1201,6 +1201,7 @@ const LandingOne = (props) => {
           </Row>
 
           {/* Tiny Footer */}
+          
           <div className='tinyFooter'>
               
                 <p>@ {year} All Rights Reserved </p>
