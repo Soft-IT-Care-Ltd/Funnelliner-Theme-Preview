@@ -748,7 +748,7 @@ const index = () => {
             </section>
 
 
-            <div className="section_gap"></div>    
+            <div className="section_gap GapNone"></div>    
 
             
         <section className=" OrderBg"  >

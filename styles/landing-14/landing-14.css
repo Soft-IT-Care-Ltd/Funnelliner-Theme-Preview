@@ -180,6 +180,7 @@ Banner
 
 .Landing__14 .BannerToptxtBox img{
     padding-bottom: 56px;  
+    height: 352px;
     
 }
 
@@ -200,7 +201,7 @@ Banner
 
 .Landing__14  .BannertxtBoxAbs2{
     position: absolute;
-    top: 170px;
+    top: 181px;
     margin-left: 24%;  
 }
 
@@ -252,7 +253,7 @@ Banner
 
 .Landing__14 .BordarMainDiv{
     position: absolute;
-    height: 450px;
+    height: 110%;
     width: 92%;
     z-index: -1;
     margin-top: -20px;
@@ -322,6 +323,12 @@ Banner
     color: #FDFDFD;
     padding-top: 10px;
     font-size: 24px;
+  
+}
+
+.Landing__14 .ShippingAddress p{
+    color: #FDFDFD;
+   
   
 }
 
@@ -457,7 +464,6 @@ Banner
 
 
 .Landing__14 .SliderImg{
-    height: 412px;
     text-align: center;
     box-sizing: border-box;
     overflow: hidden;
@@ -465,9 +471,8 @@ Banner
 }
 
 .Landing__14 .SliderImg img{
-  /* width: 100%; */
-  box-sizing: border-box;
-   
+  width: 100%;
+  height: 630px; 
 }
 
 .Landing__14 .SliderImg:hover .ClipBox{
@@ -854,7 +859,7 @@ Banner
     Sharee House
 ===============================================================================================================*/
 
-.ShippingAddress p{
+.Landing__14.ShippingAddress p{
     color: #FFF;
 }
 
@@ -863,21 +868,21 @@ Banner
 
 /* Tenne Footer */
 
-.tinyFooter p a{
+.Landing__14 .tinyFooter p a{
     display: inline;
     font-size: 24px;
     font-weight: 600;
-    color: #42210B;
+    color: #42210B !important;
     padding: 0 5px;
   }
 
-.tinyFooter p {
+  .Landing__14 .tinyFooter p {
         line-height: 40px;
         text-align: center;
-        color: #42210B;
+        color: #FFF !important;
   }
 
-.tinyFooter  {
+  .Landing__14 .tinyFooter  {
        margin-top: 50px;
   }
 
@@ -892,15 +897,138 @@ Banner
 @media (min-width: 1441px) {
 
 
+
 }
 
  @media (max-width: 1440px) {
+
+    .Landing__14 h1 {
+        font-size: 65px;
+
+    }
+
+    .Landing__14  .BannertxtBoxAbs1 {
+        top: 40px;
+        left: 250px;
+        font-size: 70px;
+        margin-left: 18%;
+    }
+
+    .Landing__14 .BannerAbs2, .BannerAbs1{
+        width: 300px;
+    }
+
+    .Landing__14 .BggImg2 h3 {
+        font-size: 52px;
+        line-height: 79px;
+    }
+
+    .Landing__14 .GiftH2 {
+        text-align: center;
+        padding: 0 10%;
+        padding-bottom: 70px;
+    }
+
+    .Landing__14 h2 {
+        font-size: 35px;
+    
+    }
+
+    .Landing__14 .GiftH3 {
+        text-align: center;
+        font-size: 48px;
+    
+    }
+
+    .Landing__14 .PriceBoxTxtDiv h3 {
+        font-size: 52px;
+        line-height: 79px;
+    }
+
+    .Landing__14 .midUl h5 {
+        font-size: 35px;
+        line-height: 54px;
+    }
+
 
 
 }
 
 
 @media (max-width: 1280px) {
+
+    .Landing__14 .BannerToptxtBox img {
+        padding-bottom: 56px;
+        height: 281px;
+    }
+
+    .Landing__14 h1 {
+        font-size: 58px;
+    }
+
+    .Landing__14  .BannertxtBoxAbs1 {
+        top: 30px;
+        left: 150px;
+        font-size: 58px;
+        margin-left: 18%;
+    }
+
+    .Landing__14  .BannertxtBoxAbs2 {
+        position: absolute;
+        top: 136px;
+        margin-left: 18%;
+    }
+
+    .Landing__14 .CardImgAbs1 {
+        top: 47px;
+        font-size: 28px;
+       
+    }
+
+    .Landing__14 .CardImgAbs2 {
+        top: 100px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .Landing__14 .BggImg2 h3 {
+        font-size: 40px;
+        line-height: 79px;
+    }
+    .Landing__14 .BggImg2 h5 {
+        font-size: 28px;
+        line-height: 42px;
+        color: #FDFDFD;
+    }
+
+    .Landing__14 a.bg {
+        margin-top: 30px;
+        padding: 14px 40px;
+        font-size: 20px;
+       
+    }
+
+    .Landing__14 .GiftH3 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .Landing__14 .PriceBoxTxtDiv h3 {
+        font-size: 40px;
+        line-height: 70px;
+    }
+
+    .Landing__14 .PriceBoxTxtDiv .bg4 {
+        font-size: 24px;
+        border-radius: 50px;
+        padding: 15px 67px;
+    }
+
+    .Landing__14 .midUl h5 {
+        font-size: 22px;
+        line-height: 54px;
+    }
+
 
 
 }
@@ -913,11 +1041,307 @@ Banner
 
 @media (max-width: 768px) {
 
+    .Landing__14 .BannerAbs2, .BannerAbs1 {
+        width: 156px;
+    }
+
+    .Landing__14 .BannerToptxtBox img {
+        padding-bottom: 56px;
+        height: 186px;
+    }
+
+    .Landing__14  .BannertxtBoxAbs1 {
+        top: 12px;
+        left: 35px;
+        font-size: 40px;
+        margin-left: 18%;
+    }
+
+    .Landing__14 h1 {
+        font-size: 40px;
+    }
+
+    .Landing__14  .BannertxtBoxAbs2 {
+        position: absolute;
+        top: 73px;
+        margin-left: 8%;
+    }
+
+    .Landing__14 h2 {
+        font-size: 30px;
+        text-align: center;
+        line-height: 45px;
+    }
+
+    .Landing__14 .BordarMainDivCol {
+        position: relative;
+        margin-top: 100px;
+    }
+
+    .Landing__14 .CardMidImg {
+        padding-left: 18%;
+        Width: 76%;
+    }
+
+    .Landing__14 .SliderImg img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .Landing__14 .GiftUlBox li p {
+        font-size: 20px;
+        line-height: 29px;
+        color: #192335;
+        font-weight: 600;
+    }
+
+    .Landing__14 .GiftH3 {
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .Landing__14 .PriceBox .priceImgBg {
+        top: -600px;
+        position: absolute;
+        height: 497px;
+    }
+
 
 }
 
 
 @media (max-width: 575px) {
+
+    .Landing__14 .BannerAbs2, .BannerAbs1 {
+        width: 87px;
+    }
+    .Landing__14 .BannerToptxt h4 {
+        font-size: 14px;
+        line-height: 27px;
+        color: #FFFFFF;
+        padding-top: 5px;
+    }
+
+    .Landing__14 .BannerToptxt {
+        height: 30px;
+        margin-bottom: 40px;
+    }
+
+    .Landing__14 .BannerToptxtBox img {
+        padding-bottom: 56px;
+        height: 144px;
+    }
+
+    .Landing__14  .BannertxtBoxAbs1 {
+        top: 9px;
+        left: 16px;
+        font-size: 28px;
+        margin-left: 18%;
+    }
+
+    .Landing__14 h1 {
+        font-size: 28px;
+    }
+
+    .Landing__14  .BannertxtBoxAbs2 {
+        position: absolute;
+        top: 50px;
+        margin-left: 4%;
+    }
+
+    .Landing__14 .BannerToptxtBox p {
+        padding: 0px 12%;
+        font-size: 18px;
+        line-height: 31px;
+        color: #FFFFFF;
+        padding-bottom: 10px;
+    }
+
+    .Landing__14 a.bg {
+        margin-top: 30px;
+        padding: 11px 18px;
+        font-size: 16px;
+    }
+
+    .Landing__14 a.bg2 {
+        padding: 9px 24px;
+        font-size: 16px;
+      
+    }
+
+    .Landing__14 .BannerBg {
+        padding-bottom: 0px;
+
+    }
+
+    .Landing__14 h2 {
+        font-size: 22px;
+        text-align: center;
+        line-height: 34px;
+    }
+
+    .Landing__14 p {
+        font-size: 16px;
+    }
+
+    .Landing__14 a svg {
+        font-size: 18px;
+        margin-top: -5px;
+        margin-right: 10px;
+    }
+
+    .Landing__14 .BordarMainDiv {
+        position: absolute;
+        height: 119%;
+        width: 84%;
+        z-index: -1;
+        margin-top: -20px;
+        margin-left: 15px;
+    }
+
+    .Landing__14 .CardTopH2 {
+        padding-bottom: 70px;
+        padding: 0 0% 70px 0%;
+        text-align: center;
+    }
+
+    .Landing__14 .CardImgAbs1 {
+        position: absolute;
+        top: 47px;
+        font-size: 24px;
+        line-height: 42px;
+        color: #C20A22;
+        font-weight: 600;
+    }
+
+    .Landing__14 .BggImg2 h3 {
+        font-size: 30px;
+        line-height: 60px;
+    }
+
+    .Landing__14 .BggImg2 h5 {
+        font-size: 22px;
+        line-height: 42px;
+        color: #FDFDFD;
+    }
+
+    .Landing__14 .BggImg2 .bg3 {
+        padding: 13px 32px;
+        margin-top: 15px;
+    }
+
+    .Landing__14 iframe {
+        width: 100%;
+        height: 380px;
+        border-radius: 10px;
+    }
+
+    .Landing__14 .SliderImg img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .Landing__14 .GiftH2 {
+        text-align: center;
+        padding: 0 0%;
+        padding-bottom: 70px;
+    }
+
+    .Landing__14 .GiftUlBox {
+        padding-left: 10px;
+    }
+
+    .Landing__14 .GiftUlBox li p {
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    .Landing__14 .GiftUlBox li img {
+        padding-right: 18px;
+        margin-bottom: auto;
+        height: 20px;
+    }
+
+    .Landing__14 .GiftH3 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .Landing__14 .GiftH3 {
+        font-size: 30px;
+        padding: 0 0%;
+    }
+
+    .Landing__14 .PriceBox .priceImgBg {
+        top: -600px;
+        position: absolute;
+        height: 343px;
+    }
+
+    .Landing__14 .PriceBoxTxtDiv {
+        top: -527px;
+        position: absolute;
+        text-align: center;
+    }
+
+    .Landing__14 .PriceBoxTxtDiv h4 {
+        font-size: 22px;
+        line-height: 9px;
+        color: #EC3361;
+        padding-bottom: 15px;
+    }
+
+    .Landing__14 .PriceBoxTxtDiv svg {
+        font-size: 22px;
+        line-height: 42px;
+        color: #F29D00;
+    }
+
+    .Landing__14 .PriceBoxTxtDiv h3 {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .Landing__14 .PriceBoxTxtDiv .bg4 {
+        font-size: 18px;
+        border-radius: 50px;
+        padding: 12px 59px;
+    }
+
+    .Landing__14 .GapNone {
+      display: none;
+    }
+
+    .Landing__14 .FooterAbs2 {
+        position: absolute;
+        top: 0%;
+        right: -500px;
+        width: 551px;
+        opacity: .1;
+    }
+
+    .Landing__14 .FooterAbs1 {
+        position: absolute;
+        top: 0%;
+        left: -500px;
+        width: 551px;
+        opacity: .1;
+    }
+
+    .Landing__14 .section_gap{
+        padding-top: 50px;
+    }
+
+    .Landing__14 .FooterUlBox{
+        text-align: center;
+    }
+
+    .Landing__14 .ShippingAddress p{
+        color: #FDFDFD;
+        padding-bottom: 20px;
+       
+      
+    }
 
    
     }
