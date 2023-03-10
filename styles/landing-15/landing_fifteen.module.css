@@ -885,7 +885,13 @@ height: 509px;
     margin-right: 30px;
     font-size: 25px;
     text-align: center;
+    transition: 0.2s;
 }
+
+.SocialIconBox  a:hover{
+    transform: scale(1.2);
+    background: none;
+ }
 
 
 
