@@ -12,6 +12,7 @@ import styles from '../../../styles/landing_eleven/landing_eleven.module.css';
 import Order from "../Common/Order";
 import Menubar from "../Common/Menubar/Menubar";
 import landingImageUrl from "../../../public/images/landing_11/logo.svg";
+import MenubarLeft from '../Common/Menubar/MenubarLeft';
 
 
 
@@ -48,7 +49,7 @@ const LandingEleven = () => {
 
             <Container>
 
-            <Menubar logoImageLeft={landingImageUrl}></Menubar>
+            <MenubarLeft logoImageLeft={landingImageUrl}></MenubarLeft>
 
                 <Row>
 

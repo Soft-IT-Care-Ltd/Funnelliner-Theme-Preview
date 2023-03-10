@@ -27,6 +27,7 @@ import Order from "../Common/Order";
 // Menu Image Url
 import landingImageUrl from "../../../public/images/landing_1/logo.png";
 import Menubar from "../Common/Menubar/Menubar";
+import MenubarLeft from "../Common/Menubar/MenubarLeft";
 
 
 
@@ -98,7 +99,7 @@ const LandingOne = (props) => {
       {/* Banner */}
       <section id='banner' className={styles.banner}>
 
-        <Menubar logoImageLeft={landingImageUrl}></Menubar>
+        <MenubarLeft logoImageLeft={landingImageUrl}></MenubarLeft>
 
         <Container>
 

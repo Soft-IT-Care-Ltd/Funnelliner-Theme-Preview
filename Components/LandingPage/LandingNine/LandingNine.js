@@ -12,6 +12,7 @@ import Order from "../Common/Order";
 // logo
 import Menubar from "../Common/Menubar/Menubar";
 import landingImageUrl from "../../../public/images/landing_9/logo9.svg";
+import MenubarLeft from '../Common/Menubar/MenubarLeft';
 
 const LandingNine = () => {
 
@@ -30,7 +31,7 @@ const LandingNine = () => {
 
             <Container>
 
-            <Menubar logoImageLeft={landingImageUrl}></Menubar>
+            <MenubarLeft logoImageLeft={landingImageUrl}></MenubarLeft>
 
 
                 <Row>

@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 
-const Menubar = (props) => {
+const MenubarLeft = (props) => {
 
 
   return (
@@ -20,8 +20,8 @@ const Menubar = (props) => {
 
                         <div className="MenubarContent">
 
-                            <div className="Logo">
-                                <Image src={props.logoImage} />
+                            <div className="LogoLeft">
+                                <Image src={props.logoImageLeft} />
                             </div>
 
                         </div>
@@ -39,4 +39,4 @@ const Menubar = (props) => {
   )
 }
 
-export default Menubar
+export default MenubarLeft
