@@ -266,13 +266,13 @@ const index = () => {
                                     navigation={true} 
                                     modules={[Navigation]}
                                     breakpoints={{
-                                        640: {
-                                          slidesPerView: 2,
-                                          spaceBetween: 20,
+                                        320: {
+                                          slidesPerView: 1.5,
+                                          spaceBetween: 5,
                                         },
                                         768: {
                                           slidesPerView: 3,
-                                          spaceBetween: 20,
+                                          spaceBetween: 10,
                                         },
                                         1024: {
                                           slidesPerView: 3,

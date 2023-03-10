@@ -325,6 +325,10 @@ Common
     margin-top: 80px;
 }
 
+.Landing__18__Order__Content .OrderConfirmFrom .container {
+    max-width: 100%;
+}
+
 
 /* ===========================================================================================================
     Landing__18__StartingPrice__Slider
@@ -772,13 +776,160 @@ Common
         object-fit: cover;
     }
 
+    .Landing__18__Welcome__bg img {
+        height: 200px;
+    }
+
+    .Landing__18__Welcome__bg {
+        bottom: -80px;
+    }
+
+    .Landing__18__whybuy__bg img {
+        height: 100px;
+    }
+
+    .Landing__18__whybuy__bg {
+        bottom: -40px;
+    }
+
+    .Landing__18__StartingPrice__bg img {
+        height: 200px;
+    }
+
+    .Landing__18__Feature img {
+        object-fit: cover;
+    }
+
+    .Landing__18__StartingPrice .container {
+        max-width: 80%;
+    }
+
+    .Landing__18 p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .Landing__18__Order {
+        padding: 50px 0;
+        height: 1100px;
+    }
+
 }
 
 
 
 
 
+@media (max-width: 500px) {
 
+    .Landing__18__Banner__Img img {
+        height: 60px;
+        width: auto;
+    }
+
+    .Landing__18 h1 {
+        font-size: 25px;
+        line-height: 40px;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .Landing__18__Banner__Text h3 {
+        padding: 20px 35px;
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 20px;
+    }
+
+    .Landing__18__Banner__Text {
+        text-align: center;
+    }
+
+    .Landing__18 :where(a, button) {
+        font-size: 25px;
+        line-height: 35px;
+        padding: 15px 50px !important;
+    }
+
+    .Landing__18__Banner__Text h3::after {
+        width: 100%;
+    }
+
+    .Landing__18__Banner .banner_bg {
+        height: 80vh;
+    }
+
+    .Landing__18 :where(a.bg, button.bg) {
+        margin-top: 10px !important;
+    }
+
+    .Landing__18__Welcome {
+        height: 870px;
+    }
+
+    .Landing__18__Welcome__bg img {
+        height: 150px;
+    }
+
+    .Landing__18__Welcome__bg {
+        bottom: -50px;
+    }
+
+    .Landing__18__WhyBuy__Img {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .Landing__18__WhyBuy__Img .Order {
+        padding: 20px;
+    }
+
+    .Landing__18__whybuy__bg img {
+        height: 80px;
+    }
+
+    .Landing__18__StartingPrice .container {
+        max-width: 90%;
+    }
+
+    .Landing__18__Feature__Content h2 {
+        margin-bottom: 30px;
+    }
+
+    .Landing__18__Feature img {
+        height: 1200px;
+    }
+
+    .Landing__18__Feature__Content img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .Landing__18__Feature__Content li {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .Landing__18__Order {
+        padding: 30px 0;
+        height: 1260px;
+    }
+
+    .Landing__18__Footer__Content li a {
+        font-size: 14px;
+        line-height: 24px;
+        padding: 0 5px !important;
+    }
+
+    .Landing__18__Footer .footer_bg {
+        height: 350px;
+    }
+
+    .Landing__18__Footer__Content img {
+        height: 100px;
+    }
+
+}
 
 
 
