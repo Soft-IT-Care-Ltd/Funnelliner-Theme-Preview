@@ -36,7 +36,7 @@ const Order = () => {
                 {/* Payment */}
                 <div className="Payment">
 
-                  <h3>Paymet</h3>
+                  <h3>Payment</h3>
 
                   <div className="CustomeInput d_flex">
                     <input type="checkbox" checked name="" id='CashOn'/>

@@ -33,7 +33,7 @@ const index = () => {
             ===============================================================================================================*/}
             <section className='Landing__18__Banner'>
 
-                <img className='banner_bg' src="/images/Landing_18/banner.png" alt="" />
+                <img src="/images/landing_18/banner.png" alt="" />
 
                 <div className="Landing__18__Banner__Content">
 
@@ -187,15 +187,15 @@ const index = () => {
 
                                 <ul>
 
-                                    <li> <img src="/images/Landing_18/tik.png" alt="" />  গুঁড়া করার জন্য ব্যবহৃত  বিভিন্ন আইটেম খাঁটি গুঁড়া মশলা আমাদের দেশের বিভিন্ন জায়গা থেকে সংগ্রহ করা হয়। নিজেরা সংগ্রহ করা হয় বলে এর গুণগত মান নিয়ে কোন প্রকার সন্দেহের অবকাশ থাকে না। </li>
+                                    <li> <img src="images/Landing_18/tik.png" alt="" />  গুঁড়া করার জন্য ব্যবহৃত  বিভিন্ন আইটেম খাঁটি গুঁড়া মশলা আমাদের দেশের বিভিন্ন জায়গা থেকে সংগ্রহ করা হয়। নিজেরা সংগ্রহ করা হয় বলে এর গুণগত মান নিয়ে কোন প্রকার সন্দেহের অবকাশ থাকে না। </li>
 
-                                    <li> <img src="/images/Landing_18/tik.png" alt="" />   রঙ সহ বিভিন্ন প্রকার কমদামি উপকরণের মিশ্রণ থেকে সম্পূর্ণ নিরাপদ।  </li>
-                                    <li> <img src="/images/Landing_18/tik.png" alt="" />  এই গুঁড়া BSTI (Bangladesh Standard and Testing Institution) অনুমোদিত।   </li>
-                                    <li> <img src="/images/Landing_18/tik.png" alt="" />  সম্পূর্ণ নিজস্ব তত্ত্বাবধানে পরিষ্কার করে শুকানো হয়। এরপর ভাঙানো হয়।  </li>
-                                    <li> <img src="/images/Landing_18/tik.png" alt="" />  বাজারের খোলা পণ্যে অনেক ক্ষেত্রেই কাঠের গুঁড়া ও আটার ভুষির মতন উপাদানের মিশ্রণ যোগ করে গুঁড়ার পরিমাণ বৃদ্ধি করা হয়। কিন্তু আমাদের খাঁটি গুঁড়া মশলা কিছু মেশানো হয় না।  </li>
-                                    <li> <img src="/images/Landing_18/tik.png" alt="" />  রান্নায় আনবে পারফেক্ট স্বাদ, সুগন্ধ ও তৃপ্তি  </li>
-                                    <li> <img src="/images/Landing_18/tik.png" alt="" />  অনেকদিন সংরক্ষণ করতে পারবেন  </li>
-                                    <li> <img src="/images/Landing_18/tik.png" alt="" />  শতভাগ নিরাপদ ও বিশুদ্ধ  </li>
+                                    <li> <img src="images/Landing_18/tik.png" alt="" />   রঙ সহ বিভিন্ন প্রকার কমদামি উপকরণের মিশ্রণ থেকে সম্পূর্ণ নিরাপদ।  </li>
+                                    <li> <img src="images/Landing_18/tik.png" alt="" />  এই গুঁড়া BSTI (Bangladesh Standard and Testing Institution) অনুমোদিত।   </li>
+                                    <li> <img src="images/Landing_18/tik.png" alt="" />  সম্পূর্ণ নিজস্ব তত্ত্বাবধানে পরিষ্কার করে শুকানো হয়। এরপর ভাঙানো হয়।  </li>
+                                    <li> <img src="images/Landing_18/tik.png" alt="" />  বাজারের খোলা পণ্যে অনেক ক্ষেত্রেই কাঠের গুঁড়া ও আটার ভুষির মতন উপাদানের মিশ্রণ যোগ করে গুঁড়ার পরিমাণ বৃদ্ধি করা হয়। কিন্তু আমাদের খাঁটি গুঁড়া মশলা কিছু মেশানো হয় না।  </li>
+                                    <li> <img src="images/Landing_18/tik.png" alt="" />  রান্নায় আনবে পারফেক্ট স্বাদ, সুগন্ধ ও তৃপ্তি  </li>
+                                    <li> <img src="images/Landing_18/tik.png" alt="" />  অনেকদিন সংরক্ষণ করতে পারবেন  </li>
+                                    <li> <img src="images/Landing_18/tik.png" alt="" />  শতভাগ নিরাপদ ও বিশুদ্ধ  </li>
 
                                 </ul>
 
