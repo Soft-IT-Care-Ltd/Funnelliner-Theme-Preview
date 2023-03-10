@@ -8,7 +8,7 @@ import { AiFillStar } from "react-icons/ai";
 import { RiShoppingCart2Line } from "react-icons/ri";
 import { IoIosMail } from "react-icons/io";
 import { IoCall } from "react-icons/io5";
-
+import { BsFacebook,BsInstagram,BsYoutube } from "react-icons/bs";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -20,6 +20,10 @@ import "swiper/css/pagination";
 import {FreeMode, Autoplay, Pagination,Navigation } from "swiper";
 import ShippingAddress from '../../Components/LandingPage/Common/ShippingAddress';
 
+import Order from'/Components/LandingPage/Common/Order'
+import Menubar from "../../Components/LandingPage/Common/Menubar/Menubar";
+import landingImageUrl from "../../public/images/landing_14/logo.png";
+
 // ShippingAddress Img
 import DelivaryImgUrl1 from '../../public/images/landing_14/delivary1.png';
 import DelivaryImgUrl2 from '../../public/images/landing_14/delivary2.png';
@@ -29,6 +33,8 @@ import DelivaryImgUrl4 from '../../public/images/landing_14/delivary4.png';
 
 const index = () => {
 
+    const today = new Date();
+    const year = today.getFullYear();
     const swiperRef = useRef();
 
     return (
@@ -43,7 +49,12 @@ const index = () => {
 
                 <Container fluid className="Conpad">
 
+                <img className="BannerAbs1" src="images/landing_14/img1.png" alt="alt" />
+                <img className="BannerAbs2" src="images/landing_14/img2.png" alt="alt" />
+
+
                     <div  className="BannerBg">
+
                         <img className="BannerBgAbsImg1" src="images/landing_14/bg1.png" alt="alt" />
                     
                         <div className="BannerToptxt">
@@ -52,9 +63,14 @@ const index = () => {
 
                         </div>
 
-                        <div className="BannerToptxtBox">   
 
-                            <img src="images/landing_14/logo.png" alt="img" />
+                        <Menubar logoImage={landingImageUrl}></Menubar>
+
+                        
+                        <div className="BannerToptxtBox">  
+
+
+                            {/* <img src="images/landing_14/logo.png" alt="img" /> */}
 
                             <div  className="BannertxtBoxRel">
 
@@ -74,9 +90,9 @@ const index = () => {
                                 </p>
 
 
-                                <Link href='#Order' className="bg"> অর্ডার করুন <AiOutlineShoppingCart/> </Link>
+                                <Link href='#placeAnOrder' className="bg"> অর্ডার করুন <AiOutlineShoppingCart/> </Link>
 
-                                <Link href='#Order' className="bg2"> +8801799733234   </Link>
+                                <Link href='#placeAnOrder' className="bg2"> +8801799733234   </Link>
 
                                 <h2>ডিস্কাউন্ট মূল্যঃ  ১৬৫০ টাকা</h2>
 
@@ -126,7 +142,7 @@ const index = () => {
                                 </p>
 
 
-                                <Link href='#Order' className="bg"> অর্ডার করুন <AiOutlineShoppingCart/> </Link>
+                                <Link href='#placeAnOrder' className="bg"> অর্ডার করুন <AiOutlineShoppingCart/> </Link>
 
                                 
                             </div>
@@ -423,7 +439,7 @@ const index = () => {
 
                             <h5>সারা দেশে ফ্রি হোম ডেলিভারি</h5>
 
-                            <Link href='#Order' className="bg bg3"> অর্ডার করতে এখানে ক্লিক করুন<AiOutlineShoppingCart/> </Link>
+                            <Link href='#placeAnOrder' className="bg bg3"> অর্ডার করতে এখানে ক্লিক করুন<AiOutlineShoppingCart/> </Link>
 
                         </div>
                     </div>
@@ -632,13 +648,13 @@ const index = () => {
 
                         <Row className='GiftRow'>
 
-                            <Col sm={12} md={6}>
+                            <Col sm={12} md={12} lg={6}>
 
                                     <img className="GiftImg" src="images/landing_14/img13.png" alt="img" />
 
                             </Col>
 
-                            <Col sm={12} md={6}>
+                            <Col sm={12} md={12} lg={6}>
 
                                     <div className='GiftUlBox'>
 
@@ -716,7 +732,7 @@ const index = () => {
 
                         <h3>1,500.00 টাকা</h3>
 
-                        <Link href='#Order' className="bg bg4"> অর্ডার করুন </Link>
+                        <Link href='#placeAnOrder' className="bg bg4"> অর্ডার করুন </Link>
 
 
                     </div>
@@ -732,126 +748,33 @@ const index = () => {
             </section>
 
 
-            <div className="section_gap"></div>    
+            <div className="section_gap GapNone"></div>    
 
-            {/* ================================================================================================
-                Order Comfirm 
-            ====================================================================================================*/}
-
-
-        <section className="OrderConfirmFrom OrderBg"  id="Order">
+            
+        <section className=" OrderBg"  >
 
             <img className='FooterAbs1' src="images/landing_14/img20.png" alt="img" />
 
             <img className='FooterAbs2' src="images/landing_14/img20.png" alt="img" />
 
+            {/* ================================================================================================
+                Order Comfirm 
+            ====================================================================================================*/}
 
-            <Container >
+                <section id="placeAnOrder">
 
-            <Row>
+                    <Order></Order>
 
-                {/* left */}
+                </section>
 
-                <Col lg={7}>
 
-                <div className="OrderConfirmLeft">
 
-                    <h3>Billing details</h3>
-
-                    <div className="CustomeInput">
-                    <input type="text" name="" placeholder='আপনার নাম লিখুন *' />
-                    </div>
-
-                    <div className="CustomeInput">
-                    <input type="text" name="" placeholder='আপনার মোবাইল নাম্বার লিখুন *' />
-                    </div>
-
-                    <div className="CustomeInput">
-
-                    <input type="text" name="" placeholder='আপনার সম্পূর্ণ ঠিকানা লিখুন *' />
-
-                    </div>
-
-                    {/* Payment */}
-
-                    <div className="Payment">
-
-                    <h3>Paymet</h3>
-
-                    <div className="CustomeInput d_flex">
-                        <input type="checkbox" name="" id='CashOn' checked/>
-                        <label htmlFor="CashOn">ক্যাশ অন ডেলিভারি</label>
-                    </div>
-
-                    <div className="ArrowBg">
-                        <p > Pay with cash on delivery.</p>
-                    </div>
-
-                    </div>
-
-                </div>
-
-                </Col>
-
-                {/* right */}
-                <Col lg={5}>
-
-                <div className="OrderConfirmRight">
-
-                    <h3>Your order</h3>
-
-                    <ul>
-
-                    <li>
-                        <h4>Product</h4>
-                        <h5>Subtotal</h5>
-                    </li>
-
-                    <li>
-
-                        <div className="left d_flex">
-                        
-                        <div className="img">
-                            <img src="images/product.svg" alt="" />
-                        </div>
-
-                        <p>Sharee Of Story Womans Set Boss</p>
-
-                        </div>
-
-                        <div className="right d_flex">
-
-                        <input type="number" />
-
-                        <h5>BDT 1,690.00</h5>
-
-                        </div>
-
-                    </li>
-
-                    <li>
-                        <h5>Subtotal</h5>
-                        <h5>1,690.00</h5>
-                    </li>
-
-                    <li>
-                        <h4>Total</h4>
-                        <h4>1,690.00</h4>
-                    </li>
-                    
-                    </ul>
-
-                    <button> <RiShoppingCart2Line/> Place Order BDT 49.00</button>
-
-                </div>
-
-                </Col>
-
-            </Row>
-
-            </Container>
 
             <div className="section_gap"></div>    
+
+            {/* ===========================================================================
+                    Footer 
+            ===============================================================================*/}
 
             <div className='FooterBg'>
 
@@ -885,6 +808,15 @@ const index = () => {
 
                                 <h4>অর্ডার পেতে কল করুন এই নাম্বারে</h4>
                                 <h5>+8801894844452</h5>
+
+                                <div className='SocialIconBox'>
+                                    
+                                    <Link href="#"> <BsFacebook/> </Link>
+                                    <Link href="#"> <BsInstagram/> </Link>
+                                    <Link href="#"> <BsYoutube/> </Link>
+                                    
+                                </div>
+
 
                             </div>
 
@@ -925,6 +857,14 @@ const index = () => {
 
                     
                 
+                    {/* Tiny Footer */}
+
+                    <div className="tinyFooter">
+                        
+                        <p>@ {year} All Rights Reserved </p>
+                        <p>System developed by <Link href='https://funnelliner.com/'>Funnel Liner</Link> </p>
+
+                    </div>
 
 
                 </Container>

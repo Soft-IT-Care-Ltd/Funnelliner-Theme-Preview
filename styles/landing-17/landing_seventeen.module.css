@@ -502,7 +502,7 @@
                         Order Section
             =============================================================================================================================*/
             .OrderBg{
-               background-color: #E5E5E5;
+               background-color: none;
                border-radius: 10px;
                padding: 20px 12px;
             
@@ -661,7 +661,25 @@
                 font-weight: 400 !important;
             }
             
-            
+            /* Social Icon */
+
+            .SocialIconBox {
+                display: flex;
+                align-items: center;
+                justify-content:center;
+            }
+
+            .SocialIconBox  a{
+                margin-right: 30px;
+                font-size: 25px !important;
+                text-align: center;
+            }
+
+            .SocialIconBox  a:hover{
+                transform: scale(1.2);
+                background: none;
+             }
+
             
             
             

@@ -37,6 +37,9 @@ const LandingOne = (props) => {
 
   const [shopID, setShopID] = useState();
 
+  const today = new Date();
+  const year = today.getFullYear();   
+
   const {
     register,
     handleSubmit,
@@ -198,7 +201,8 @@ const LandingOne = (props) => {
                   <h2> {props.orderTitle}</h2>
                   <h1>{props.productPrice} </h1>
 
-                  <Link href='#Order' className={styles.bg} activeClass='active'>
+                  <Link href='#placeAnOrder' className={styles.bg} activeClass='active'>
+                    
                     অর্ডার করুন
                   </Link>
                 </div>
@@ -366,7 +370,7 @@ const LandingOne = (props) => {
         </Container>
 
         {/* section gaps */}
-        <div className={styles.section_gaps} />
+        <div className={`${styles.section_gaps} ${styles.GapNone}`} />
       </section>
 
       {/* OrderPrice */}
@@ -378,7 +382,7 @@ const LandingOne = (props) => {
                 <img src='images/landing_1/order.png' alt='' />
 
                 <div className={styles.overlay_text}>
-                  <Link href='#Order' activeClass='active' className={styles.bg}>
+                  <Link href='#placeAnOrder' activeClass='active' className={styles.bg}>
                     {props.buttonInnerText}
                   </Link>
 
@@ -391,7 +395,7 @@ const LandingOne = (props) => {
         </Container>
 
         {/* section gaps */}
-        <div className={styles.section_gaps} />
+        <div className={`${styles.section_gaps} ${styles.GapNone}`} />
       </section>
 
       {/* Gallery */}
@@ -650,7 +654,7 @@ const LandingOne = (props) => {
       </section>
       
       {/* order */}
-      <section id="Order">
+      <section id="placeAnOrder">
         
         <Order></Order>
 
@@ -674,7 +678,7 @@ const LandingOne = (props) => {
 
                 <ul>
                   <li className='d_flex'>
-                    <BiPhoneCall /> <a href='tel:018100-45255'>018100-45255</a>{" "}
+                    <BiPhoneCall /> <a href='tel:+8801894844452'>+8801894844452</a>{" "}
                   </li>
                 </ul>
 
@@ -725,11 +729,21 @@ const LandingOne = (props) => {
                 <ul>
                   <li className='d_flex'>
                     <FiMail />{" "}
-                    <a href='mailto:oder@freshen.com'>oder@freshen.com</a>{" "}
+                    <a href='mailto:support@funnelliner.com'>support@funnelliner.com</a>{" "}
                   </li>
                 </ul>
               </div>
             </Col>
+
+
+             {/* Tiny Footer */}
+            <div className={styles.tinyFooter}>
+                
+                <p>@ {year} All Rights Reserved </p>
+                <p>System developed by <Link href='https://funnelliner.com/'>Funnel Liner</Link> </p>
+
+          </div>
+
           </Row>
         </Container>
       </section>

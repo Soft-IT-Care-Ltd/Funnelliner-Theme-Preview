@@ -294,7 +294,7 @@ const LandingOne = (props) => {
                 </h6>
 
                 <div className='OrderNow'>
-                  <Link href='#form_part' className='bg'>
+                  <Link href='#placeAnOrder' className='bg'>
                     অর্ডার করুন <BsArrowRight />{" "}
                   </Link>
                 </div>
@@ -730,7 +730,7 @@ const LandingOne = (props) => {
                   <img src='images/landing_2/video.png' alt='' />
                 </div>
 
-                <Link href='#form_part' className='bg'>
+                <Link href='#placeAnOrder' className='bg'>
                   অর্ডার করুন <BsArrowRight />{" "}
                 </Link>
               </div>
@@ -1116,7 +1116,7 @@ const LandingOne = (props) => {
 
       {/* From Part */}
 
-      <section id="Order">
+      <section id="placeAnOrder">
         
         <Order></Order>
 
@@ -1201,6 +1201,7 @@ const LandingOne = (props) => {
           </Row>
 
           {/* Tiny Footer */}
+          
           <div className='tinyFooter'>
               
                 <p>@ {year} All Rights Reserved </p>

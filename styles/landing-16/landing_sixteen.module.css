@@ -559,6 +559,30 @@
 }
 
 
+/* Social Icon */
+
+.SocialIconBox {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+ .SocialIconBox  a{
+    margin-right: 30px;
+    font-size: 25px;
+    text-align: center;
+}
+
+ .SocialIconBox  a:hover{
+   transform: scale(1.2);
+   background: none;
+}
+
+
+
+
+
+
 /* ========================================================================================================================
         Media Quary
 ============================================================================================================================*/

@@ -3071,3 +3071,23 @@ position: relative;
     }
 
 }
+
+
+
+.tinyFooter p a{
+    display: inline;
+    font-size: 24px;
+    font-weight: 600;
+    color: #DE5074 !important;
+    padding: 0 5px;
+  }
+
+.tinyFooter p {
+        line-height: 40px;
+        text-align: center;
+        color: #828282 !important;
+  }
+
+.tinyFooter  {
+       margin-top: 50px;
+  }

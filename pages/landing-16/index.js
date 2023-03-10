@@ -1,12 +1,14 @@
 import React from 'react'
-import { LandingSixteen } from '../../Components/LandingSixteen/LandingSixteen'
+import { LandingSixteen } from '../../Components/LandingPage/LandingSixteen/LandingSixteen'
 
 const index = () => {
 
   return (
 
-    <div>
+    <div className='Landing__Sixteen'>
+
        <LandingSixteen></LandingSixteen>
+
     </div>
 
   )
