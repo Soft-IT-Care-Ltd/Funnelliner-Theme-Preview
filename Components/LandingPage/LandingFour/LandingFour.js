@@ -112,9 +112,7 @@ const LandingFour = () => {
             <Col lg={6}>
 
               <div className={styles.BannerContent}>
-                <div className={styles.Logo}>
-                  {/* <img src="images/landing_4/logo.svg" alt="" /> */}
-                </div>
+               
 
                 <div className={styles.text}>
 

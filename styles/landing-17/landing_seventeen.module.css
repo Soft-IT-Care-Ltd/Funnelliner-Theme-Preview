@@ -673,6 +673,7 @@
                 margin-right: 30px;
                 font-size: 25px !important;
                 text-align: center;
+                transition: 0.2s;
             }
 
             .SocialIconBox  a:hover{

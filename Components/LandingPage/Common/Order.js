@@ -41,8 +41,10 @@ const Order = () => {
                   <h3>Paymet</h3>
 
                   <div className="CustomeInput d_flex">
+
                     <input type="checkbox" checked name="" id='CashOn'/>
                     <label htmlFor="CashOn">ক্যাশ অন ডেলিভারি</label>
+                    
                   </div>
 
                   <div className="ArrowBg">
