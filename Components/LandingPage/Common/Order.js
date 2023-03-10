@@ -97,6 +97,22 @@ const Order = () => {
                   </li>
 
                   <li>
+                    <h5>Shipping</h5>
+
+                    <h5>
+                      <div className="checkbox d_flex">
+                        <input type="radio" id='Inside' name='checkbox'/>
+                        <label htmlFor="Inside">Inside Dhaka : ৳ 00.00</label>
+                      </div>
+                      <div className="checkbox d_flex">
+                        <input type="radio" id='Outside' name='checkbox'/>
+                        <label htmlFor="Outside">Outside Dhaka: ৳ 00.00</label>
+                      </div>
+                    </h5>
+
+                  </li>
+
+                  <li>
                     <h4>Total</h4>
                     <h4>1,690.00</h4>
                   </li>

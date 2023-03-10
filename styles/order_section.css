@@ -180,6 +180,27 @@
   color: #332729;
 }
 
+.OrderConfirmRight ul h5 .checkbox{
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.OrderConfirmRight ul h5 .checkbox input{
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;cursor: pointer;
+}
+
+.OrderConfirmRight ul h5 .checkbox:last-child{
+  margin-bottom: 0;
+}
+
+.OrderConfirmRight ul h5 label{
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
 .OrderConfirmRight ul .img {
   width: 80px;
 }
