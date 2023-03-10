@@ -648,13 +648,13 @@ const index = () => {
 
                         <Row className='GiftRow'>
 
-                            <Col sm={12} md={6}>
+                            <Col sm={12} md={12} lg={6}>
 
                                     <img className="GiftImg" src="images/landing_14/img13.png" alt="img" />
 
                             </Col>
 
-                            <Col sm={12} md={6}>
+                            <Col sm={12} md={12} lg={6}>
 
                                     <div className='GiftUlBox'>
 
