@@ -32,6 +32,8 @@ import "../styles/landing_twelve/landing_twelve.css";
 import "../styles/landing_thirteen/landing_thirteen.css";
 import "../styles/landing-14/landing-14.css";
 import "../styles/landing-15/landing-15.css";
+import "../styles/landing-16/landing_sixteen.css";
+import "../styles/landing-17/landing_seventeen.css";
 import "../styles/landing-18/landing-18.css";
 
 // Theme Css
