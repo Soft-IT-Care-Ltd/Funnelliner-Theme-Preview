@@ -281,6 +281,35 @@
   border: none;
 }
 
+@media (max-width: 1339px) {
+
+  .OrderConfirmRight ul h5 {
+    font-size: 15px;
+    line-height: 28px;
+  }
+
+  .OrderConfirmRight ul .right input {
+    width: 70px;
+    padding: 5px 10px;
+  }
+
+  .OrderConfirmLeft .Payment h3 {
+    padding: 20px;
+    padding-bottom: 0;
+  }
+
+  .OrderConfirmRight ul h4 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .OrderConfirmLeft .Payment .CustomeInput label {
+    font-size: 17px;
+    line-height: 30px;
+}
+
+}
+
 /* ------------------------------------------------------------------------------------------------------
   ------------------------------------------------------------------------------------------------------
       Media

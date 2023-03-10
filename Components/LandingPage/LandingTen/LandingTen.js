@@ -11,6 +11,7 @@ import { RiShoppingCart2Line } from "react-icons/ri";
 import Order from "../Common/Order";
 import Menubar from "../Common/Menubar/Menubar";
 import landingImageUrl from "../../../public/images/landing_10/logo.svg";
+import MenubarLeft from '../Common/Menubar/MenubarLeft';
 
 
 
@@ -32,7 +33,7 @@ export default function LandingTen() {
                
               <Container>
 
-             
+              <MenubarLeft logoImageLeft={landingImageUrl}></MenubarLeft>
                
                   <Row className={styles.Rowrvs}>
 
@@ -41,10 +42,8 @@ export default function LandingTen() {
                             
 
                             <div className={styles.TopTxtdev}>
-
                                <div className={styles.logo}>
 
-                               <Menubar logoImageLeft={landingImageUrl}></Menubar>
                                 {/* <img src="images/landing_10/logo.svg" alt="img" /> */}
                                 
                                 </div>
@@ -60,13 +59,7 @@ export default function LandingTen() {
 
                        <Col xs={12} sm={12} md={6} className={styles.ClmPad}>
                     
-                            <div className={styles.logo2}>
-
-                                 <Menubar logoImageLeft={landingImageUrl}></Menubar>
-
-                                {/* <img src="images/landing_10/logo.svg" alt="img" /> */}
-                                
-                                </div>
+                            <div className={styles.logo2}><img src="images/landing_10/logo.svg" alt="img" /></div>
                             {/* <div className={styles.topImg2}><img className={styles.topImg4} src="images/landing_10/b2.svg" alt="img" /></div> */}
  
                        
@@ -105,9 +98,7 @@ export default function LandingTen() {
               ------------------------------------------------------------------------------------------------------------------------------------------------------------------*/}
         
         <section >
-
             <Container fluid className={styles.secBanner2}>
-
                 <div className={styles.banner2}>
                     <ul>
                         <li> <Link href='#placeAnOrder' className={styles.bg}> <AiOutlineShoppingCart/>Order Now</Link></li>
@@ -115,9 +106,7 @@ export default function LandingTen() {
                         <li> <span className={styles.myWhatsapp}>Whats App:</span> 01600-324567</li>
                     </ul>
                 </div>
-
             </Container>
-
         </section>
 
 
@@ -215,9 +204,7 @@ export default function LandingTen() {
 
                     <h2>দেশজুড়ে সারা বাংলাদেশে ফ্রি হোম ডেলিভারি এবং কুরিয়ার মাধ্যমেও বই পাঠানো হয়</h2>
                 </div>
-                
             </Container>
-
         </section>
 
           {/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -299,7 +286,7 @@ export default function LandingTen() {
                 
           <section className={styles.section_gaps}></section>
 
-          <section id="placeAnOrder">
+          <section id="Order">
         
             <Order></Order>
 

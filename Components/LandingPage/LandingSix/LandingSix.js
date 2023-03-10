@@ -11,6 +11,7 @@ import Order from "../Common/Order";
 import Menubar from "../Common/Menubar/Menubar";
 import landingImageUrl from "../../../public/images/landing_6/bike_logo.svg";
 import landingImageUrl2 from "../../../public/images/landing_6/logo-2.svg";
+import MenubarLeft from '../Common/Menubar/MenubarLeft';
 
 const LandingSix = () => {
 
@@ -28,12 +29,13 @@ const LandingSix = () => {
         <section className={styles.Banner}>
 
             <Container>
+
                 <div className={styles.imgBlack}>
-                    <Menubar logoImageLeft={landingImageUrl}></Menubar>
+                    <MenubarLeft logoImageLeft={landingImageUrl}></MenubarLeft>
                 </div>
 
                 <div className={styles.imgWhite}>
-                    <Menubar logoImageLeft={landingImageUrl2}></Menubar>
+                    <MenubarLeft logoImageLeft={landingImageUrl2}></MenubarLeft>
                 </div>
 
                 <Row>

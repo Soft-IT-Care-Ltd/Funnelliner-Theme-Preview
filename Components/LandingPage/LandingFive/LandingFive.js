@@ -12,6 +12,7 @@ import Order from "../Common/Order";
 
 import Menubar from "../Common/Menubar/Menubar";
 import landingImageUrl from "../../../public/images/landing_5/logo.svg";
+import MenubarLeft from '../Common/Menubar/MenubarLeft';
 
 
 
@@ -36,7 +37,7 @@ const LandingFive = () => {
 
         <Container className={styles.BigDivece1}>
 
-        <Menubar logoImageLeft={landingImageUrl}></Menubar>
+        <MenubarLeft logoImageLeft={landingImageUrl}></MenubarLeft>
 
 
           <Row className='d_flex'>

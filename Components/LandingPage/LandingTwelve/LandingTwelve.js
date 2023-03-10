@@ -12,6 +12,7 @@ import { RiShoppingCart2Line } from "react-icons/ri";
 import Order from "../Common/Order";
 import Menubar from "../Common/Menubar/Menubar";
 import landingImageUrl from "../../../public/images/landing_12/logo.svg";
+import MenubarLeft from '../Common/Menubar/MenubarLeft';
 
 
 
@@ -42,7 +43,7 @@ export default function LandingTwelve() {
 
                     <Container className={styles.BannerCon1}>
 
-                        <Menubar logoImageLeft={landingImageUrl}></Menubar>
+                        <MenubarLeft logoImageLeft={landingImageUrl}></MenubarLeft>
 
                             <Row className={styles.BannerCon1}>
 

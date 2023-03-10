@@ -20,6 +20,7 @@ import Order from "../Common/Order";
 // Menu Image Url
 import landingImageUrl from "../../../public/images/landing_3/logo.png";
 import Menubar from "../Common/Menubar/Menubar";
+import MenubarLeft from "../Common/Menubar/MenubarLeft";
 
 
 const LandingThree = () => {
@@ -108,8 +109,8 @@ const LandingThree = () => {
 
         <Container>
 
-                   {/* Menubar */}
-                   <Menubar logoImageLeft={landingImageUrl}></Menubar>
+            {/* Menubar */}
+            <MenubarLeft logoImageLeft={landingImageUrl}></MenubarLeft>
 
           <Row>
             <Col lg={8}>

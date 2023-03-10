@@ -15,7 +15,7 @@ const ShippingAddress = (props) => {
                 <Row className='d_flex'>
 
                     {/* item */}
-                    <Col xs={12} sm={6} lg={3}>
+                    <Col lg={3} sm={6}>
 
                         <div className="ShippingAddressItem">
 
@@ -32,7 +32,7 @@ const ShippingAddress = (props) => {
                     </Col>
 
                     {/* item */}
-                    <Col xs={12} sm={6} lg={3}>
+                    <Col lg={3} sm={6}>
 
                         <div className="ShippingAddressItem">
 
@@ -49,7 +49,7 @@ const ShippingAddress = (props) => {
                     </Col>
 
                     {/* item */}
-                    <Col xs={12} sm={6} lg={3}>
+                    <Col lg={3} sm={6}>
 
                         <div className="ShippingAddressItem">
 
@@ -66,7 +66,7 @@ const ShippingAddress = (props) => {
                     </Col>
 
                     {/* item */}
-                    <Col xs={12} sm={6} lg={3}>
+                    <Col lg={3} sm={6}>
 
                         <div className="ShippingAddressItem">
 
