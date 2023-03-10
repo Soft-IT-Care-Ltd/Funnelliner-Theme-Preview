@@ -21,12 +21,20 @@ Menubar
         height: 60px;
     }
   
+    .MenubarContent img{
+        height: 60px;
+    }
+  
 }
 
 
 @media (max-width: 500px) {
 
     .MenubarContent .Logo img{
+        height: 50px;
+    }
+  
+    .MenubarContent img{
         height: 50px;
     }
   

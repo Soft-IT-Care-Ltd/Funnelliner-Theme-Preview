@@ -369,7 +369,7 @@ const LandingOne = (props) => {
         </Container>
 
         {/* section gaps */}
-        <div className={styles.section_gaps} />
+        <div className={`${styles.section_gaps} ${styles.GapNone}`} />
       </section>
 
       {/* OrderPrice */}
@@ -394,7 +394,7 @@ const LandingOne = (props) => {
         </Container>
 
         {/* section gaps */}
-        <div className={styles.section_gaps} />
+        <div className={`${styles.section_gaps} ${styles.GapNone}`} />
       </section>
 
       {/* Gallery */}
@@ -677,7 +677,7 @@ const LandingOne = (props) => {
 
                 <ul>
                   <li className='d_flex'>
-                    <BiPhoneCall /> <a href='tel:018100-45255'>018100-45255</a>{" "}
+                    <BiPhoneCall /> <a href='tel:+8801894844452'>+8801894844452</a>{" "}
                   </li>
                 </ul>
 
@@ -728,7 +728,7 @@ const LandingOne = (props) => {
                 <ul>
                   <li className='d_flex'>
                     <FiMail />{" "}
-                    <a href='mailto:oder@freshen.com'>oder@freshen.com</a>{" "}
+                    <a href='mailto:support@funnelliner.com'>support@funnelliner.com</a>{" "}
                   </li>
                 </ul>
               </div>
