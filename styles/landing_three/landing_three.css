@@ -565,14 +565,14 @@
 /* Other-----Ibrahim */
 
 
-.tinyFooter p a{
+.LandingThree .tinyFooter p a{
     display: inline;
     font-size: 16px;
     font-weight: 600;
     color: #FECB02 !important;
     padding: 0 5px;
   }
-.tinyFooter p {
+  .LandingThree .tinyFooter p {
     text-align: center;
     font-size: 16px;
     font-weight: 600;
@@ -583,7 +583,7 @@
    
   }
 
-.tinyFooter {
+  .LandingThree .tinyFooter {
      padding-top: 25px;
 
   }
