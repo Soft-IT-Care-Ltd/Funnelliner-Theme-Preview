@@ -87,8 +87,6 @@ const Footer = () => {
 
 
 
-
-
     {/* ---------------------Bottom Footer-------------- */}
     <section id="footer-section">
       <Container>
@@ -99,7 +97,7 @@ const Footer = () => {
 
                <p>@ {year} All Rights Reserved </p>
                 <p>System developed by <Link href='https://funnelliner.com/'>Funnel Liner</Link> </p>
-                
+
             </div>
           </Col>
           <Col lg={6}>
