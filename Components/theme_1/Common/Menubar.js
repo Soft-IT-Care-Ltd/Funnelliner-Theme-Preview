@@ -67,14 +67,14 @@ const Menubar = ({ menu1, menu2, menu3, menu4, fontSize, save }) => {
                   </li>
 
                   <li>
-                    <Link href='/theme_1/shop' className='active'>
-                    About Us 
+                    <Link href='/theme_1/aboutus' className='active'>
+                      About Us 
                     </Link>
                   </li>
 
 
                   <li>
-                    <Link href='/theme_1/shop' className='active'>
+                    <Link href='/theme_1/contact-us' className='active'>
                      Contact Us
                     </Link>
                   </li>
