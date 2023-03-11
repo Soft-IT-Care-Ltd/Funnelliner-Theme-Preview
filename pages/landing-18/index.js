@@ -493,8 +493,6 @@ const index = () => {
             ===============================================================================================================*/}
             <section className='Landing__18__Order'>
 
-                <img className='Order_bg' src="/images/landing_18/order_bg.png" alt="" />
-
                 <div className="Landing__18__Order__Content">
 
                     <Container>
@@ -502,8 +500,6 @@ const index = () => {
                         <Row>
 
                             <Col lg={12}>
-
-                                <h2>তাই আর দেরি না করে আজই অর্ডার করুন </h2>
 
                                 <Order></Order>
 
