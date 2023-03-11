@@ -8,7 +8,7 @@ Common
 .Landing__14{
     overflow-x: hidden;
     box-sizing: border-box;
-    font-family: 'Hind Siliguri', sans-serif;
+    font-family: 'Hind Siliguri', sans-serif !important;
 }
 
 .Landing__14 h1{
@@ -22,7 +22,7 @@ Common
     line-height: 60px;
     color: #EC3361;
     font-weight: 600;
-    font-family: 'Noto Serif Bengali', serif;
+    font-family: 'Noto Serif Bengali', serif !important;
 }
 
 .Landing__14 p{
@@ -215,7 +215,6 @@ Banner
 
 .Landing__14 .BannerToptxtBox h2 {
     padding-top: 54px;
-
 
 }
 

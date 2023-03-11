@@ -467,7 +467,7 @@
     }
 
     100% {
-        top: -6300px;
+        top: -6400px;
     }
 }
 
@@ -488,7 +488,7 @@
     }
 
     100% {
-        top: -6300px;
+        top: -6400px;
         transform: rotate(180deg);
     }
 
@@ -950,7 +950,7 @@ top: -95px;
         }
 
         100% {
-            top: -6700px;
+            top: -6800px;
         }
     }
 
@@ -963,7 +963,7 @@ top: -95px;
         }
 
         100% {
-            top: -6700px;
+            top: -6800px;
             transform: rotate(180deg);
         }
 
