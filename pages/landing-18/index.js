@@ -66,7 +66,7 @@ const index = () => {
 
                                         <h3>মূল্যঃ  ১,৫৮৭ টাকা</h3>
 
-                                        <Link href='' className='bg'>অর্ডার করুন</Link>
+                                        <Link href='#placeAnOrder' className='bg'>অর্ডার করুন</Link>
 
 
                                     </div>
@@ -253,7 +253,7 @@ const index = () => {
                                         <h2>৳120 টাকা থেকে শুরু </h2>
                                         <p>সারা দেশে ফ্রি হোম ডেলিভারি</p>
 
-                                        <Link href='' className='bg'>অর্ডার করুন</Link>
+                                        <Link href='#placeAnOrder' className='bg'>অর্ডার করুন</Link>
 
                                     </div>
 
@@ -503,7 +503,11 @@ const index = () => {
 
                             <Col lg={12}>
 
-                                <Order></Order>
+                                <section id="placeAnOrder">
+                                
+                                  <Order></Order>
+
+                                 </section>
 
                             </Col>
 
