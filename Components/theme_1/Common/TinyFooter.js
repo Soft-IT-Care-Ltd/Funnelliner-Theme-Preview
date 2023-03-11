@@ -9,6 +9,9 @@ import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 const TinyFooter = () => {
 
+        const today = new Date();
+        const year = today.getFullYear(); 
+
     return (
         
         <section className="TinyFooter">
@@ -21,7 +24,8 @@ const TinyFooter = () => {
 
                         <div className="TinyFooterItem">
                             
-                            <p>© 2022 <Link href="https://softitcare.com/">Soft IT Care</Link> . All Rights Reserved.</p>
+                        <p>@ {year} All Rights Reserved </p>
+                        <p>System developed by <Link href='https://funnelliner.com/'>Funnel Liner</Link> </p>
 
                         </div>
 

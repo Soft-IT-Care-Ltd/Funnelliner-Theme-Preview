@@ -10,6 +10,9 @@ import {SlSocialPintarest} from 'react-icons/sl'
 
 const Footer = () => {
 
+      const today = new Date();
+      const year = today.getFullYear(); 
+
   return (
 
     <>
@@ -93,7 +96,10 @@ const Footer = () => {
         <Row>
           <Col lg={6}>
           <div className="copyright">
-              <p>@ 2021 - Phonks - Designed &amp; Develop by <a href="#"> Soft IT Care</a></p>
+
+               <p>@ {year} All Rights Reserved </p>
+                <p>System developed by <Link href='https://funnelliner.com/'>Funnel Liner</Link> </p>
+                
             </div>
           </Col>
           <Col lg={6}>

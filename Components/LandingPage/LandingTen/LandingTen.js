@@ -33,7 +33,7 @@ export default function LandingTen() {
                
               <Container>
 
-              <MenubarLeft logoImageLeft={landingImageUrl}></MenubarLeft>
+              
                
                   <Row className={styles.Rowrvs}>
 
@@ -45,6 +45,7 @@ export default function LandingTen() {
                                <div className={styles.logo}>
 
                                 {/* <img src="images/landing_10/logo.svg" alt="img" /> */}
+                                <MenubarLeft logoImageLeft={landingImageUrl}></MenubarLeft>
                                 
                                 </div>
                                <h1>জান্নাতে চাবি কুরআন মজিদ পড়ুন সহজ সরল পবিত্র জীবন গড়ুন</h1>
@@ -59,7 +60,11 @@ export default function LandingTen() {
 
                        <Col xs={12} sm={12} md={6} className={styles.ClmPad}>
                     
-                            <div className={styles.logo2}><img src="images/landing_10/logo.svg" alt="img" /></div>
+                            <div className={styles.logo2}>
+
+                               <MenubarLeft logoImageLeft={landingImageUrl}></MenubarLeft>
+
+                                </div>
                             {/* <div className={styles.topImg2}><img className={styles.topImg4} src="images/landing_10/b2.svg" alt="img" /></div> */}
  
                        
