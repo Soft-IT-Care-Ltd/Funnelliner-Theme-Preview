@@ -61,7 +61,7 @@
 
 
 
-.swiper-button-prev {
+.Landing__Seventeen .swiper-button-prev {
     left: 10px;
     right: auto;
     padding: 10px 20px !important;
@@ -71,9 +71,9 @@
     height: 40px !important;
 }
 
-.swiper-button-next {
-    left: 10px;
-    right: auto;
+.Landing__Seventeen .swiper-button-next {
+    right: 10px;
+    left: auto;
     padding: 10px 20px !important;
     background: #FFCB05;
     border-radius: 50px;
@@ -92,12 +92,12 @@
 }
 
 
- .swiper-button-prev {
+.Landing__Seventeen .swiper-button-prev {
     left: 5px !important;
     left: auto;
 }
 
- .swiper-button-next {
+.Landing__Seventeen .swiper-button-next {
     right: 5px !important;
     right: auto;
 }
