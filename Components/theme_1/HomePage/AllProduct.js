@@ -165,14 +165,14 @@ const AllProduct = ({ title, fontSize }) => {
       <Container>
         <Row>
           {/* item */}
-          <Col xs={12}>
+          <Col xs={12} >
           {/* <h2>All Product</h2> */}
             <div className='AllProductTabs'>
               <Tabs variant='pills' defaultActiveKey='PackOne'>
                 <Tab eventKey='PackOne' title='All Products'>
                   <div className='PopularProductContent'>
                     <Row>
-                      <Col>
+                      <Col xs={12} >
                         <div className='PopularProductGrid'>
                           {product.map((item, index) => {
                             return (
