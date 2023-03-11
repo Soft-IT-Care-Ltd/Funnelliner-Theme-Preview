@@ -492,6 +492,31 @@ Common
     font-weight: 400;
 }
 
+
+
+/* Teniy Footer */
+
+.Landing__18__Footer .tinyFooter p a{
+    display: inline;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--bg1)!important;
+    padding: 0 5px;
+  }
+
+  .Landing__18__Footer .tinyFooter p {
+        line-height: 0px;
+        text-align: center;
+        color: #FFF !important;
+  }
+
+  .Landing__18__Footer .tinyFooter  {
+       margin-top: 30px;
+  }
+
+
+
+
 /* ===========================================================================================================
     
 ===============================================================================================================*/
