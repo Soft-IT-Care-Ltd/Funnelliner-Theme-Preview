@@ -41,6 +41,7 @@ const LandingEleven = () => {
                 <img className='' src="images/landing_11/bannerdesign.svg" alt="" />
 
             </div>
+            
             <div className={styles.img_bottom_right}>
 
                 <img className='' src="images/landing_11/cross.svg" alt="" />

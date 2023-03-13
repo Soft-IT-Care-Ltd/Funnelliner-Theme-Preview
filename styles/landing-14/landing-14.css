@@ -2,21 +2,20 @@
 Common
 ===================================================================================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;700&display=swap'); */
 
 
 .Landing__14{
     overflow-x: hidden;
     box-sizing: border-box;
-    font-family: 'Hind Siliguri', sans-serif !important;
+  
 }
 
 .Landing__14 h1{
-    font-size: 81px;
+    font-size: 71px;
     color:#FFFFFF;
     font-weight: 600;
-    font-family: 'Hind Siliguri', sans-serif !important;
 }
 
 .Landing__14 h2{
@@ -24,7 +23,7 @@ Common
     line-height: 60px;
     color: #EC3361;
     font-weight: 600;
-    font-family: 'Noto Serif Bengali', serif !important;
+    /* font-family: 'Noto Serif Bengali', serif !important; */
 }
 
 .Landing__14 p{
@@ -196,7 +195,7 @@ Banner
     position: absolute;
     top: 40px;
     left: 250px;
-    font-size: 81px;
+    /* font-size: 81px; */
     color:#FFFFFF;
     margin-left: 18%;  
 }
@@ -875,7 +874,7 @@ Banner
 
 .Landing__14 .tinyFooter p a{
     display: inline;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
     color: #42210B !important;
     padding: 0 5px;
@@ -982,13 +981,13 @@ Banner
     }
 
     .Landing__14 h1 {
-        font-size: 58px;
+        font-size: 48px;
     }
 
     .Landing__14  .BannertxtBoxAbs1 {
         top: 30px;
         left: 150px;
-        font-size: 58px;
+        font-size: 48px;
         margin-left: 18%;
     }
 
@@ -1072,12 +1071,12 @@ Banner
     .Landing__14  .BannertxtBoxAbs1 {
         top: 30px;
         left: 150px;
-        font-size: 44px;
+        font-size: 38px;
         margin-left: 14%;
     }
 
     .Landing__14 h1 {
-        font-size: 44px;
+        font-size: 38px;
     }
 
     .Landing__14 .BannerToptxtBox img {
@@ -1115,12 +1114,12 @@ Banner
     .Landing__14  .BannertxtBoxAbs1 {
         top: 12px;
         left: 35px;
-        font-size: 40px;
+        font-size: 31px;
         margin-left: 18%;
     }
 
     .Landing__14 h1 {
-        font-size: 40px;
+        font-size: 31px;
     }
 
     .Landing__14  .BannertxtBoxAbs2 {
@@ -1202,23 +1201,23 @@ Banner
     .Landing__14  .BannertxtBoxAbs1 {
         top: 9px;
         left: 16px;
-        font-size: 28px;
+        font-size: 24px;
         margin-left: 18%;
     }
 
     .Landing__14 h1 {
-        font-size: 28px;
+        font-size: 22px;
     }
 
     .Landing__14  .BannertxtBoxAbs2 {
         position: absolute;
         top: 50px;
-        margin-left: 4%;
+        margin-left: 1%;
     }
 
     .Landing__14 .BannerToptxtBox p {
         padding: 0px 12%;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 31px;
         color: #FFFFFF;
         padding-bottom: 10px;
